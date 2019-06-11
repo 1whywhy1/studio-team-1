@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Dialog : MonoBehaviour
+public class NPCDialog : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] sentenses;

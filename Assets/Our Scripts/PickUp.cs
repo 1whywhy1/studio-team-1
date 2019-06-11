@@ -12,6 +12,21 @@ public class PickUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.tag != "Player")
+        {
+            return;
+        }
+
+        PickUpItem(other.transform);
+    }
+
+    public virtual void OnPickup(Transform item)
+    {
+        //emty
+    }
+
+    void PickUpItem(Transform item)
+    {
+
     }
 }
