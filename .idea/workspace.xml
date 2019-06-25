@@ -10,35 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d85bad3-7b66-4c57-968d-6d23c3133a39" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Our Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Materials/Floor.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Materials/Floor.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Materials/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Materials/Materials/computer screen.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Materials/Materials/computer screen.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Materials/computer screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Materials/computer screen.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Materials/floorboard.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Materials/floorboard.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scenes/Hospital.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scenes/Hospital.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scenes/IK Scene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scenes/IK Scene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scenes/Prototype Week 3.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scenes/Prototype Week 3.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scripts/NPCDialog.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scripts/NPCDialog.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scripts/PickUp.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scripts/PickUp.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scripts/PickUpPrototype.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Scripts/PickUpPrototype.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Sound.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Sound/ContinueButtonSound.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Our Sound/ContinueButtonSound.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tony/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tony/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +23,9 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,6 +53,12 @@
               <item name="studio-team-1" type="462c0819:PsiDirectoryNode" />
               <item name="Assets" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="studio-team-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studio-team-1" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
+              <item name="Shaders" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -82,6 +66,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -109,12 +94,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561441778191</updated>
-      <workItem from="1561441780332" duration="259000" />
+      <workItem from="1561441780332" duration="825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259000" />
+    <option name="totallyTimeSpent" value="825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -141,5 +126,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/ForceField.shadergraph">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
   </component>
 </project>
