@@ -7,6 +7,7 @@ public class CameraScript : MonoBehaviour
     // Start is called before the first frame update
     public Camera cam;
     public GameObject zoom;
+    public GameObject camworld;
 
     public Transform playerTransform;
     public Vector3 _cameraOffset;
@@ -23,6 +24,7 @@ public class CameraScript : MonoBehaviour
 
         _cameraOffset = transform.position - playerTransform.position;
         zoom.SetActive(false);
+        camworld.SetActive(false);
         
     }
 
@@ -55,6 +57,16 @@ public class CameraScript : MonoBehaviour
         if (Input.GetMouseButtonUp(1))
         {
             zoom.SetActive(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            camworld.SetActive(true);
+        }
+
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            camworld.SetActive(false);
         }
     }
 }
