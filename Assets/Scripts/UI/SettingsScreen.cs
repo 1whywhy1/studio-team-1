@@ -4,10 +4,9 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-public class SettingsScript : MonoBehaviour
+public class SettingsScreen : MonoBehaviour
 {
     public AudioMixer audioMixer;
-
     public Dropdown resolutionDropdown;
 
     Resolution[] resolutions;

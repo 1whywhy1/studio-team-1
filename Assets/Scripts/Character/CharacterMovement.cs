@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class CharacterMovement : MonoBehaviour
 {
     float speed = 1;
-    float rotSpeed = 80;
-    float rot = 0f;
+    float rotationSpeed = 80;
+    float rotation = 0f;
     float gravity = 8;
 
     [SerializeField] private string horizontalInputName;
@@ -19,28 +19,33 @@ public class Movement : MonoBehaviour
     [SerializeField] private float jumpMultiplier;
     [SerializeField] private KeyCode jumpKey;
 
+    private Camera mainCam;
 
     Vector3 moveDir = Vector3.zero;
-
-    CharacterController controller;
     Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        controller = GetComponent<CharacterController>();
+        charController = GetComponent<CharacterController>();
+        mainCam = Camera.main;
         anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // When is 
-        if (controller.isGrounded)
+        float horizInput = Input.GetAxis(horizontalInputName) * movementSpeed;
+        float vertInput = Input.GetAxis(verticalInputName) * movementSpeed;
+
+        // If character is touching the ground
+        if (charController.isGrounded)
         {
             moveDir = new Vector3(0, 0, 1);
             moveDir *= speed;
         }
+
+        // While [W] key button is pressed
         if (Input.GetKey(KeyCode.W))
         {
            // anim.SetBool("walking", true);
@@ -48,18 +53,19 @@ public class Movement : MonoBehaviour
             moveDir = new Vector3(0, 0, 1);
             moveDir *= speed;
             moveDir = transform.TransformDirection(moveDir);
-            float horizInput = Input.GetAxis(horizontalInputName) * movementSpeed;
-            float vertInput = Input.GetAxis(verticalInputName) * movementSpeed;
 
             Vector3 rightMovement = transform.right * horizInput;
             Vector3 forwardMovement = transform.forward * vertInput;
             charController.SimpleMove(forwardMovement + rightMovement);
         }
+
         if (Input.GetKeyUp(KeyCode.W))
         {
             moveDir = new Vector3(0, 0, 0);
             anim.SetInteger("condition", 0);
         }
+
+        // While [S] key button is pressed
         if (Input.GetKey(KeyCode.S))
         {
             //anim.SetBool("walking", true);
@@ -67,8 +73,6 @@ public class Movement : MonoBehaviour
             moveDir = new Vector3(0, 0, -1);
             moveDir *= speed;
             moveDir = transform.TransformDirection(moveDir);
-            float horizInput = Input.GetAxis(horizontalInputName) * movementSpeed;
-            float vertInput = Input.GetAxis(verticalInputName) * movementSpeed;
 
             Vector3 rightMovement = transform.right * horizInput;
             Vector3 forwardMovement = transform.forward * vertInput;
@@ -79,14 +83,12 @@ public class Movement : MonoBehaviour
             moveDir = new Vector3(0, 0, 0);
             anim.SetInteger("condition", 0);
         }
-    
-        rot += Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime;
 
-        transform.eulerAngles = new Vector3(0, rot, 0);
+        rotation += Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
+
+        transform.eulerAngles = new Vector3(0, rotation, 0);
 
         moveDir.y -= gravity * Time.deltaTime;
-        controller.Move(moveDir * Time.deltaTime);
-
+        charController.Move(moveDir * Time.deltaTime);
     }
-   
 }
