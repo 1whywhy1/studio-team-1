@@ -10,13 +10,6 @@
           <e p="Alma" t="Include">
             <e p="Assets" t="Include">
               <e p="3D Game Kit - Character Pack" t="Include">
-                <e p="Characters" t="Include">
-                  <e p="Spitter" t="Include">
-                    <e p="AnimationClips" t="Include">
-                      <e p="animations.txt" t="Include" />
-                    </e>
-                  </e>
-                </e>
                 <e p="Shaders" t="Include">
                   <e p="Alien.shader" t="Include" />
                   <e p="Dissolve.shader" t="Include" />

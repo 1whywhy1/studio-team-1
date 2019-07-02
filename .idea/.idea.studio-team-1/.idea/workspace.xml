@@ -24,9 +24,164 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd5782bd-c590-4e30-929a-289b0eb13f3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.studio-team-1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.studio-team-1/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.studio-team-1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.studio-team-1/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.studio-team-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.studio-team-1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperAttack.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperAttack.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperCutsceneTOIdle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperCutsceneTOIdle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperHit1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperHit1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperHit2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperHit2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperHit3.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperHit3.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperHit4.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperHit4.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperIdle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperIdle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperRunForward.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperRunForward.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperWalkForward.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/AnimationClips/@ChomperWalkForward.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Materials/Chomper_Body_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Materials/Chomper_Body_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Materials/Chomper_Internals_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Materials/Chomper_Internals_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Models/Chomper.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Models/Chomper.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Textures/Chomper_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Textures/Chomper_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Textures/Chomper_DissolveGradient.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Textures/Chomper_DissolveGradient.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Textures/Chomper_MetallicSmooth.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Textures/Chomper_MetallicSmooth.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Textures/Chomper_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Textures/Chomper_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Textures/Chomper_Occlusion.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Chomper/Textures/Chomper_Occlusion.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierCloseRangeAttack.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierCloseRangeAttack.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierDeath.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierDeath.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierHit.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierHit.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierIdle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierIdle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierMeleeAttack.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierMeleeAttack.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierRangeAttack.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierRangeAttack.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierRangeAttack2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierRangeAttack2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnLeft135.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnLeft135.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnLeft180.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnLeft180.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnLeft45.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnLeft45.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnLeft90.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnLeft90.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnRight135.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnRight135.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnRight180.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnRight180.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnRight45.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnRight45.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnRight90.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierTurnRight90.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierWalk.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierWalk.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierWalkFast.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/AnimationClips/@GrenadierWalkFast.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Materials/Grenadier_Core_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Materials/Grenadier_Core_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Materials/Grenadier_Eye_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Materials/Grenadier_Eye_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Materials/Grenadier_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Materials/Grenadier_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Models/Grenadier.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Models/Grenadier.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/EnergyCore_Gradient.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/EnergyCore_Gradient.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/EnergyCore_Noise.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/EnergyCore_Noise.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/Grenadier_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/Grenadier_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/Grenadier_Eye_Emission.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/Grenadier_Eye_Emission.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/Grenadier_Eye_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/Grenadier_Eye_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/Grenadier_MetallicSmooth.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/Grenadier_MetallicSmooth.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/Grenadier_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/Grenadier_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/Grenadier_Packed.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/Grenadier_Packed.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/HighlightRamp.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/HighlightRamp.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/InnerStructureRamp.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Grenadier/Textures/InnerStructureRamp.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Materials/Gunner_Core_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Materials/Gunner_Core_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Materials/Gunner_Eye_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Materials/Gunner_Eye_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Materials/Gunner_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Materials/Gunner_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Models/Gunner.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Models/Gunner.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Textures/Gunner_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Textures/Gunner_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Textures/Gunner_Eye_Emission.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Textures/Gunner_Eye_Emission.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Textures/Gunner_Eye_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Textures/Gunner_Eye_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Textures/Gunner_MetallicSmooth.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Textures/Gunner_MetallicSmooth.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Textures/Gunner_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Textures/Gunner_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Textures/Gunner_Packed.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Gunner/Textures/Gunner_Packed.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/AnimationClips.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/AnimationClips/@SpitterSpit.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/AnimationClips/@SpitterSpit.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/AnimationClips/animations.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/AnimationClips/animations.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Materials/Spitter_Body_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Materials/Spitter_Body_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Materials/Spitter_Internals_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Materials/Spitter_Internals_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Models/Spitter.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Models/Spitter.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Textures/Spitter_Albedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Textures/Spitter_Albedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Textures/Spitter_DissolveGradient.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Textures/Spitter_DissolveGradient.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Textures/Spitter_MetallicSmooth.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Textures/Spitter_MetallicSmooth.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Textures/Spitter_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Textures/Spitter_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Textures/Spitter_Occlusion.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Alma/Assets/3D Game Kit - Character Pack/Characters/Spitter/Textures/Spitter_Occlusion.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tony/Inventory.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tony/Inventory.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProBuilderSettings.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,12 +202,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PlayerInventory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SettingsScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SettingsScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PlayerInventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -67,14 +222,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/PlayerInventory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Character/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventory.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -103,6 +258,12 @@
               <item name="Assets" type="8711f2a6:AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
             </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="UI" type="1045f7f1:UnityExplorerNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -118,6 +279,9 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -160,12 +324,12 @@
       <option name="presentableId" value="Default" />
       <updated>1561943092877</updated>
       <workItem from="1561943095603" duration="7402000" />
-      <workItem from="1562025923015" duration="213000" />
+      <workItem from="1562025923015" duration="3139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7615000" />
+    <option name="totallyTimeSpent" value="10541000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -177,28 +341,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15077251" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.309628" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="TeamCity" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3299923" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Performance Profiler" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Unity" order="11" weight="0.3299923" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Unit Tests" order="13" />
-      <window_info anchor="bottom" id="Terminal" order="14" />
-      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="bottom" id="TeamCity" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3299923" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="NuGet" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Unity" order="12" weight="0.32905984" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Unit Tests" order="14" />
+      <window_info anchor="bottom" id="Terminal" order="15" />
+      <window_info anchor="bottom" id="Event Log" order="16" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -239,5 +403,12 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseScreen.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/PlayerInventory.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Character/PlayerManager.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/Inventory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
