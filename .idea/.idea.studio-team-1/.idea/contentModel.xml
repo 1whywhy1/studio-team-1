@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Tony\.Rider2019.1\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Tony\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_studio-team-1.-123089179.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Tony Etro\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Tony Etro\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_studio-team-1.-123089179.00" t="ExcludeRecursive" />
     <e p="D:\Projects\Unity\studio-team-1" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -10,13 +10,6 @@
           <e p="Alma" t="Include">
             <e p="Assets" t="Include">
               <e p="3D Game Kit - Character Pack" t="Include">
-                <e p="Characters" t="Include">
-                  <e p="Spitter" t="Include">
-                    <e p="AnimationClips" t="Include">
-                      <e p="animations.txt" t="Include" />
-                    </e>
-                  </e>
-                </e>
                 <e p="Shaders" t="Include">
                   <e p="Alien.shader" t="Include" />
                   <e p="Dissolve.shader" t="Include" />
@@ -44,6 +37,7 @@
           <e p="PickUp.cs" t="Include" />
           <e p="PickUpPrototype.cs" t="Include" />
           <e p="UI" t="Include">
+            <e p="Inventory.cs" t="Include" />
             <e p="MainMenu.cs" t="Include" />
             <e p="PauseScreen.cs" t="Include" />
             <e p="PlayerInventory.cs" t="Include" />

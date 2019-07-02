@@ -12,13 +12,15 @@ public class PlayerInventory : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.I))
 		{
 			// Show/hide menu
-			if (inventoryShowing)
+			if (!inventoryShowing)
 			{
 				inventoryScreen.SetActive(true);
+				inventoryShowing = inventoryScreen.activeSelf;
 			}
 			else
 			{
 				inventoryScreen.SetActive(false);
+				inventoryShowing = inventoryScreen.activeSelf;
 			}
 		}
 	}

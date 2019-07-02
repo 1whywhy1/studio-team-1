@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BuildServerSettings">
+    <option name="LOGIN" value="" />
+    <option name="SERVER_URL" value="http://buildserver" />
+    <option name="REMEMBER_ME" value="true" />
+    <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
+    <option name="INSPECTIONS_BUILD_TYPE_IDS" />
+    <option name="DUPLICATES_BUILD_TYPE_IDS" />
+    <option name="COVERAGE_SETTINGS" />
+    <option name="TEST_STATUS_ENABLED" value="true" />
+    <option name="TEST_STATUS_SHOW_SUCCESSFUL" value="false" />
+    <option name="POSTPONE_SUITABLE_CONFIGURATIONS_SEARCH" value="false" />
+    <option name="ARTIFACTS_BUILD_TYPE_IDS" />
+    <option name="PERFORM_COMMIT_IF_SUCCESSFUL" value="true" />
+    <option name="PERFORM_COMMIT_IF_NO_NEW_FAILED_TESTS" value="false" />
+    <option name="REQUEST_CONFIRMATON" value="false" />
+    <option name="PRE_TESTED_COMMIT" value="true" />
+    <option name="FILTER_BY_STATUS" value="false" />
+    <option name="FILTER_MARKED_AS_FIXED" value="false" />
+    <option name="SHOW_CLOSE_PROMPT" value="true" />
+    <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
+    <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bd5782bd-c590-4e30-929a-289b0eb13f3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.studio-team-1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.studio-team-1/.idea/contentModel.xml" afterDir="false" />
@@ -153,9 +175,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PickUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SettingsScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SettingsScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PlayerInventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -411,42 +435,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/MainMenu.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="306">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
           <folding>
-            <marker date="1561948068953" expanded="true" signature="6:113" ph="..." />
-            <marker date="1561948068953" expanded="true" signature="152:350" ph="{...}" />
-            <marker date="1561948068953" expanded="true" signature="178:213" ph="{...}" />
-            <marker date="1561948068953" expanded="true" signature="238:273" ph="{...}" />
-            <marker date="1561948068953" expanded="true" signature="298:348" ph="{...}" />
+            <marker date="1562046468594" expanded="false" signature="6:78" ph="..." />
+            <marker date="1562046468594" expanded="true" signature="126:490" ph="{...}" />
+            <marker date="1562046468594" expanded="true" signature="211:269" ph="{...}" />
+            <marker date="1562046468594" expanded="true" signature="285:488" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseScreen.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="238">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
-            <marker date="1561945594250" expanded="true" signature="6:78" ph="..." />
-            <marker date="1561945594250" expanded="true" signature="120:278" ph="{...}" />
-            <marker date="1561945594250" expanded="true" signature="192:205" ph="{...}" />
-            <marker date="1561945594250" expanded="true" signature="263:276" ph="{...}" />
+            <marker date="1562046609302" expanded="true" signature="6:78" ph="..." />
+            <marker date="1562046609302" expanded="true" signature="124:521" ph="{...}" />
+            <marker date="1562046609302" expanded="true" signature="218:519" ph="{...}" />
+            <marker date="1562046609302" expanded="true" signature="256:516" ph="{...}" />
+            <marker date="1562046609302" expanded="true" signature="307:405" ph="{...}" />
+            <marker date="1562046609302" expanded="true" signature="413:512" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/PlayerInventory.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Character/CameraMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="5" selection-start-line="5" selection-start-column="1" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <marker date="1561950630492" expanded="false" signature="6:78" ph="..." />
-            <marker date="1561950630492" expanded="true" signature="124:418" ph="{...}" />
-            <marker date="1561950630492" expanded="true" signature="218:416" ph="{...}" />
-            <marker date="1561950630492" expanded="true" signature="256:413" ph="{...}" />
-            <marker date="1561950630492" expanded="true" signature="306:353" ph="{...}" />
-            <marker date="1561950630492" expanded="true" signature="361:409" ph="{...}" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
