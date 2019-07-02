@@ -22,15 +22,6 @@
               </e>
             </e>
           </e>
-          <e p="Ricky" t="Include">
-            <e p="Ricky Scripts" t="Include">
-              <e p="Inventory.cs" t="Include" />
-              <e p="Item.cs" t="Include" />
-              <e p="ItemSlotController.cs" t="Include" />
-              <e p="NewBehaviourScript.cs" t="Include" />
-              <e p="Tradable.cs" t="Include" />
-            </e>
-          </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="Character" t="Include">
@@ -42,6 +33,7 @@
           <e p="PickUp.cs" t="Include" />
           <e p="PickUpPrototype.cs" t="Include" />
           <e p="UI" t="Include">
+            <e p="Inventory.cs" t="Include" />
             <e p="MainMenu.cs" t="Include" />
             <e p="PauseScreen.cs" t="Include" />
             <e p="PlayerInventory.cs" t="Include" />
