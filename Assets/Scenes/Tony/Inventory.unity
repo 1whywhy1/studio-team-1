@@ -272,7 +272,7 @@ MonoBehaviour:
   jumpMultiplier: 0
   jumpKey: 0
   movementSpeed: 0
-  inventoryScreen: {fileID: 1696838483}
+  inventoryScreen: {fileID: 280073666}
 --- !u!4 &156247389 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9163918993777600539, guid: 462e5dd64446bb14082dec21d45e9b68,
