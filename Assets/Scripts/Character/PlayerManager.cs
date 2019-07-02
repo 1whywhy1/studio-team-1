@@ -13,6 +13,7 @@ public class PlayerManager : MonoBehaviour
 	private Animator anim;
 	private CharacterController charController;
 	private Vector3 moveDir = Vector3.zero;
+
 	[SerializeField] private AnimationCurve jumpFallOff;
 	[SerializeField] private float jumpMultiplier;
 	[SerializeField] private KeyCode jumpKey;
