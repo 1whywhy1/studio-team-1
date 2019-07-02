@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,6 +20,7 @@ public class PlayerManager : MonoBehaviour
 	[SerializeField] private float movementSpeed;
 
 	[Header("Inventory")]
+	public Inventory inventory;
 	public GameObject inventoryScreen;
 	private bool inventoryShowing = false;
 
@@ -112,6 +114,15 @@ public class PlayerManager : MonoBehaviour
 		{
 			inventoryScreen.SetActive(false);
 			inventoryShowing = inventoryScreen.activeSelf;
+		}
+	}
+
+	private void OnControllerColliderHit(ControllerColliderHit hit)
+	{
+		IInventoryItem item = hit.collider.GetComponent<IInventoryItem>();
+		if (item != null)
+		{
+			inventory.AddItem(item);
 		}
 	}
 }
