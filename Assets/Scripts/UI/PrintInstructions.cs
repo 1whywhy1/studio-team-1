@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PrintInstructions : MonoBehaviour
 {
-    public Text textDisplay;
+    public Text textDisplay;                //text box to diplay
     public string sentence;
     private int index;
     public float typingSpeed = 0.05f;
@@ -23,6 +23,7 @@ public class PrintInstructions : MonoBehaviour
         
     }
 
+    // Displays a str one letter at a time every typingSpeed seconds
     IEnumerator CoType()
     {
         foreach (char letter in sentence.ToCharArray())

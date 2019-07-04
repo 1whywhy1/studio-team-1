@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BGMusicController : MonoBehaviour
-{
-
+{ 
     private AudioSource musicPlayer;
     public AudioClip inGameBG;
 
@@ -16,14 +15,9 @@ public class BGMusicController : MonoBehaviour
       
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    // Waits for 5 second and starts playing an audio clip
     IEnumerator CoWait()
     {
-     
         yield return new WaitForSeconds(5);
         musicPlayer.Play();
     }
