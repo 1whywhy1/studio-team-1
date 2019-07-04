@@ -6,23 +6,20 @@ using TMPro;
 public class PickUpPrototype : MonoBehaviour
 {
     public TextMeshProUGUI pickUpText;
-    private void OnTriggerEnter(Collider other)
+    public AudioSource sxf;
+    public AudioClip pickUp;
+
+    private void Start()
     {
-        if (other.name == "Player")
-        {
-            pickUpText.enabled = true;
-            if(Input.GetButtonDown("E"))
-            {
-                Destroy(this);
-            }
-        }
+        sxf = GameObject.Find("EGO SFX").GetComponent<AudioSource>();
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.name == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            pickUpText.enabled = false;
+            sxf.PlayOneShot(pickUp);
+            gameObject.SetActive(false);
         }
     }
 }

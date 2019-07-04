@@ -12,11 +12,10 @@ GameObject:
   - component: {fileID: 9163918993768531549}
   - component: {fileID: 9163918994963812950}
   - component: {fileID: 9163918994963812951}
-  - component: {fileID: 9163918994963812948}
   - component: {fileID: 9163918994963812949}
   m_Layer: 0
   m_Name: PlayerSample
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,27 +89,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.05, z: 0}
---- !u!114 &9163918994963812948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9163918993777898619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1333ddc770d86be4eabe1c58900d7fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  zoom: {fileID: 0}
-  camworld: {fileID: 0}
-  playerTransform: {fileID: 9163918993777600539}
-  _cameraOffset: {x: 0, y: 0, z: 0}
-  SmoothFactor: 0.27
-  LookAtPlayer: 0
-  RotateAroundPlayer: 0
-  RotationSpeed: 5
 --- !u!114 &9163918994963812949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,10 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e78d6fd2bc5ce42a748cdbf2e32ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalInputName: Horizontal
-  verticalInputName: Vertical
-  movementSpeed: 5
-  charController: {fileID: 0}
+  speed: 1
+  rotationSpeed: 80
+  rotation: 0
+  gravity: 8
   jumpFallOff:
     serializedVersion: 2
     m_Curve: []
@@ -135,6 +113,9 @@ MonoBehaviour:
     m_RotationOrder: 4
   jumpMultiplier: 2
   jumpKey: 32
+  movementSpeed: 5
+  inventory: {fileID: 0}
+  inventoryScreen: {fileID: 0}
 --- !u!1 &9163918993777900033
 GameObject:
   m_ObjectHideFlags: 0
