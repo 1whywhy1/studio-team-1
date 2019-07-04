@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
+
 
 public class PickUpPrototype : MonoBehaviour
 {
-    public TextMeshProUGUI pickUpText;
+    public Text pickUpText;
     public AudioSource sxf;
     public AudioClip pickUp;
 

@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class NPCDialog : MonoBehaviour
 {
-    public TextMeshProUGUI textDisplay;
+    public Text textDisplay;
     public string[] sentenses;
     private int index;
-    public float typingSpeed = 1f;
+    public float typingSpeed = 0.05f;
     public AudioSource source;
 
     public GameObject continueButton;
