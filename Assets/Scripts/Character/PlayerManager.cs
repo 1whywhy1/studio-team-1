@@ -21,7 +21,7 @@ public class PlayerManager : MonoBehaviour
 	[SerializeField] private float movementSpeed;
 
 	[Header("Inventory")]
-	public Inventory inventory;
+	// public Inventory inventory;
 	public GameObject inventoryScreen;
 	private bool inventoryShowing = false;
 
@@ -53,8 +53,8 @@ public class PlayerManager : MonoBehaviour
 		// While [W] key button is pressed
 		if (Input.GetKey(KeyCode.W))
 		{
-			// anim.SetBool("walking", true);
-			anim.SetInteger("condition", 1);
+			// anim.SetBool("moving", true);
+			anim.SetInteger("moving", 1);
 			moveDir = new Vector3(0, 0, 1);
 			moveDir *= speed;
 			moveDir = transform.TransformDirection(moveDir);
@@ -67,14 +67,14 @@ public class PlayerManager : MonoBehaviour
 		if (Input.GetKeyUp(KeyCode.W))
 		{
 			moveDir = new Vector3(0, 0, 0);
-			anim.SetInteger("condition", 0);
+			anim.SetInteger("moving", 0);
 		}
 
 		// While [S] key button is pressed
 		if (Input.GetKey(KeyCode.S))
 		{
-			//anim.SetBool("walking", true);
-			anim.SetInteger("condition", 2);
+			//anim.SetBool("moving", true);
+			anim.SetInteger("moving", 2);
 			moveDir = new Vector3(0, 0, -1);
 			moveDir *= speed;
 			moveDir = transform.TransformDirection(moveDir);
@@ -87,7 +87,7 @@ public class PlayerManager : MonoBehaviour
 		if (Input.GetKeyUp(KeyCode.S))
 		{
 			moveDir = new Vector3(0, 0, 0);
-			anim.SetInteger("condition", 0);
+			anim.SetInteger("moving", 0);
 		}
 
 		if (Input.GetKeyDown(KeyCode.I))
@@ -115,15 +115,6 @@ public class PlayerManager : MonoBehaviour
 		{
 			inventoryScreen.SetActive(false);
 			inventoryShowing = inventoryScreen.activeSelf;
-		}
-	}
-
-	private void OnControllerColliderHit(ControllerColliderHit hit)
-	{
-		IInventoryItem item = hit.collider.GetComponent<IInventoryItem>();
-		if (item != null)
-		{
-			inventory.AddItem(item);
 		}
 	}
 }
