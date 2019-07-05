@@ -25,7 +25,6 @@
               </e>
             </e>
             <e p="Scripts" t="Include">
-              <e p="cameraControl.cs" t="Include" />
               <e p="Move.cs" t="Include" />
             </e>
           </e>
@@ -34,6 +33,8 @@
           <e p="Character" t="Include">
             <e p="CameraManager.cs" t="Include" />
             <e p="CharacterMovement.cs" t="Include" />
+            <e p="Inventory.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
             <e p="PlayerManager.cs" t="Include" />
           </e>
           <e p="CursorScript.cs" t="Include" />
@@ -42,6 +43,7 @@
             <e p="BGMusicController.cs" t="Include" />
             <e p="PickUpPrototype.cs" t="Include" />
           </e>
+          <e p="Interfaces.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="MainMenu.cs" t="Include" />
             <e p="NPCDialog.cs" t="Include" />
