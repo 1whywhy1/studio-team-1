@@ -24,9 +24,6 @@
                 </e>
               </e>
             </e>
-            <e p="Scripts" t="Include">
-              <e p="Move.cs" t="Include" />
-            </e>
           </e>
         </e>
         <e p="Scripts" t="Include">

@@ -10,7 +10,7 @@ public class PickUp : MonoBehaviour
     private bool inPoV;
     private bool inRange;
     int layerMask = 8;
-    private float pickUpRange;
+    private float pickUpRange = 0;
 
     public TextMeshProUGUI useText;
 
