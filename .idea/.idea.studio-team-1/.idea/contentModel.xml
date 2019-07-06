@@ -24,6 +24,14 @@
                 </e>
               </e>
             </e>
+            <e p="Scripts" t="Include">
+              <e p="cameraControl.cs" t="Include" />
+              <e p="Move.cs" t="Include" />
+              <e p="Safe" t="Include">
+                <e p="cameraControl2.cs" t="Include" />
+                <e p="Move2.cs" t="Include" />
+              </e>
+            </e>
           </e>
         </e>
         <e p="Scripts" t="Include">
@@ -33,6 +41,8 @@
             <e p="Item.cs" t="Include" />
             <e p="PlayerManager.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
+            <e p="Push.cs" t="Include" />
+            <e p="Vent.cs" t="Include" />
           </e>
           <e p="CursorScript.cs" t="Include" />
           <e p="DummyScript.cs" t="Include" />

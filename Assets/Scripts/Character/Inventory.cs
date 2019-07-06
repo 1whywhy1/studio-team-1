@@ -24,16 +24,20 @@ public class Inventory : MonoBehaviour, IInventory
 	// add items + check in case of avoid overflow of items
 	public void AddItem(string itemName)
 	{
-		Debug.Log(itemName);
-		Debug.Log(InventoryItems[itemName] + ": " + currentCount);
-
+		// if inventory does NOT contain key already, make one
 		if (!InventoryItems.ContainsKey(itemName))
 		{
 			InventoryItems.Add(itemName, 1);
 		}
+		// otherwise increment value of key already made
 		else if (InventoryItems.TryGetValue(itemName, out var currentCount))
 		{
 			InventoryItems[itemName] = currentCount++;
+
+			foreach (string key in InventoryItems.Keys)
+			{
+				Debug.Log(key);
+			}
 		}
 	}
 
