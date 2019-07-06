@@ -11,6 +11,10 @@ public class Move : MonoBehaviour
 
     public float moveSpeed = 10f;
     public float jumpHeight = 10f;
+    public float jumpCount = 1f;
+    public float jumpMax = 1f;
+
+    public bool isControlling;
 
     float gravity = 0f;
     float jumpVelocity = 0;
@@ -23,18 +27,20 @@ public class Move : MonoBehaviour
         Ccontroller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         cam = Camera.main;
+
+        
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        Movement();
-        Jump();
-        if(state == "Jump")
+        if (isControlling)
         {
-            Jump();
             Movement();
         }
+
+        
+        
     }
 
     void Movement()
@@ -52,17 +58,31 @@ public class Move : MonoBehaviour
 
         if (Ccontroller.isGrounded)
         {
-            gravity = 0;
+            print("IsGround");
+            jumpCount = jumpMax;
+            gravity = 1f;
+            anim.SetBool("isGrounded", true);
+
+
         }
         else
         {
             gravity += 0.25f;
-            gravity = Mathf.Clamp(gravity, 1f, 20f);
+            gravity = Mathf.Clamp(gravity, -20f, 20f);
         }
-              
+
+        if (Input.GetKeyDown(KeyCode.Space) && jumpCount > 0)
+        {
+            print("jump");
+            gravity = -jumpHeight;
+            Jump();
+            anim.SetTrigger("Jump");
+            anim.SetBool("isGrounded", false);
+        }
 
         Vector3 gravityVector = -Vector3.up * gravity * Time.deltaTime;
-        Ccontroller.Move(velocity + gravityVector);
+        
+            Ccontroller.Move(velocity + gravityVector);
 
         if (velocity.magnitude > 0)
         {
@@ -85,21 +105,10 @@ public class Move : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && Ccontroller.isGrounded)
-        {
-            jumpVelocity = jumpHeight;
-            ChangeState("Jump");
-        }
-
-        void ChangeState(string stateName)
-        {
-            state = "Jump";
-            anim.SetTrigger("Jump");
-        }
-
-        if(Input.GetKeyUp(KeyCode.Space) && Ccontroller.isGrounded)
-        {
-            ChangeState("Movement");
-        }
+        
+            jumpCount--;
+            jumpVelocity -= jumpHeight;
+            state = "Jump";         
+             
     }
 }
