@@ -31,6 +31,8 @@ public class Inventory : MonoBehaviour, IInventory
 		else if (InventoryItems.TryGetValue(itemName, out var currentCount))
 		{
 			InventoryItems[itemName]++;
+
+			Debug.Log(InventoryItems[itemName]);
 		}
 	}
 

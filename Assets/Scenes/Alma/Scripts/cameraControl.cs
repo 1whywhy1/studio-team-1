@@ -27,7 +27,7 @@ public class cameraControl : MonoBehaviour
     float desiredDistance = 3f;
 
     float pitch = 0f; // controls up and down
-    float pitchMin = -10f; 
+    float pitchMin = -10f;
     float pitchMax = 60f;
     float yaw = 0f; // controls side to side
     float roll = 0f; // controls camera rotation
@@ -61,7 +61,6 @@ public class cameraControl : MonoBehaviour
 
         if (Input.GetMouseButton(1))
         {
-            print("working");
             transform.position = targetZoom.transform.position;
 
         }
@@ -73,7 +72,7 @@ public class cameraControl : MonoBehaviour
             cam2.SetActive(false);
             cam3.SetActive(false);
             cam4.SetActive(false);
-            
+
 
             player.isControlling = true;
             player2.isControlling = false;
@@ -91,7 +90,7 @@ public class cameraControl : MonoBehaviour
             cam1.SetActive(false);
             cam3.SetActive(false);
             cam4.SetActive(false);
-            
+
 
             player2.isControlling = true;
             player.isControlling = false;
@@ -109,7 +108,7 @@ public class cameraControl : MonoBehaviour
             cam1.SetActive(false);
             cam2.SetActive(false);
             cam4.SetActive(false);
-            
+
 
             player3.isControlling = true;
             player.isControlling = false;
@@ -125,7 +124,7 @@ public class cameraControl : MonoBehaviour
             cam1.SetActive(false);
             cam2.SetActive(false);
             cam3.SetActive(false);
-            
+
 
             player4.isControlling = true;
             player.isControlling = false;
@@ -136,7 +135,7 @@ public class cameraControl : MonoBehaviour
 
         }
 
-    }   
+    }
 
-    
+
 }

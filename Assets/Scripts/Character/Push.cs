@@ -13,7 +13,7 @@ public class Push : MonoBehaviour
     void Start()
     {
         isRange = false;
-        
+
 
     }
 
@@ -25,7 +25,7 @@ public class Push : MonoBehaviour
             if (isHolding == false)
             {
                 heldItem.transform.SetParent(this.transform);
-                
+
                 heldItem.transform.localPosition = new Vector3(0, 0.75f, 1);
                 isHolding = true;
                 return;
@@ -47,12 +47,11 @@ public class Push : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
-        print("collided");
         if(other.gameObject.tag == "Pushable")
         {
             isRange = true;
             heldItem = other.gameObject;
-            
+
         }
         else
         {
@@ -62,5 +61,5 @@ public class Push : MonoBehaviour
 
     }
 
-    
+
 }

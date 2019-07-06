@@ -6,7 +6,7 @@ public class Vent: MonoBehaviour
 {
     public GameObject destination;
     public GameObject Hazmat;
-    
+
 
     CharacterController Ccontroller;
 
@@ -18,7 +18,7 @@ public class Vent: MonoBehaviour
     {
         isRange = false;
         Ccontroller = GetComponent<CharacterController>();
-       
+
 
     }
 
@@ -35,20 +35,19 @@ public class Vent: MonoBehaviour
         }
     }
 
-   
+
     public void OnTriggerEnter(Collider other)
     {
-        print("collided");
         if (other.gameObject.tag == "Hazmat")
         {
             isRange = true;
-            
+
 
         }
         else
         {
             isRange = false;
-            
+
         }
 
     }

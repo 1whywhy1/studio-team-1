@@ -61,7 +61,6 @@ public class cameraControl2 : MonoBehaviour
 
         if (Input.GetMouseButton(1))
         {
-            print("working");
             transform.position = targetZoom.transform.position;
 
         }

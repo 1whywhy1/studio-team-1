@@ -28,7 +28,7 @@ public class Move : MonoBehaviour
         anim = GetComponent<Animator>();
         cam = Camera.main;
 
-        
+
     }
 
     // Update is called once per frame
@@ -39,8 +39,8 @@ public class Move : MonoBehaviour
             Movement();
         }
 
-        
-        
+
+
     }
 
     void Movement()
@@ -58,7 +58,6 @@ public class Move : MonoBehaviour
 
         if (Ccontroller.isGrounded)
         {
-            print("IsGround");
             jumpCount = jumpMax;
             gravity = 1f;
             anim.SetBool("isGrounded", true);
@@ -73,7 +72,6 @@ public class Move : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && jumpCount > 0)
         {
-            print("jump");
             gravity = -jumpHeight;
             Jump();
             anim.SetTrigger("Jump");
@@ -81,7 +79,7 @@ public class Move : MonoBehaviour
         }
 
         Vector3 gravityVector = -Vector3.up * gravity * Time.deltaTime;
-        
+
             Ccontroller.Move(velocity + gravityVector);
 
         if (velocity.magnitude > 0)
@@ -95,20 +93,20 @@ public class Move : MonoBehaviour
         {
 
         }
-        
+
 
     }
     void ReturnToMovement()
     {
-        
+
     }
 
     void Jump()
     {
-        
+
             jumpCount--;
             jumpVelocity -= jumpHeight;
-            state = "Jump";         
-             
+            state = "Jump";
+
     }
 }

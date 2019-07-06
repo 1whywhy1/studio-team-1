@@ -58,7 +58,6 @@ public class Move2 : MonoBehaviour
 
         if (Ccontroller.isGrounded)
         {
-            print("IsGround");
             jumpCount = jumpMax;
             gravity = 1f;
             anim.SetBool("isGrounded", true);
@@ -73,7 +72,6 @@ public class Move2 : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && jumpCount > 0)
         {
-            print("jump");
             gravity = -jumpHeight;
             Jump();
             anim.SetTrigger("Jump");
