@@ -68,11 +68,12 @@ public class cameraControl : MonoBehaviour
         if (Input.GetKeyDown("1"))
         {
             trueTarget = targetPlayer;
-            
+
+            cam1.SetActive(true);
             cam2.SetActive(false);
             cam3.SetActive(false);
             cam4.SetActive(false);
-            cam1.SetActive(true);
+            
 
             player.isControlling = true;
             player2.isControlling = false;
@@ -85,10 +86,12 @@ public class cameraControl : MonoBehaviour
         if (Input.GetKeyDown("2"))
         {
             trueTarget = targetPlayer2;
+
+            cam2.SetActive(true);
             cam1.SetActive(false);
             cam3.SetActive(false);
             cam4.SetActive(false);
-            cam2.SetActive(true);
+            
 
             player2.isControlling = true;
             player.isControlling = false;
@@ -101,11 +104,12 @@ public class cameraControl : MonoBehaviour
         if (Input.GetKeyDown("3"))
         {
             trueTarget = targetPlayer3;
-            
+
+            cam3.SetActive(true);
             cam1.SetActive(false);
             cam2.SetActive(false);
             cam4.SetActive(false);
-            cam3.SetActive(true);
+            
 
             player3.isControlling = true;
             player.isControlling = false;
@@ -116,11 +120,12 @@ public class cameraControl : MonoBehaviour
         if (Input.GetKeyDown("4"))
         {
             trueTarget = targetPlayer4;
-            
+
+            cam4.SetActive(true);
             cam1.SetActive(false);
             cam2.SetActive(false);
             cam3.SetActive(false);
-            cam4.SetActive(true);
+            
 
             player4.isControlling = true;
             player.isControlling = false;
