@@ -5,6 +5,7 @@ using UnityEngine;
 public interface IInventoryItem
 {
 	string Name { get; }
+	int Amount { get; }
 	Sprite Sprite { get; }
 }
 

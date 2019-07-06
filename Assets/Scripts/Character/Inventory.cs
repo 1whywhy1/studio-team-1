@@ -17,7 +17,7 @@ public class Inventory : MonoBehaviour, IInventory
 	public Dictionary<string, int> InventoryItems => items;
 
 	public enum ItemType { Food, Part, Rag, Ration }
-	public TextMeshProUGUI[] pickupNotifications;
+	public TextMeshProUGUI[] pickupText;
 
 	// add items + check in case of avoid overflow of items
 	public void AddItem(string itemName)
@@ -31,8 +31,27 @@ public class Inventory : MonoBehaviour, IInventory
 		else if (InventoryItems.TryGetValue(itemName, out var currentCount))
 		{
 			InventoryItems[itemName]++;
+		}
 
-			Debug.Log(InventoryItems[itemName]);
+		string amount = InventoryItems[itemName].ToString();
+		switch (itemName)
+		{
+			case "Pickup1":
+				pickupText[0].text = itemName;
+				pickupText[0].GetComponent<TextMeshProUGUI>().text = amount;
+				break;
+			case "Pickup2":
+				pickupText[1].text = itemName;
+				pickupText[1].GetComponent<TextMeshProUGUI>().text = amount;
+				break;
+			case "Pickup3":
+				pickupText[2].text = itemName;
+				pickupText[2].GetComponent<TextMeshProUGUI>().text = amount;
+				break;
+			case "Pickup4":
+				pickupText[3].text = itemName;
+				pickupText[3].GetComponent<TextMeshProUGUI>().text = amount;
+				break;
 		}
 	}
 
