@@ -24,8 +24,8 @@ public class Item : MonoBehaviour, IInventoryItem
 	{
 		if (other.CompareTag("Player"))
 		{
-			GameObject player = other.gameObject;
-			player.GetComponent<Inventory>().AddItem(itemName);
+			Inventory inventory = GameObject.Find("PlayerInventory").GetComponent<Inventory>();
+			inventory.AddItem(itemName);
 
 			gameObject.SetActive(false);
 		}
