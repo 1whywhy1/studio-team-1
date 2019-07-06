@@ -16,7 +16,7 @@ public class Inventory : MonoBehaviour, IInventory
 	public int MaxSlots => maxSlots;
 	public Dictionary<string, int> InventoryItems => items;
 
-	public enum ItemType { Food, Part, Rag, Ration }
+	// public enum ItemType { Food, Part, Rag, Ration }
 	public TextMeshProUGUI[] pickupText;
 
 	// add items + check in case of avoid overflow of items
@@ -24,31 +24,28 @@ public class Inventory : MonoBehaviour, IInventory
 	{
 		// if inventory does NOT contain key already, make one
 		if (!InventoryItems.ContainsKey(itemName))
-		{
 			InventoryItems.Add(itemName, 1);
-		}
 		// otherwise increment value of key already made
 		else if (InventoryItems.TryGetValue(itemName, out var currentCount))
-		{
 			InventoryItems[itemName]++;
-		}
 
+		// after calculations done (if any) start assigning text
 		string amount = InventoryItems[itemName].ToString();
 		switch (itemName)
 		{
-			case "Pickup1":
+			case "Food":
 				pickupText[0].text = itemName;
 				pickupText[0].GetComponent<TextMeshProUGUI>().text = amount;
 				break;
-			case "Pickup2":
+			case "Part":
 				pickupText[1].text = itemName;
 				pickupText[1].GetComponent<TextMeshProUGUI>().text = amount;
 				break;
-			case "Pickup3":
+			case "Rag":
 				pickupText[2].text = itemName;
 				pickupText[2].GetComponent<TextMeshProUGUI>().text = amount;
 				break;
-			case "Pickup4":
+			case "Ration":
 				pickupText[3].text = itemName;
 				pickupText[3].GetComponent<TextMeshProUGUI>().text = amount;
 				break;
