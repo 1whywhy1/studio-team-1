@@ -10,7 +10,6 @@ public class KeyPad : MonoBehaviour
     public string input = "";
     public AudioClip woodenDoor;
     public Transform doorleft;            //left door of the locked door
-   // public Transform doorright;           //right door of the locked door
     public Text errorText;
     public AudioSource effects;
 
@@ -23,20 +22,22 @@ public class KeyPad : MonoBehaviour
 
     void Update()
     {
-        if (input == curPassword)
+        if (onTrigger)
         {
-            doorOpened = true;
+            if (input == curPassword)
+            {
+                doorOpened = true;
+            }
+            else if (input.Length > 3)
+            {
+                //reset the lock
+                onTrigger = false;
+                keypadShow = false;
+                input = "";
+                errorText.text = errorMsg;
+                StartCoroutine("CoWaitForMessage");
+            }
         }
-        else if (input.Length > 3)
-        {
-            //reset the lock
-            onTrigger = false;
-            keypadShow = false;
-            input = "";
-            errorText.text = errorMsg;
-            StartCoroutine("CoWaitForMessage");
-        }
-
         if (doorOpened)
         {
             if (!doorSoundPlayed)
@@ -48,8 +49,7 @@ public class KeyPad : MonoBehaviour
             //opens both doors
             var rotLeft = Quaternion.RotateTowards(doorleft.rotation, Quaternion.Euler(0.0f, -90.0f, 0.0f), Time.deltaTime * 250);
             doorleft.rotation = rotLeft;
-           // var rotRight = Quaternion.RotateTowards(doorright.rotation, Quaternion.Euler(0.0f, 90.0f, 0.0f), Time.deltaTime * 250);
-          //  doorright.rotation = rotRight;
+
         }
         keyPress();
     }
