@@ -14,9 +14,10 @@ public class NPCInventory : Inventory
 
 	void Start()
 	{
-//		InventoryItems.Add(name, food);
-//		InventoryItems.Add(name, part);
-//		InventoryItems.Add(name, rag);
-//		InventoryItems.Add(name, ration);
+		// TODO: Somehow make names more dynamic, cos this method SUCKS!
+		AddItem("Food", food);
+		AddItem("Part", part);
+		AddItem("Rag", rag);
+		AddItem("Ration", ration);
 	}
 }

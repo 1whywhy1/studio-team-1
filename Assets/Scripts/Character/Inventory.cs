@@ -45,7 +45,7 @@ public class Inventory : MonoBehaviour, IInventory
 
 	void UpdateInventoryUi(string name, int amount)
 	{
-		Debug.Log(name + ": " + amount);
+		// TODO: Somehow make names more dynamic, cos this method SUCKS!
 		switch (name)
 		{
 			case "Food":

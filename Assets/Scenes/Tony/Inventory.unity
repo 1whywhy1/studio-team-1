@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Food
-  itemAmount: 1
+  itemValue: 2
   itemSprite: {fileID: 0}
 --- !u!1 &117241938
 GameObject:
@@ -381,6 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSlots: 4
+  maxItemAmount: 99
   pickupText:
   - {fileID: 1028649272}
   - {fileID: 752473257}
@@ -506,7 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Ration
-  itemAmount: 1
+  itemValue: 1
   itemSprite: {fileID: 0}
 --- !u!1 &217885513
 GameObject:
@@ -614,7 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Part
-  itemAmount: 1
+  itemValue: 99
   itemSprite: {fileID: 0}
 --- !u!4 &268498857 stripped
 Transform:
@@ -807,7 +808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Part
-  itemAmount: 1
+  itemValue: 23
   itemSprite: {fileID: 0}
 --- !u!1 &314885540
 GameObject:
@@ -1185,7 +1186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Ration
-  itemAmount: 2
+  itemValue: 1
   itemSprite: {fileID: 0}
 --- !u!1 &454819839
 GameObject:
@@ -1597,7 +1598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Food
-  itemAmount: 1
+  itemValue: 1
   itemSprite: {fileID: 7831688794362381626, guid: 22d42b62c3bd23840a5d305a3809a83f,
     type: 3}
 --- !u!1 &595514490
@@ -2905,7 +2906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Rag
-  itemAmount: 2
+  itemValue: 1
   itemSprite: {fileID: 0}
 --- !u!1 &784251403
 GameObject:
@@ -3112,7 +3113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Part
-  itemAmount: 1
+  itemValue: 27
   itemSprite: {fileID: 0}
 --- !u!1 &802781757
 GameObject:
@@ -3521,7 +3522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Ration
-  itemAmount: 1
+  itemValue: 6
   itemSprite: {fileID: 0}
 --- !u!1 &930704322
 GameObject:
@@ -4243,6 +4244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSlots: 4
+  maxItemAmount: 99
   pickupText:
   - {fileID: 1028649272}
   - {fileID: 752473257}
@@ -4354,7 +4356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Rag
-  itemAmount: 1
+  itemValue: 4
   itemSprite: {fileID: 0}
 --- !u!1 &1246186189
 GameObject:
@@ -4462,7 +4464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Part
-  itemAmount: 6
+  itemValue: 5
   itemSprite: {fileID: 0}
 --- !u!1 &1315737637
 GameObject:
@@ -5616,7 +5618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Ration
-  itemAmount: 6
+  itemValue: 3
   itemSprite: {fileID: 0}
 --- !u!1 &1666115645
 GameObject:
@@ -7707,6 +7709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSlots: 4
+  maxItemAmount: 99
   pickupText:
   - {fileID: 1046732167}
   - {fileID: 1548059585}
