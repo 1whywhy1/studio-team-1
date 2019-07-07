@@ -40,6 +40,7 @@
             <e p="PlayerManager.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="Push.cs" t="Include" />
+            <e p="TradingSystem.cs" t="Include" />
             <e p="Vent.cs" t="Include" />
           </e>
           <e p="CursorScript.cs" t="Include" />
