@@ -37,8 +37,6 @@
         <e p="Scripts" t="Include">
           <e p="Character" t="Include">
             <e p="CameraManager.cs" t="Include" />
-            <e p="Inventory.cs" t="Include" />
-            <e p="Item.cs" t="Include" />
             <e p="PlayerManager.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="Push.cs" t="Include" />
@@ -52,6 +50,8 @@
           </e>
           <e p="Interfaces.cs" t="Include" />
           <e p="Items" t="Include">
+            <e p="Inventory.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
             <e p="NPCInventory.cs" t="Include" />
           </e>
           <e p="UI" t="Include">

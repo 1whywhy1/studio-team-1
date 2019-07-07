@@ -29,7 +29,7 @@ public class Item : MonoBehaviour, IInventoryItem
 			Inventory inventory = GameObject.Find("PlayerInventory").GetComponent<Inventory>();
 			inventory.AddItem(itemName, itemValue);
 
-			gameObject.SetActive(false);
+			Destroy(gameObject);
 		}
 	}
 }
