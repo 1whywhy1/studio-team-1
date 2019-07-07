@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pickup 4
+  m_Text: Ration
 --- !u!222 &26190465
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -199,98 +199,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26190462}
   m_CullTransparentMesh: 0
---- !u!1 &40866650
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 40866654}
-  - component: {fileID: 40866653}
-  - component: {fileID: 40866652}
-  - component: {fileID: 40866651}
-  m_Layer: 0
-  m_Name: NPC1
-  m_TagString: NPC
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!136 &40866651
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40866650}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &40866652
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40866650}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &40866653
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40866650}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &40866654
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40866650}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.022076234, y: 0.85, z: 3.02}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &56898475
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Food
-  itemAmount: 0
+  itemAmount: 1
   itemSprite: {fileID: 0}
 --- !u!1 &117241938
 GameObject:
@@ -598,7 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Ration
-  itemAmount: 0
+  itemAmount: 1
   itemSprite: {fileID: 0}
 --- !u!1 &217885513
 GameObject:
@@ -706,7 +614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Part
-  itemAmount: 0
+  itemAmount: 1
   itemSprite: {fileID: 0}
 --- !u!4 &268498857 stripped
 Transform:
@@ -784,7 +692,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pickup 4
+  m_Text: Ration
 --- !u!222 &274302833
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -899,7 +807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Part
-  itemAmount: 0
+  itemAmount: 1
   itemSprite: {fileID: 0}
 --- !u!1 &314885540
 GameObject:
@@ -1050,7 +958,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 84bad744d5bdd934e9b3a64b7f3bbd5d, type: 2}
+  - {fileID: 2100000, guid: fbe47bd5d96de834dafa38126acbdd8f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1162,7 +1070,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pickup 1
+  m_Text: Food
 --- !u!222 &356823732
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1277,7 +1185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Ration
-  itemAmount: 0
+  itemAmount: 2
   itemSprite: {fileID: 0}
 --- !u!1 &454819839
 GameObject:
@@ -1689,7 +1597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Food
-  itemAmount: 0
+  itemAmount: 1
   itemSprite: {fileID: 7831688794362381626, guid: 22d42b62c3bd23840a5d305a3809a83f,
     type: 3}
 --- !u!1 &595514490
@@ -1841,7 +1749,7 @@ PrefabInstance:
     - target: {fileID: 8828915368825347898, guid: c2b263636b6e9d4479886679e2a11e63,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8828915368825347898, guid: c2b263636b6e9d4479886679e2a11e63,
         type: 3}
@@ -2139,7 +2047,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pickup 2
+  m_Text: Part
 --- !u!222 &627194847
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2361,7 +2269,7 @@ GameObject:
   - component: {fileID: 710067983}
   - component: {fileID: 710067982}
   m_Layer: 5
-  m_Name: NPCPickupUI
+  m_Name: NPCrazyUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2997,7 +2905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Rag
-  itemAmount: 0
+  itemAmount: 2
   itemSprite: {fileID: 0}
 --- !u!1 &784251403
 GameObject:
@@ -3204,7 +3112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Part
-  itemAmount: 0
+  itemAmount: 1
   itemSprite: {fileID: 0}
 --- !u!1 &802781757
 GameObject:
@@ -3270,7 +3178,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &821698242
 GameObject:
@@ -3613,7 +3521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Ration
-  itemAmount: 0
+  itemAmount: 1
   itemSprite: {fileID: 0}
 --- !u!1 &930704322
 GameObject:
@@ -3800,7 +3708,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pickup 3
+  m_Text: Rag
 --- !u!222 &1001801386
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4316,6 +4224,30 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1197043456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8828915368825570138, guid: c2b263636b6e9d4479886679e2a11e63,
+    type: 3}
+  m_PrefabInstance: {fileID: 616014233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1197043463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197043456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb139b934d19634abcef424326fd2a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSlots: 4
+  pickupText:
+  - {fileID: 1028649272}
+  - {fileID: 752473257}
+  - {fileID: 1806569254}
+  - {fileID: 1954669261}
 --- !u!1 &1241708499
 GameObject:
   m_ObjectHideFlags: 0
@@ -4422,7 +4354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Rag
-  itemAmount: 0
+  itemAmount: 1
   itemSprite: {fileID: 0}
 --- !u!1 &1246186189
 GameObject:
@@ -4530,7 +4462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Part
-  itemAmount: 0
+  itemAmount: 6
   itemSprite: {fileID: 0}
 --- !u!1 &1315737637
 GameObject:
@@ -5684,7 +5616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Ration
-  itemAmount: 0
+  itemAmount: 6
   itemSprite: {fileID: 0}
 --- !u!1 &1666115645
 GameObject:
@@ -5756,7 +5688,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pickup 4
+  m_Text: Ration
 --- !u!222 &1666115648
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6336,7 +6268,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pickup 4
+  m_Text: Ration
 --- !u!222 &1778369572
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6415,7 +6347,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pickup 2
+  m_Text: Part
 --- !u!222 &1797755754
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6698,7 +6630,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pickup 3
+  m_Text: Rag
 --- !u!222 &1868903281
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7186,7 +7118,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pickup 1
+  m_Text: Food
 --- !u!222 &1966064731
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7569,7 +7501,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pickup 2
+  m_Text: Part
 --- !u!222 &2068644397
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7648,7 +7580,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pickup 2
+  m_Text: Part
 --- !u!222 &2109430971
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7756,3 +7688,121 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &3381755289517208318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3381755289517208318, guid: 94e195e5799b6e84399e286cec5a7853,
+    type: 3}
+  m_PrefabInstance: {fileID: 4123588366488991619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3381755289517208319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3381755289517208318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db3f9b903378f874183b75656a481431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSlots: 4
+  pickupText:
+  - {fileID: 1046732167}
+  - {fileID: 1548059585}
+  - {fileID: 1601610744}
+  - {fileID: 616041641}
+  food: 3
+  part: 1
+  rag: 19
+  ration: 0
+--- !u!1001 &4123588366488991619
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3381755289517208318, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: m_Name
+      value: NPCrazy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621978414438089172, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621978414438089172, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621978414438089172, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621978414438089172, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621978414438089172, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621978414438089172, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621978414438089172, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621978414438089172, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621978414438089172, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621978414438089172, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621978414438089172, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 799585010242658279, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: pickupText.Array.data[0]
+      value: 
+      objectReference: {fileID: 1046732167}
+    - target: {fileID: 799585010242658279, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: pickupText.Array.data[1]
+      value: 
+      objectReference: {fileID: 1548059585}
+    - target: {fileID: 799585010242658279, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: pickupText.Array.data[2]
+      value: 
+      objectReference: {fileID: 1601610744}
+    - target: {fileID: 799585010242658279, guid: 94e195e5799b6e84399e286cec5a7853,
+        type: 3}
+      propertyPath: pickupText.Array.data[3]
+      value: 
+      objectReference: {fileID: 616041641}
+    m_RemovedComponents:
+    - {fileID: 799585010242658279, guid: 94e195e5799b6e84399e286cec5a7853, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 94e195e5799b6e84399e286cec5a7853, type: 3}

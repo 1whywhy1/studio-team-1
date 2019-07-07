@@ -12,5 +12,6 @@ public interface IInventoryItem
 public interface IInventory
 {
 	int MaxSlots { get; }
+	int MaxItemAmount { get; }
 	Dictionary<string, int> InventoryItems { get; }
 }

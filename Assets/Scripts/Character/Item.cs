@@ -8,13 +8,13 @@ public class Item : MonoBehaviour, IInventoryItem
 	// Get item name & inventory UI sprite
 	[Header("Interface Requirements")]
 	public string itemName;
-	public int itemAmount = 1;
+	public int itemValue = 1;
 	public Sprite itemSprite;
 
 	// Implement above as per interface requirement
 	// Only has 'get', so variable is read only
 	public string Name => itemName;
-	public int Amount => itemAmount;
+	public int Amount => itemValue;
 	public Sprite Sprite => itemSprite;
 
 	void Start()
@@ -27,7 +27,7 @@ public class Item : MonoBehaviour, IInventoryItem
 		if (other.CompareTag("Player"))
 		{
 			Inventory inventory = GameObject.Find("PlayerInventory").GetComponent<Inventory>();
-			inventory.AddItem(itemName);
+			inventory.AddItem(itemName, itemValue);
 
 			gameObject.SetActive(false);
 		}

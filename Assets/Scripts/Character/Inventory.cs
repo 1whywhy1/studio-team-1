@@ -9,49 +9,61 @@ public class Inventory : MonoBehaviour, IInventory
 {
 	// Get max slots amount and fresh dictionary
 	[Header("Interface Requirements")]
-	public int maxSlots = 12;
+	public int maxSlots = 4;
+	public int maxItemAmount = 99;
 	private Dictionary<string, int> items = new Dictionary<string, int>();
 
 	// Implement above as per interface requirement
 	public int MaxSlots => maxSlots;
+	public int MaxItemAmount => maxItemAmount;
 	public Dictionary<string, int> InventoryItems => items;
 
 	// public enum ItemType { Food, Part, Rag, Ration }
 	public TextMeshProUGUI[] pickupText;
 
 	// add items + check in case of avoid overflow of items
-	public void AddItem(string itemName)
+	public void AddItem(string itemName, int itemAmount)
 	{
 		// if inventory does NOT contain key already, make one
 		if (!InventoryItems.ContainsKey(itemName))
-			InventoryItems.Add(itemName, 1);
+		{
+			InventoryItems.Add(itemName, itemAmount);
+		}
 		// otherwise increment value of key already made
 		else if (InventoryItems.TryGetValue(itemName, out var currentCount))
-			InventoryItems[itemName]++;
+		{
+			InventoryItems[itemName] += itemAmount;
 
-		// after calculations done (if any) start assigning text
-		string amount = InventoryItems[itemName].ToString();
-		switch (itemName)
+			// cap item capacity
+			if (InventoryItems[itemName] >= maxItemAmount)
+				InventoryItems[itemName] = maxItemAmount;
+		}
+
+		// after calculations done (if any) start assigning text to UI
+		UpdateInventoryUi(itemName, InventoryItems[itemName]);
+	}
+
+	void UpdateInventoryUi(string name, int amount)
+	{
+		Debug.Log(name + ": " + amount);
+		switch (name)
 		{
 			case "Food":
-				pickupText[0].text = itemName;
-				pickupText[0].GetComponent<TextMeshProUGUI>().text = amount;
+				pickupText[0].text = name;
+				pickupText[0].GetComponent<TextMeshProUGUI>().text = amount.ToString();
 				break;
 			case "Part":
-				pickupText[1].text = itemName;
-				pickupText[1].GetComponent<TextMeshProUGUI>().text = amount;
+				pickupText[1].text = name;
+				pickupText[1].GetComponent<TextMeshProUGUI>().text = amount.ToString();
 				break;
 			case "Rag":
-				pickupText[2].text = itemName;
-				pickupText[2].GetComponent<TextMeshProUGUI>().text = amount;
+				pickupText[2].text = name;
+				pickupText[2].GetComponent<TextMeshProUGUI>().text = amount.ToString();
 				break;
 			case "Ration":
-				pickupText[3].text = itemName;
-				pickupText[3].GetComponent<TextMeshProUGUI>().text = amount;
+				pickupText[3].text = name;
+				pickupText[3].GetComponent<TextMeshProUGUI>().text = amount.ToString();
 				break;
 		}
 	}
-
-	// used when things go in/out of inventory
-	void RearrangeInventory() {}
 }
