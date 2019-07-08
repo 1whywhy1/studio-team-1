@@ -59,7 +59,6 @@ public class PlayerMovement : MonoBehaviour
 			gravity = Mathf.Clamp(gravity, 1f, 20f);
 		}
 
-
 		Vector3 gravityVector = -Vector3.up * gravity * Time.deltaTime;
 		controller.Move(velocity + gravityVector);
 
@@ -69,10 +68,7 @@ public class PlayerMovement : MonoBehaviour
 			transform.localEulerAngles = new Vector3(0, yAngle, 0);
 		}
 
-
-		if (Input.GetKeyDown(KeyCode.LeftShift) && controller.isGrounded)
-		{
-		}
+		if (Input.GetKeyDown(KeyCode.LeftShift) && controller.isGrounded) {}
 	}
 
 	void ReturnToMovement()
