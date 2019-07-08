@@ -28,7 +28,8 @@ public class CameraManager : MonoBehaviour
 		pitch = Mathf.Clamp(pitch, pitchMinMax.x, pitchMinMax.y);
 
 		// assign cameras rotation
-		currentRotation = Vector3.SmoothDamp(currentRotation, new Vector3(pitch, yaw), ref rotationSmoothVelocity, rotationSmoothTime);
+		currentRotation = Vector3.SmoothDamp(currentRotation, new Vector3(pitch, yaw), ref rotationSmoothVelocity,
+			rotationSmoothTime);
 
 		// cameras yaw, pitch & roll
 		transform.eulerAngles = currentRotation;

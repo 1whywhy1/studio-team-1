@@ -26,7 +26,7 @@ public class Item : MonoBehaviour, IInventoryItem
 	{
 		if (other.CompareTag("Player"))
 		{
-			Inventory inventory = GameObject.Find("PlayerInventory").GetComponent<Inventory>();
+			Inventory inventory = GameObject.Find("EGOPlayerInventory").GetComponent<Inventory>();
 			inventory.AddItem(itemName, itemValue);
 
 			Destroy(gameObject);

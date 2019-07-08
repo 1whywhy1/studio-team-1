@@ -6,7 +6,6 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
 	[Header("Inventory")]
-	// public Inventory inventory;
 	public GameObject inventoryScreen;
 	private bool inventoryShowing = false;
 
