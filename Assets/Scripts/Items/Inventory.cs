@@ -43,6 +43,23 @@ public class Inventory : MonoBehaviour, IInventory
 		UpdateInventoryUi(itemName, InventoryItems[itemName]);
 	}
 
+	// add items + check in case of avoid overflow of items
+	public void RemoveItem(string itemName, int itemAmount)
+	{
+		// decrement value of key/value pair
+		if (InventoryItems.TryGetValue(itemName, out var currentCount))
+		{
+			InventoryItems[itemName] -= itemAmount;
+
+			// cap item capacity
+			if (InventoryItems[itemName] <= 0)
+				InventoryItems[itemName] = 0;
+		}
+
+		// after calculations done (if any) start assigning text to UI
+		UpdateInventoryUi(itemName, InventoryItems[itemName]);
+	}
+
 	void UpdateInventoryUi(string name, int amount)
 	{
 		// TODO: Somehow make names more dynamic, cos this method SUCKS!

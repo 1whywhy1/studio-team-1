@@ -6,6 +6,7 @@ using UnityEngine;
 public class TradingSystem : MonoBehaviour
 {
 	public bool inTradingRange = false;
+	private Collider npcToTradeWith;
 	private GameObject tradingUI;
 
 	void Start()
@@ -35,6 +36,9 @@ public class TradingSystem : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
+		// assign designated NPC to a variable
+		npcToTradeWith = other;
+
 		// only make actions when true (in range)
 		if (other.CompareTag("NPC"))
 			inTradingRange = true;
@@ -42,6 +46,9 @@ public class TradingSystem : MonoBehaviour
 
 	private void OnTriggerExit(Collider other)
 	{
+		// empty variable when vicinity left
+		npcToTradeWith = null;
+
 		// only make actions when true (in range)
 		if (other.CompareTag("NPC"))
 			inTradingRange = false;
