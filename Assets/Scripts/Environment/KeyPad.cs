@@ -9,21 +9,23 @@ public class KeyPad : MonoBehaviour
 
     public string input = "";
     public AudioClip woodenDoor;
-    public Transform doorleft;            //left door of the locked door
+    public Transform doorleft;            // Left door of the locked door
     public Text errorText;
-    public AudioSource effects;
+    public AudioSource effectsPlayer;
 
-    private bool onTrigger;                //check in the player is near to keypad lock
-    private bool doorOpened = false;       //opens the door
-    private bool keypadShow;               //shows keypad
+    private bool onTrigger;                // Check in the player is near to keypad lock
+    private bool doorOpened = false;       // Opens the door
+    private bool keypadShow;              // Shows keypad
     private string errorMsg = "Wrong password";
 
     bool doorSoundPlayed = false;
 
     void Update()
     {
-        if (onTrigger)
+        // While door is not opened
+        if (!doorOpened)
         {
+            // Check the input to be matching the password
             if (input == curPassword)
             {
                 doorOpened = true;
@@ -38,11 +40,13 @@ public class KeyPad : MonoBehaviour
                 StartCoroutine("CoWaitForMessage");
             }
         }
+
+        // If the password was right plays the sound of the opening door once and rotates the door.
         if (doorOpened)
         {
             if (!doorSoundPlayed)
             {
-                effects.PlayOneShot(woodenDoor);
+                effectsPlayer.PlayOneShot(woodenDoor);
                 doorSoundPlayed = !doorSoundPlayed;
             }
            
@@ -54,6 +58,7 @@ public class KeyPad : MonoBehaviour
         keyPress();
     }
 
+    // Upon entering the trigger in front of the door resets user input and sets onTrigger to true
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -63,6 +68,7 @@ public class KeyPad : MonoBehaviour
         }
     }
 
+    // Upon leaving the trigger in front of the door resets user input and makes sure keypad is not showed
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -79,6 +85,7 @@ public class KeyPad : MonoBehaviour
         {
             if (onTrigger)
             {
+                // Shows a intructions for interacting with a lock
                 GUI.Box(new Rect(500, 500, 200, 25), "Press E");
 
                 if (Input.GetKeyDown(KeyCode.E))
@@ -87,11 +94,14 @@ public class KeyPad : MonoBehaviour
                     onTrigger = false;
                 }
             }
+
+            // Password is 4 digits long. If the input is 4 and more, disables keypad
             if (input.Length >= 4)
             {
                 keypadShow = false;
             }
 
+            // Draws the keypad
             if (keypadShow)
             {
                 GUI.Box(new Rect(0, 0, 320, 455), "");
@@ -146,6 +156,7 @@ public class KeyPad : MonoBehaviour
         }
     }
 
+    // Registers the input from the player and stores the sequence
     void keyPress()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -190,6 +201,7 @@ public class KeyPad : MonoBehaviour
         }
     }
 
+    // Waits for 3sec and gets rid of "Wrong password" message
     IEnumerator CoWaitForMessage()
     {
         yield return new WaitForSeconds(3.0f);

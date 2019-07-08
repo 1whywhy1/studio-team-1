@@ -1260,7 +1260,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-11174
+  m_Name: pb_Mesh61850
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1648,7 +1648,7 @@ GameObject:
   - component: {fileID: 1294128636}
   - component: {fileID: 1294128635}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: KeypadLockDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1764,7 +1764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curPassword: 4826
   input: 
-  woodenDoor: {fileID: 8300000, guid: 9960a38009971d9489a88d8e9ebd8e1e, type: 3}
+  woodenDoor: {fileID: 8300000, guid: 2c250e69c86ad0948a5a52c235f9e383, type: 3}
   doorleft: {fileID: 1294128642}
   errorText: {fileID: 899120656}
   effects: {fileID: 1294128635}
