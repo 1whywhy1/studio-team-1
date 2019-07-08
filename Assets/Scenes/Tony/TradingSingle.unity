@@ -358,7 +358,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 51246104}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1197043463}
+        m_MethodName: GiveItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &51246104
@@ -440,7 +451,7 @@ Transform:
   - {fileID: 910079272}
   - {fileID: 399326977}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &103167746
 GameObject:
@@ -561,7 +572,7 @@ GameObject:
   - component: {fileID: 117241940}
   - component: {fileID: 117241939}
   m_Layer: 0
-  m_Name: PlayerInventory
+  m_Name: EGOPlayerInventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -598,7 +609,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &176153170
 GameObject:
@@ -852,7 +863,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 256148418}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1197043463}
+        m_MethodName: GiveItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &256148418
@@ -1514,7 +1536,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 379404191}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1197043463}
+        m_MethodName: TakeItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &379404191
@@ -2106,7 +2139,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1197043464}
+      - m_Target: {fileID: 1197043463}
         m_MethodName: TakeItem
         m_Mode: 1
         m_Arguments:
@@ -2311,7 +2344,7 @@ PrefabInstance:
     - target: {fileID: 8828915368825347898, guid: c2b263636b6e9d4479886679e2a11e63,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8828915368825347898, guid: c2b263636b6e9d4479886679e2a11e63,
         type: 3}
@@ -4939,7 +4972,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1103629805}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1197043463}
+        m_MethodName: TakeItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1103629805
@@ -5275,25 +5319,6 @@ GameObject:
   m_PrefabInstance: {fileID: 616014233}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1197043463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1197043456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bb139b934d19634abcef424326fd2a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSlots: 4
-  maxItemAmount: 99
-  pickupText:
-  - {fileID: 1028649272}
-  - {fileID: 752473257}
-  - {fileID: 1806569254}
-  - {fileID: 1954669261}
---- !u!114 &1197043464
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6006,7 +6031,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1371585037}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1197043463}
+        m_MethodName: GiveItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1371585037
@@ -7675,7 +7711,7 @@ GameObject:
   - component: {fileID: 1803894296}
   - component: {fileID: 1803894295}
   m_Layer: 5
-  m_Name: TradeUI
+  m_Name: TradeButtons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8282,7 +8318,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1923889780}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1197043463}
+        m_MethodName: TakeItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1923889780
@@ -9404,7 +9451,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2139479167}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1197043463}
+        m_MethodName: GiveItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2139479167
@@ -9459,7 +9517,7 @@ PrefabInstance:
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.4169297
+      value: -6.42
       objectReference: {fileID: 0}
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
@@ -9510,6 +9568,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609718946640993347, guid: 18893f4390d39c54381a46ee53fbc78b,
+        type: 3}
+      propertyPath: itemValue
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18893f4390d39c54381a46ee53fbc78b, type: 3}
@@ -9653,7 +9716,7 @@ PrefabInstance:
     - target: {fileID: 5149271186829484041, guid: 08deee094948d6344b9afbeadd822fd1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.4169297
+      value: -3.42
       objectReference: {fileID: 0}
     - target: {fileID: 5149271186829484041, guid: 08deee094948d6344b9afbeadd822fd1,
         type: 3}
@@ -9704,6 +9767,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149271186829484045, guid: 08deee094948d6344b9afbeadd822fd1,
+        type: 3}
+      propertyPath: itemValue
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08deee094948d6344b9afbeadd822fd1, type: 3}
