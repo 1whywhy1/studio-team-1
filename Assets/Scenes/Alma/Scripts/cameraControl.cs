@@ -15,9 +15,9 @@ public class cameraControl : MonoBehaviour
     public Move player4;
 
     public GameObject cam1;
-    public GameObject cam2;
-    public GameObject cam3;
-    public GameObject cam4;
+    //public GameObject cam2;
+    //public GameObject cam3;
+    //public GameObject cam4;
 
     public GameObject trueTarget;
 
@@ -37,10 +37,11 @@ public class cameraControl : MonoBehaviour
     void Start()
     {
         trueTarget = targetPlayer;
+        player.isControlling = true;
         cam1.SetActive(true);
-        cam2.SetActive(false);
-        cam3.SetActive(false);
-        cam4.SetActive(false);
+        //cam2.SetActive(false);
+        //cam3.SetActive(false);
+        //cam4.SetActive(false);
     }
 
     // Update is called once per frame
@@ -66,12 +67,13 @@ public class cameraControl : MonoBehaviour
         }
         if (Input.GetKeyDown("1"))
         {
-            trueTarget = targetPlayer;
+            
 
             cam1.SetActive(true);
-            cam2.SetActive(false);
-            cam3.SetActive(false);
-            cam4.SetActive(false);
+            trueTarget = targetPlayer;
+            //cam2.SetActive(false);
+            //cam3.SetActive(false);
+            //cam4.SetActive(false);
 
 
             player.isControlling = true;
@@ -84,16 +86,19 @@ public class cameraControl : MonoBehaviour
         }
         if (Input.GetKeyDown("2"))
         {
-            trueTarget = targetPlayer2;
+            
 
-            cam2.SetActive(true);
-            cam1.SetActive(false);
-            cam3.SetActive(false);
-            cam4.SetActive(false);
-
-
+            //cam2.SetActive(true);
             player2.isControlling = true;
+            trueTarget = targetPlayer2;
+            cam1.SetActive(true);
             player.isControlling = false;
+            //cam3.SetActive(false);
+            //cam4.SetActive(false);
+
+
+
+
             player3.isControlling = false;
             player4.isControlling = false;
 
@@ -104,10 +109,10 @@ public class cameraControl : MonoBehaviour
         {
             trueTarget = targetPlayer3;
 
-            cam3.SetActive(true);
-            cam1.SetActive(false);
-            cam2.SetActive(false);
-            cam4.SetActive(false);
+            //cam3.SetActive(true);
+            cam1.SetActive(true);
+            //cam2.SetActive(false);
+            //cam4.SetActive(false);
 
 
             player3.isControlling = true;
@@ -120,10 +125,10 @@ public class cameraControl : MonoBehaviour
         {
             trueTarget = targetPlayer4;
 
-            cam4.SetActive(true);
-            cam1.SetActive(false);
-            cam2.SetActive(false);
-            cam3.SetActive(false);
+            //cam4.SetActive(true);
+            cam1.SetActive(true);
+            //cam2.SetActive(false);
+            //cam3.SetActive(false);
 
 
             player4.isControlling = true;

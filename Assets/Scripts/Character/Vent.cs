@@ -38,7 +38,7 @@ public class Vent: MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Hazmat")
+        if (other.gameObject.name == "HazMat")
         {
             isRange = true;
 
