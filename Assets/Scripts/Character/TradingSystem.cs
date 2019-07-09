@@ -36,6 +36,9 @@ public class TradingSystem : MonoBehaviour
 					Time.timeScale = 1;
 			}
 		}
+
+//		Debug.Log("Test:" + ItemType.Food.ToString());
+//		Debug.Log("ItemType as int: [" + (int)ItemType.Food + "].");
 	}
 
 	private void OnTriggerEnter(Collider other)
@@ -49,6 +52,10 @@ public class TradingSystem : MonoBehaviour
 			inTradingRange = true;
 	}
 
+	/// <summary>
+	/// Occurs when player leaves NPC vicinity
+	/// </summary>
+	/// <param name="other">NPC to trade with</param>
 	private void OnTriggerExit(Collider other)
 	{
 		// empty npc variable's when vicinity left
@@ -60,34 +67,57 @@ public class TradingSystem : MonoBehaviour
 			inTradingRange = false;
 	}
 
-	public void GiveItem()
+	public void GiveItem(ItemType item, int amount)
 	{
 		if (npcToTradeWith != null && inTradingRange)
 		{
-			// takes number from player
-			if (playerInventory.InventoryItems.TryGetValue("Food", out int value))
+			// if item exists in inventory
+			if (playerInventory.InventoryItems.TryGetValue(item, out int value))
 			{
-				amountToSwap = value;
-				playerInventory.RemoveItem("Food", value);
+//				amountToSwap = value;
 
-				// gives number to NPC
-				npcToTradeWith.GetComponent<Inventory>().AddItem("Food", amountToSwap);
+				// takes item from player
+				playerInventory.RemoveItem(item, amount);
+
+				// gives item to NPC
+				npcToTradeWith.GetComponent<Inventory>().AddItem(item, amount);
 			}
 		}
 	}
 
-	public void TakeItem()
+	public void TakeItem(ItemType item, int amount)
 	{
 		if (npcToTradeWith != null && inTradingRange)
 		{
-			// takes number from player
-			if (npcToTradeWith.GetComponent<Inventory>().InventoryItems.TryGetValue("Food", out int value))
+			// if item exists in inventory
+			if (npcToTradeWith.GetComponent<Inventory>().InventoryItems.TryGetValue(item, out int value))
 			{
-				amountToSwap = value;
-				playerInventory.AddItem("Food", value);
-				// takes number to NPC
-				npcToTradeWith.GetComponent<Inventory>().RemoveItem("Food", amountToSwap);
+//				amountToSwap = value;
+
+				// gives item from player
+				playerInventory.AddItem(item, amount);
+				// takes item to NPC
+				npcToTradeWith.GetComponent<Inventory>().RemoveItem(item, amount);
 			}
+		}
+	}
+
+	/// <summary>
+	/// Trade assigned item for assigned item.
+	/// </summary>
+	/// <param name="itemOne">The first item.</param>
+	/// <param name="itemTwo">The second item.</param>
+	public void TradeItemForItem(int tradeType)
+	{
+		switch (tradeType)
+		{
+			case 1:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			default:
+				Debug.LogError("You've used the wrong TradeType. Found: " + tradeType);
+				break;
 		}
 	}
 }

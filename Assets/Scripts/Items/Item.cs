@@ -7,7 +7,6 @@ public class Item : MonoBehaviour, IInventoryItem
 {
 	// Get item name & inventory UI sprite
 	[Header("Interface Requirements")]
-	public string itemName;
 	public int itemValue = 1;
 	public Sprite itemSprite;
 
@@ -17,9 +16,12 @@ public class Item : MonoBehaviour, IInventoryItem
 	public int Amount => itemValue;
 	public Sprite Sprite => itemSprite;
 
-	void Start()
+	public ItemType itemType = ItemType.Unassigned;
+	private string itemName;
+
+	private void Awake()
 	{
-		itemName = gameObject.name;
+		itemName = itemType.ToString();
 	}
 
 	private void OnTriggerEnter(Collider other)
@@ -27,7 +29,7 @@ public class Item : MonoBehaviour, IInventoryItem
 		if (other.CompareTag("Player"))
 		{
 			Inventory inventory = GameObject.Find("EGOPlayerInventory").GetComponent<Inventory>();
-			inventory.AddItem(itemName, itemValue);
+			inventory.AddItem(itemType, itemValue);
 
 			Destroy(gameObject);
 		}
