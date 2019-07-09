@@ -5,7 +5,7 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
 
-    CharacterController  Ccontroller;
+    CharacterController Ccontroller;
     Animator anim;
     Camera cam;
 
@@ -61,6 +61,8 @@ public class Move : MonoBehaviour
             jumpCount = jumpMax;
             gravity = 1f;
             anim.SetBool("isGrounded", true);
+            state = "Movement";
+           
 
 
         }
@@ -72,15 +74,14 @@ public class Move : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && jumpCount > 0)
         {
-            gravity = -jumpHeight;
+
             Jump();
-            anim.SetTrigger("Jump");
-            anim.SetBool("isGrounded", false);
+
         }
 
         Vector3 gravityVector = -Vector3.up * gravity * Time.deltaTime;
 
-            Ccontroller.Move(velocity + gravityVector);
+        Ccontroller.Move(velocity + gravityVector);
 
         if (velocity.magnitude > 0)
         {
@@ -91,7 +92,7 @@ public class Move : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && Ccontroller.isGrounded)
         {
-
+            Jump();
         }
 
 
@@ -104,9 +105,12 @@ public class Move : MonoBehaviour
     void Jump()
     {
 
-            jumpCount--;
-            jumpVelocity -= jumpHeight;
-            state = "Jump";
+        gravity = -jumpHeight;
+        jumpCount--;
+        jumpVelocity -= jumpHeight;
+        state = "Jump";
+        anim.SetTrigger("Jump");
+        anim.SetBool("isGrounded", false);
 
     }
 }
