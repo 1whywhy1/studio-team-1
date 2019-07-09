@@ -7997,6 +7997,13 @@ MonoBehaviour:
   meds: 4
   parts: 8
   rags: 16
+  npcTradeRatios:
+  - {x: 1, y: 3}
+  - {x: 2, y: 3}
+  - {x: 2, y: 1}
+  - {x: 3, y: 1}
+  - {x: 1, y: 1}
+  - {x: 2, y: 1}
 --- !u!1001 &4123588366488991619
 PrefabInstance:
   m_ObjectHideFlags: 0
