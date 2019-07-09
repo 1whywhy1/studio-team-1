@@ -109,48 +109,48 @@ public class TradingSystem : MonoBehaviour
 				TakeItem(ItemType.Food, 3);
 				break;
 			case 2:
-				GiveItem(ItemType.Meds, 1);
+				GiveItem(ItemType.Meds, 2);
 				TakeItem(ItemType.Parts, 3);
 				break;
 			case 3:
-				GiveItem(ItemType.Food, 1);
-				TakeItem(ItemType.Rags, 3);
+				GiveItem(ItemType.Meds, 2);
+				TakeItem(ItemType.Rags, 1);
 				break;
 			case 4:
-				GiveItem(ItemType.Food, 1);
-				TakeItem(ItemType.Rags, 3);
+				GiveItem(ItemType.Food, 3);
+				TakeItem(ItemType.Parts, 1);
 				break;
 			case 5:
-				GiveItem(ItemType.Food, 1);
-				TakeItem(ItemType.Rags, 3);
+				GiveItem(ItemType.Food, 3);
+				TakeItem(ItemType.Rags, 1);
 				break;
 			case 6:
-				GiveItem(ItemType.Food, 1);
-				TakeItem(ItemType.Rags, 3);
+				GiveItem(ItemType.Rags, 2);
+				TakeItem(ItemType.Parts, 1);
 				break;
 			case 7:
-				GiveItem(ItemType.Food, 1);
-				TakeItem(ItemType.Rags, 3);
+				GiveItem(ItemType.Food, 3);
+				TakeItem(ItemType.Meds, 1);
 				break;
 			case 8:
-				GiveItem(ItemType.Food, 1);
-				TakeItem(ItemType.Rags, 3);
+				GiveItem(ItemType.Parts, 3);
+				TakeItem(ItemType.Meds, 2);
 				break;
 			case 9:
-				GiveItem(ItemType.Food, 1);
-				TakeItem(ItemType.Rags, 3);
+				GiveItem(ItemType.Rags, 1);
+				TakeItem(ItemType.Meds, 2);
 				break;
 			case 10:
-				GiveItem(ItemType.Food, 1);
-				TakeItem(ItemType.Rags, 3);
+				GiveItem(ItemType.Parts, 1);
+				TakeItem(ItemType.Food, 3);
 				break;
 			case 11:
-				GiveItem(ItemType.Food, 1);
-				TakeItem(ItemType.Rags, 3);
+				GiveItem(ItemType.Rags, 1);
+				TakeItem(ItemType.Food, 3);
 				break;
 			case 12:
-				GiveItem(ItemType.Food, 1);
-				TakeItem(ItemType.Rags, 3);
+				GiveItem(ItemType.Parts, 1);
+				TakeItem(ItemType.Rags, 2);
 				break;
 			default:
 				Debug.LogError("You've used the wrong TradeType. Found: " + tradeType);
