@@ -10,6 +10,10 @@ public enum ItemType
 	Rags
 };
 
+// TODO: Make a method that actually used this enum instead of hard coded integer values
+/// <summary>
+/// For trade schematic reference
+/// </summary>
 public enum TradeType
 {
 	Unassigned,
@@ -25,4 +29,12 @@ public enum TradeType
 	PartsForFood,
 	RagsForFood,
 	PartsForRags
+};
+
+public enum TradeProgress
+{
+	Init,
+	PlayerTurn,
+	NPCTurn,
+	MakeTrade
 };

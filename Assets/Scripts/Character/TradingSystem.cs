@@ -9,8 +9,12 @@ public class TradingSystem : MonoBehaviour
 	private Collider npcToTradeWith;
 	private GameObject tradingUI;
 
-	private Inventory playerInventory, npcInventory;
-	private int amountToSwap;
+	[SerializeField] private TradeProgress tradeProgress = TradeProgress.Init;
+	private Inventory playerInventory;
+	private NPCInventory npcInventory;
+	private ItemType playerSwapType, npcSwapType;
+	private int playerSwapAmount, npcSwapAmount;
+	private bool tradeValid;
 
 	void Start()
 	{
@@ -37,6 +41,11 @@ public class TradingSystem : MonoBehaviour
 			}
 		}
 	}
+
+	/// <summary>
+	/// Occurs when player enters NPC vicinity
+	/// </summary>
+	/// <param name="other">NPC to trade with</param>
 
 	void OnTriggerEnter(Collider other)
 	{
@@ -66,32 +75,68 @@ public class TradingSystem : MonoBehaviour
 
 	public void GiveItem(ItemType item, int amount)
 	{
-		if (npcToTradeWith != null && inTradingRange)
+		if (npcToTradeWith != null)
 		{
 			// if item exists in inventory
 			if (playerInventory.InventoryItems.TryGetValue(item, out int value))
 			{
-				// takes item from player
-				playerInventory.RemoveItem(item, amount);
+				// if either person does not have enough materials
+				if (value < amount)
+				{
+					Debug.Log("YOU DON'T HAVE HAVE ENOUGH");
+					tradeValid = false;
+					tradeProgress = TradeProgress.Init;
+				}
+				else
+				{
+					tradeProgress = TradeProgress.NPCTurn;
 
-				// gives item to NPC
-				npcInventory.AddItem(item, amount);
+					playerSwapType = item;
+					playerSwapAmount = amount;
+				}
 			}
 		}
 	}
 
 	public void TakeItem(ItemType item, int amount)
 	{
-		if (npcToTradeWith != null && inTradingRange)
+		if (npcToTradeWith != null)
 		{
 			// if item exists in inventory
 			if (npcInventory.InventoryItems.TryGetValue(item, out int value))
 			{
-				// gives item from player
-				playerInventory.AddItem(item, amount);
-				// takes item to NPC
-				npcInventory.RemoveItem(item, amount);
+				// if either person does not have enough materials
+				if (value < amount)
+				{
+					Debug.Log("THEY DON'T HAVE HAVE ENOUGH");
+					tradeValid = false;
+					tradeProgress = TradeProgress.Init;
+				}
+				else
+				{
+					tradeProgress = TradeProgress.MakeTrade;
+					tradeValid = true;
+
+					npcSwapType = item;
+					npcSwapAmount = amount;
+				}
 			}
+		}
+	}
+
+	void ExecuteTrade()
+	{
+		if (tradeValid)
+		{
+			// takes item from player
+			playerInventory.RemoveItem(playerSwapType, playerSwapAmount);
+			// gives item to NPC
+			npcInventory.AddItem(playerSwapType, playerSwapAmount);
+
+			// gives item from player
+			playerInventory.AddItem(npcSwapType, npcSwapAmount);
+			// takes item to NPC
+			npcInventory.RemoveItem(npcSwapType, npcSwapAmount);
 		}
 	}
 
@@ -100,61 +145,87 @@ public class TradingSystem : MonoBehaviour
 	/// </summary>
 	/// <param name="itemOne">The first item.</param>
 	/// <param name="itemTwo">The second item.</param>
-	public void TradeItemForItem(int tradeType)
+	public void TradeItemsSetup(int tradeType)
 	{
 		switch (tradeType)
 		{
 			case 1:
-				GiveItem(ItemType.Meds, 1);
-				TakeItem(ItemType.Food, 3);
+				tradeProgress = TradeProgress.PlayerTurn;
+				GiveItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[0].x));
+				TakeItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[0].y));
+				ExecuteTrade();
 				break;
 			case 2:
-				GiveItem(ItemType.Meds, 2);
-				TakeItem(ItemType.Parts, 3);
+				tradeProgress = TradeProgress.PlayerTurn;
+				GiveItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[1].x));
+				TakeItem(ItemType.Parts, Mathf.RoundToInt(npcInventory.npcTradeRatios[1].y));
+				ExecuteTrade();
 				break;
 			case 3:
-				GiveItem(ItemType.Meds, 2);
-				TakeItem(ItemType.Rags, 1);
+				tradeProgress = TradeProgress.PlayerTurn;
+				GiveItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[2].x));
+				TakeItem(ItemType.Rags, Mathf.RoundToInt(npcInventory.npcTradeRatios[2].y));
+				ExecuteTrade();
 				break;
 			case 4:
-				GiveItem(ItemType.Food, 3);
-				TakeItem(ItemType.Parts, 1);
+				tradeProgress = TradeProgress.PlayerTurn;
+				GiveItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[3].x));
+				TakeItem(ItemType.Parts, Mathf.RoundToInt(npcInventory.npcTradeRatios[3].y));
+				ExecuteTrade();
 				break;
 			case 5:
-				GiveItem(ItemType.Food, 3);
-				TakeItem(ItemType.Rags, 1);
+				tradeProgress = TradeProgress.PlayerTurn;
+				GiveItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[4].x));
+				TakeItem(ItemType.Rags, Mathf.RoundToInt(npcInventory.npcTradeRatios[4].y));
+				ExecuteTrade();
 				break;
 			case 6:
-				GiveItem(ItemType.Rags, 2);
-				TakeItem(ItemType.Parts, 1);
+				tradeProgress = TradeProgress.PlayerTurn;
+				GiveItem(ItemType.Rags, Mathf.RoundToInt(npcInventory.npcTradeRatios[5].x));
+				TakeItem(ItemType.Parts, Mathf.RoundToInt(npcInventory.npcTradeRatios[5].y));
+				ExecuteTrade();
 				break;
 			case 7:
-				GiveItem(ItemType.Food, 3);
-				TakeItem(ItemType.Meds, 1);
+				tradeProgress = TradeProgress.PlayerTurn;
+				GiveItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[0].y));
+				TakeItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[0].x));
+				ExecuteTrade();
 				break;
 			case 8:
-				GiveItem(ItemType.Parts, 3);
-				TakeItem(ItemType.Meds, 2);
+				tradeProgress = TradeProgress.PlayerTurn;
+				GiveItem(ItemType.Parts, Mathf.RoundToInt(npcInventory.npcTradeRatios[1].y));
+				TakeItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[1].x));
+				ExecuteTrade();
 				break;
 			case 9:
-				GiveItem(ItemType.Rags, 1);
-				TakeItem(ItemType.Meds, 2);
+				tradeProgress = TradeProgress.PlayerTurn;
+				GiveItem(ItemType.Rags, Mathf.RoundToInt(npcInventory.npcTradeRatios[2].y));
+				TakeItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[2].x));
+				ExecuteTrade();
 				break;
 			case 10:
-				GiveItem(ItemType.Parts, 1);
-				TakeItem(ItemType.Food, 3);
+				tradeProgress = TradeProgress.PlayerTurn;
+				GiveItem(ItemType.Parts, Mathf.RoundToInt(npcInventory.npcTradeRatios[3].y));
+				TakeItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[3].x));
+				ExecuteTrade();
 				break;
 			case 11:
-				GiveItem(ItemType.Rags, 1);
-				TakeItem(ItemType.Food, 3);
+				tradeProgress = TradeProgress.PlayerTurn;
+				GiveItem(ItemType.Rags, Mathf.RoundToInt(npcInventory.npcTradeRatios[4].y));
+				TakeItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[4].x));
+				ExecuteTrade();
 				break;
 			case 12:
-				GiveItem(ItemType.Parts, 1);
-				TakeItem(ItemType.Rags, 2);
+				tradeProgress = TradeProgress.PlayerTurn;
+				GiveItem(ItemType.Parts, Mathf.RoundToInt(npcInventory.npcTradeRatios[5].y));
+				TakeItem(ItemType.Rags, Mathf.RoundToInt(npcInventory.npcTradeRatios[5].x));
+				ExecuteTrade();
 				break;
 			default:
 				Debug.LogError("You've used the wrong TradeType. Found: " + tradeType);
 				break;
 		}
+
+		tradeProgress = TradeProgress.Init;
 	}
 }
