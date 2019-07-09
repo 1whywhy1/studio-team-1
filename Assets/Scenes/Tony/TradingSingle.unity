@@ -7993,10 +7993,10 @@ MonoBehaviour:
   - {fileID: 1548059585}
   - {fileID: 1601610744}
   - {fileID: 616041641}
-  food: 3
-  meds: 16
-  parts: 44
-  rags: 7
+  food: 2
+  meds: 4
+  parts: 8
+  rags: 16
 --- !u!1001 &4123588366488991619
 PrefabInstance:
   m_ObjectHideFlags: 0

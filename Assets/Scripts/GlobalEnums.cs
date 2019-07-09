@@ -13,5 +13,16 @@ public enum ItemType
 public enum TradeType
 {
 	Unassigned,
-	FoodForRags
+	MedsForFood,
+	MedsForParts,
+	MedsForRags,
+	FoodForParts,
+	FoodForRags,
+	RagsForParts,
+	FoodForMeds,
+	PartsForMeds,
+	RagsForMeds,
+	PartsForFood,
+	RagsForFood,
+	PartsForRags
 };

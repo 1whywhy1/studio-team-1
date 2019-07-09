@@ -36,15 +36,12 @@ public class TradingSystem : MonoBehaviour
 					Time.timeScale = 1;
 			}
 		}
-
-//		Debug.Log("Test:" + ItemType.Food.ToString());
-//		Debug.Log("ItemType as int: [" + (int)ItemType.Food + "].");
 	}
 
-	private void OnTriggerEnter(Collider other)
+	void OnTriggerEnter(Collider other)
 	{
 		// assign designated NPC to variables
-		npcInventory = other.GetComponent<Inventory>();
+		npcInventory = other.GetComponent<NPCInventory>();
 		npcToTradeWith = other;
 
 		// only make actions when true (in range)
@@ -56,7 +53,7 @@ public class TradingSystem : MonoBehaviour
 	/// Occurs when player leaves NPC vicinity
 	/// </summary>
 	/// <param name="other">NPC to trade with</param>
-	private void OnTriggerExit(Collider other)
+	void OnTriggerExit(Collider other)
 	{
 		// empty npc variable's when vicinity left
 		Inventory npcInventory = null;
@@ -74,13 +71,11 @@ public class TradingSystem : MonoBehaviour
 			// if item exists in inventory
 			if (playerInventory.InventoryItems.TryGetValue(item, out int value))
 			{
-//				amountToSwap = value;
-
 				// takes item from player
 				playerInventory.RemoveItem(item, amount);
 
 				// gives item to NPC
-				npcToTradeWith.GetComponent<Inventory>().AddItem(item, amount);
+				npcInventory.AddItem(item, amount);
 			}
 		}
 	}
@@ -90,14 +85,12 @@ public class TradingSystem : MonoBehaviour
 		if (npcToTradeWith != null && inTradingRange)
 		{
 			// if item exists in inventory
-			if (npcToTradeWith.GetComponent<Inventory>().InventoryItems.TryGetValue(item, out int value))
+			if (npcInventory.InventoryItems.TryGetValue(item, out int value))
 			{
-//				amountToSwap = value;
-
 				// gives item from player
 				playerInventory.AddItem(item, amount);
 				// takes item to NPC
-				npcToTradeWith.GetComponent<Inventory>().RemoveItem(item, amount);
+				npcInventory.RemoveItem(item, amount);
 			}
 		}
 	}
@@ -112,6 +105,50 @@ public class TradingSystem : MonoBehaviour
 		switch (tradeType)
 		{
 			case 1:
+				GiveItem(ItemType.Meds, 1);
+				TakeItem(ItemType.Food, 3);
+				break;
+			case 2:
+				GiveItem(ItemType.Meds, 1);
+				TakeItem(ItemType.Parts, 3);
+				break;
+			case 3:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 4:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 5:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 6:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 7:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 8:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 9:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 10:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 11:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 12:
 				GiveItem(ItemType.Food, 1);
 				TakeItem(ItemType.Rags, 3);
 				break;
