@@ -15,9 +15,9 @@ public class cameraControl : MonoBehaviour
     public Move player4;
 
     public GameObject cam1;
-    //public GameObject cam2;
-    //public GameObject cam3;
-    //public GameObject cam4;
+
+
+    
 
     public GameObject trueTarget;
 
