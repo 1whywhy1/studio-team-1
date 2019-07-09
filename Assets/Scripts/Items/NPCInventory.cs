@@ -14,9 +14,11 @@ public class NPCInventory : Inventory
 	public int parts;
 	public int rags;
 
+	[Header("Item Values")]
+	public List<Vector2> npcTradeRatios = new List<Vector2>();
+
 	void Start()
 	{
-		// TODO: Somehow make names more dynamic, cos this method SUCKS!
 		AddItem(ItemType.Food, food);
 		AddItem(ItemType.Meds, meds);
 		AddItem(ItemType.Parts, parts);

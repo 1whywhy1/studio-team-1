@@ -105,6 +105,50 @@ public class TradingSystem : MonoBehaviour
 		switch (tradeType)
 		{
 			case 1:
+				GiveItem(ItemType.Meds, 1);
+				TakeItem(ItemType.Food, 3);
+				break;
+			case 2:
+				GiveItem(ItemType.Meds, 1);
+				TakeItem(ItemType.Parts, 3);
+				break;
+			case 3:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 4:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 5:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 6:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 7:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 8:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 9:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 10:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 11:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			case 12:
 				GiveItem(ItemType.Food, 1);
 				TakeItem(ItemType.Rags, 3);
 				break;
