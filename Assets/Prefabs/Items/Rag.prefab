@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rag
+  m_Text: Rags
 --- !u!1 &6061953856720893662
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +106,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6061953856720893662}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.41692972, y: -2.3499923, z: 3.9416695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -188,6 +188,7 @@ MonoBehaviour:
   itemValue: 1
   itemSprite: {fileID: 2839966426974576240, guid: 22d42b62c3bd23840a5d305a3809a83f,
     type: 3}
+  itemType: 4
 --- !u!1 &6061953857167871475
 GameObject:
   m_ObjectHideFlags: 0

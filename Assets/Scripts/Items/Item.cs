@@ -17,17 +17,14 @@ public class Item : MonoBehaviour, IInventoryItem
 	public int Amount => itemValue;
 	public Sprite Sprite => itemSprite;
 
-	void Start()
-	{
-		itemName = gameObject.name;
-	}
+	public ItemType itemType = ItemType.Unassigned;
 
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Player"))
 		{
 			Inventory inventory = GameObject.Find("EGOPlayerInventory").GetComponent<Inventory>();
-			inventory.AddItem(itemName, itemValue);
+			inventory.AddItem(itemType, itemValue);
 
 			Destroy(gameObject);
 		}

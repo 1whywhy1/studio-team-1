@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5149271186829484040}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.4169297, y: -2.3499923, z: 3.9416695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Food
+  itemType: 1
   itemValue: 1
   itemSprite: {fileID: 7831688794362381626, guid: 22d42b62c3bd23840a5d305a3809a83f,
     type: 3}

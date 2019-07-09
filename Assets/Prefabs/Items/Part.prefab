@@ -126,7 +126,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2609718946640993348}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.4169297, y: -2.3499923, z: 3.9416695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -205,7 +205,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Part
-  itemValue: 1
+  itemType: 3
+  itemValue: 5
   itemSprite: {fileID: 6246735077378340022, guid: 22d42b62c3bd23840a5d305a3809a83f,
     type: 3}
 --- !u!1 &2609718948316292202
