@@ -177,7 +177,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Rag
+  m_text: Parts
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 11707690}
-    characterCount: 3
+    characterCount: 5
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -360,12 +360,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1197043463}
-        m_MethodName: GiveItem
-        m_Mode: 1
+        m_MethodName: TradeItemForItem
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -440,16 +440,16 @@ Transform:
   - {fileID: 710067981}
   - {fileID: 523596257}
   - {fileID: 1251130276}
+  - {fileID: 6974150806128282320}
+  - {fileID: 176792525}
+  - {fileID: 956859301}
+  - {fileID: 520722280}
   - {fileID: 217885514}
   - {fileID: 465681372}
   - {fileID: 1591075689}
   - {fileID: 1719006530}
   - {fileID: 779655870}
   - {fileID: 1031315074}
-  - {fileID: 6974150806128282320}
-  - {fileID: 176792525}
-  - {fileID: 956859301}
-  - {fileID: 520722280}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -560,9 +560,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Ration
-
-'
+  m_text: Rags
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -631,9 +629,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 176153172}
-    characterCount: 7
+    characterCount: 4
     spriteCount: 0
-    spaceCount: 1
+    spaceCount: 0
     wordCount: 1
     linkCount: 0
     lineCount: 1
@@ -712,7 +710,7 @@ PrefabInstance:
     - target: {fileID: 6974150806128282320, guid: 29470fafcabdc264d8d6e6906afc0699,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6974150806128282320, guid: 29470fafcabdc264d8d6e6906afc0699,
         type: 3}
@@ -1639,7 +1637,7 @@ PrefabInstance:
     - target: {fileID: 2609718946640993348, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
       propertyPath: m_Name
-      value: Part
+      value: Parts
       objectReference: {fileID: 0}
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
@@ -1679,7 +1677,7 @@ PrefabInstance:
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
@@ -1886,7 +1884,7 @@ PrefabInstance:
     - target: {fileID: 6974150806128282320, guid: 29470fafcabdc264d8d6e6906afc0699,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6974150806128282320, guid: 29470fafcabdc264d8d6e6906afc0699,
         type: 3}
@@ -2757,7 +2755,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Part:'
+  m_text: 'Meds:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3275,7 +3273,7 @@ PrefabInstance:
     - target: {fileID: 6974150806128282320, guid: 29470fafcabdc264d8d6e6906afc0699,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6974150806128282320, guid: 29470fafcabdc264d8d6e6906afc0699,
         type: 3}
@@ -3519,7 +3517,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Part
+  m_text: Meds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3833,7 +3831,7 @@ PrefabInstance:
     - target: {fileID: 6061953856720893662, guid: 6373097abba390f4b874c910a6a5728e,
         type: 3}
       propertyPath: m_Name
-      value: Rag
+      value: Rags
       objectReference: {fileID: 0}
     - target: {fileID: 6061953856720893661, guid: 6373097abba390f4b874c910a6a5728e,
         type: 3}
@@ -3873,7 +3871,7 @@ PrefabInstance:
     - target: {fileID: 6061953856720893661, guid: 6373097abba390f4b874c910a6a5728e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6061953856720893661, guid: 6373097abba390f4b874c910a6a5728e,
         type: 3}
@@ -4396,7 +4394,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Part
+  m_text: Meds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4546,10 +4544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4766e701a0193a4c8599fc361ef7ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  itemValue: 1
-  itemSprite: {fileID: 0}
-  itemType: 0
   inTradingRange: 0
 --- !u!1001 &1251130275
 PrefabInstance:
@@ -4686,7 +4680,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Part:'
+  m_text: 'Meds:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5050,9 +5044,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Ration
-
-'
+  m_text: Rags
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5121,9 +5113,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1486466713}
-    characterCount: 7
+    characterCount: 4
     spriteCount: 0
-    spaceCount: 1
+    spaceCount: 0
     wordCount: 1
     linkCount: 0
     lineCount: 1
@@ -5212,7 +5204,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Rag:'
+  m_text: 'Parts:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5281,7 +5273,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1520139058}
-    characterCount: 4
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -5571,7 +5563,7 @@ PrefabInstance:
     - target: {fileID: 2609718946640993348, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
       propertyPath: m_Name
-      value: Part
+      value: Parts
       objectReference: {fileID: 0}
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
@@ -5611,7 +5603,7 @@ PrefabInstance:
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
@@ -6037,7 +6029,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Ration:'
+  m_text: 'Rags:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6106,7 +6098,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1698078421}
-    characterCount: 7
+    characterCount: 5
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -6192,7 +6184,7 @@ PrefabInstance:
     - target: {fileID: 2609718946640993348, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
       propertyPath: m_Name
-      value: Part
+      value: Parts
       objectReference: {fileID: 0}
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
@@ -6232,7 +6224,7 @@ PrefabInstance:
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
@@ -6317,7 +6309,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Ration:'
+  m_text: 'Rags:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6386,7 +6378,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1741587888}
-    characterCount: 7
+    characterCount: 5
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -7395,7 +7387,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Rag
+  m_text: Parts
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7464,7 +7456,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1977477927}
-    characterCount: 3
+    characterCount: 5
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -7555,7 +7547,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Rag:'
+  m_text: 'Parts:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7624,7 +7616,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2007006153}
-    characterCount: 4
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -7842,7 +7834,7 @@ PrefabInstance:
     - target: {fileID: 2609718946640993348, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
       propertyPath: m_Name
-      value: Part
+      value: Parts
       objectReference: {fileID: 0}
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
@@ -7882,7 +7874,7 @@ PrefabInstance:
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2609718946640993351, guid: 18893f4390d39c54381a46ee53fbc78b,
         type: 3}
@@ -7957,7 +7949,7 @@ PrefabInstance:
     - target: {fileID: 6974150806128282320, guid: 29470fafcabdc264d8d6e6906afc0699,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6974150806128282320, guid: 29470fafcabdc264d8d6e6906afc0699,
         type: 3}
@@ -8002,9 +7994,9 @@ MonoBehaviour:
   - {fileID: 1601610744}
   - {fileID: 616041641}
   food: 3
-  meds: 0
-  parts: 0
-  rags: 0
+  meds: 16
+  parts: 44
+  rags: 7
 --- !u!1001 &4123588366488991619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8174,7 +8166,7 @@ PrefabInstance:
     - target: {fileID: 6061953856720893662, guid: 6373097abba390f4b874c910a6a5728e,
         type: 3}
       propertyPath: m_Name
-      value: Rag
+      value: Rags
       objectReference: {fileID: 0}
     - target: {fileID: 6061953856720893661, guid: 6373097abba390f4b874c910a6a5728e,
         type: 3}
@@ -8214,7 +8206,7 @@ PrefabInstance:
     - target: {fileID: 6061953856720893661, guid: 6373097abba390f4b874c910a6a5728e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6061953856720893661, guid: 6373097abba390f4b874c910a6a5728e,
         type: 3}

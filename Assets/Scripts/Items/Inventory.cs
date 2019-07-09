@@ -16,6 +16,8 @@ public class Inventory : MonoBehaviour, IInventory
 	// Implement above as per interface requirement
 	public int MaxSlots => maxSlots;
 	public int MaxItemAmount => maxItemAmount;
+
+
 	public Dictionary<ItemType, int> InventoryItems => items;
 
 	// public enum ItemType { Food, Part, Rag, Ration }
@@ -25,7 +27,6 @@ public class Inventory : MonoBehaviour, IInventory
 	public void AddItem(ItemType itemName, int itemAmount)
 	{
 		ItemType currentItem = ItemType.Unassigned;
-		Debug.Log(currentItem);
 
 		// if inventory does NOT contain key already, make one
 		if (!items.ContainsKey(itemName))
@@ -50,7 +51,6 @@ public class Inventory : MonoBehaviour, IInventory
 	public void RemoveItem(ItemType itemName, int itemAmount)
 	{
 		ItemType currentItem = ItemType.Unassigned;
-		Debug.Log(currentItem);
 
 		// decrement value of key/value pair
 		if (items.TryGetValue(itemName, out var currentCount))
@@ -68,23 +68,24 @@ public class Inventory : MonoBehaviour, IInventory
 
 	void UpdateInventoryUi(ItemType name, int amount)
 	{
+		Debug.Log(name);
 		switch (name)
 		{
 			case ItemType.Food:
-				pickupText[0].text = name.ToString();
-				pickupText[0].GetComponent<TextMeshProUGUI>().text = amount.ToString();
+				pickupText[(int)name - 1].text = name.ToString();
+				pickupText[(int)name - 1].GetComponent<TextMeshProUGUI>().text = amount.ToString();
 				break;
 			case ItemType.Meds:
-				pickupText[1].text = name.ToString();
-				pickupText[1].GetComponent<TextMeshProUGUI>().text = amount.ToString();
+				pickupText[(int)name - 1].text = name.ToString();
+				pickupText[(int)name - 1].GetComponent<TextMeshProUGUI>().text = amount.ToString();
 				break;
 			case ItemType.Parts:
-				pickupText[2].text = name.ToString();
-				pickupText[2].GetComponent<TextMeshProUGUI>().text = amount.ToString();
+				pickupText[(int)name - 1].text = name.ToString();
+				pickupText[(int)name - 1].GetComponent<TextMeshProUGUI>().text = amount.ToString();
 				break;
 			case ItemType.Rags:
-				pickupText[3].text = name.ToString();
-				pickupText[3].GetComponent<TextMeshProUGUI>().text = amount.ToString();
+				pickupText[(int)name - 1].text = name.ToString();
+				pickupText[(int)name - 1].GetComponent<TextMeshProUGUI>().text = amount.ToString();
 				break;
 		}
 	}

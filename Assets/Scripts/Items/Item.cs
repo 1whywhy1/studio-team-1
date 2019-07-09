@@ -7,7 +7,6 @@ public class Item : MonoBehaviour, IInventoryItem
 {
 	// Get item name & inventory UI sprite
 	[Header("Interface Requirements")]
-	public string itemName;
 	public int itemValue = 1;
 	public Sprite itemSprite;
 
@@ -18,6 +17,12 @@ public class Item : MonoBehaviour, IInventoryItem
 	public Sprite Sprite => itemSprite;
 
 	public ItemType itemType = ItemType.Unassigned;
+	private string itemName;
+
+	private void Awake()
+	{
+		itemName = itemType.ToString();
+	}
 
 	private void OnTriggerEnter(Collider other)
 	{

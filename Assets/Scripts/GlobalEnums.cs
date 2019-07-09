@@ -9,3 +9,9 @@ public enum ItemType
 	Parts,
 	Rags
 };
+
+public enum TradeType
+{
+	Unassigned,
+	FoodForRags
+};

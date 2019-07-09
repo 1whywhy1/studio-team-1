@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TradingSystem : Item
+public class TradingSystem : MonoBehaviour
 {
 	public bool inTradingRange = false;
 	private Collider npcToTradeWith;
@@ -67,33 +67,37 @@ public class TradingSystem : Item
 			inTradingRange = false;
 	}
 
-	public void GiveItem()
+	public void GiveItem(ItemType item, int amount)
 	{
 		if (npcToTradeWith != null && inTradingRange)
 		{
-			// takes number from player
-			if (playerInventory.InventoryItems.TryGetValue(itemType, out int value))
+			// if item exists in inventory
+			if (playerInventory.InventoryItems.TryGetValue(item, out int value))
 			{
-				amountToSwap = value;
-				playerInventory.RemoveItem(itemType, value);
+//				amountToSwap = value;
 
-				// gives number to NPC
-				npcToTradeWith.GetComponent<Inventory>().AddItem(itemType, amountToSwap);
+				// takes item from player
+				playerInventory.RemoveItem(item, amount);
+
+				// gives item to NPC
+				npcToTradeWith.GetComponent<Inventory>().AddItem(item, amount);
 			}
 		}
 	}
 
-	public void TakeItem()
+	public void TakeItem(ItemType item, int amount)
 	{
 		if (npcToTradeWith != null && inTradingRange)
 		{
-			// takes number from player
-			if (npcToTradeWith.GetComponent<Inventory>().InventoryItems.TryGetValue(itemType, out int value))
+			// if item exists in inventory
+			if (npcToTradeWith.GetComponent<Inventory>().InventoryItems.TryGetValue(item, out int value))
 			{
-				amountToSwap = value;
-				playerInventory.AddItem(itemType, value);
-				// takes number to NPC
-				npcToTradeWith.GetComponent<Inventory>().RemoveItem(itemType, amountToSwap);
+//				amountToSwap = value;
+
+				// gives item from player
+				playerInventory.AddItem(item, amount);
+				// takes item to NPC
+				npcToTradeWith.GetComponent<Inventory>().RemoveItem(item, amount);
 			}
 		}
 	}
@@ -103,12 +107,17 @@ public class TradingSystem : Item
 	/// </summary>
 	/// <param name="itemOne">The first item.</param>
 	/// <param name="itemTwo">The second item.</param>
-	void TradeItemForItem(string itemOne, string itemTwo)
+	public void TradeItemForItem(int tradeType)
 	{
-		// take item 1 from player
-		TakeItem();
-
-		// give item 1 to player
-		GiveItem();
+		switch (tradeType)
+		{
+			case 1:
+				GiveItem(ItemType.Food, 1);
+				TakeItem(ItemType.Rags, 3);
+				break;
+			default:
+				Debug.LogError("You've used the wrong TradeType. Found: " + tradeType);
+				break;
+		}
 	}
 }
