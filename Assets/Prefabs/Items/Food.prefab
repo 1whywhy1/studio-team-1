@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5149271186829484040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.4169297, y: -2.3499923, z: 3.9416695}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 5149271187627174884}
   m_Father: {fileID: 0}
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 7a34a946a00bd014e98baca9f02a86c7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -105,11 +105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e6c18d075c5d14b8b49ad22f1a9534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Food
-  itemType: 1
   itemValue: 1
   itemSprite: {fileID: 7831688794362381626, guid: 22d42b62c3bd23840a5d305a3809a83f,
     type: 3}
+  itemType: 1
 --- !u!1 &5149271186933408601
 GameObject:
   m_ObjectHideFlags: 0
