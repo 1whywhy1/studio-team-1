@@ -360,7 +360,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1197043463}
-        m_MethodName: TradeItemForItem
+        m_MethodName: TradeItemsSetup
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -829,7 +829,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1197043463}
-        m_MethodName: TradeItemForItem
+        m_MethodName: TradeItemsSetup
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1216,7 +1216,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1197043463}
-        m_MethodName: TradeItemForItem
+        m_MethodName: TradeItemsSetup
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1505,7 +1505,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1197043463}
-        m_MethodName: TradeItemForItem
+        m_MethodName: TradeItemsSetup
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2074,7 +2074,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1197043463}
-        m_MethodName: TradeItemForItem
+        m_MethodName: TradeItemsSetup
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2292,7 +2292,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1197043463}
-        m_MethodName: TradeItemForItem
+        m_MethodName: TradeItemsSetup
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4870,7 +4870,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1197043463}
-        m_MethodName: TradeItemForItem
+        m_MethodName: TradeItemsSetup
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5002,7 +5002,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1197043463}
-        m_MethodName: TradeItemForItem
+        m_MethodName: TradeItemsSetup
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5359,6 +5359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inTradingRange: 0
+  tradeProgress: 0
 --- !u!1001 &1251130275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5722,7 +5723,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1197043463}
-        m_MethodName: TradeItemForItem
+        m_MethodName: TradeItemsSetup
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8249,7 +8250,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1197043463}
-        m_MethodName: TradeItemForItem
+        m_MethodName: TradeItemsSetup
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9104,7 +9105,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1197043463}
-        m_MethodName: TradeItemForItem
+        m_MethodName: TradeItemsSetup
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9236,7 +9237,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1197043463}
-        m_MethodName: TradeItemForItem
+        m_MethodName: TradeItemsSetup
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9448,10 +9449,10 @@ MonoBehaviour:
   - {fileID: 1548059585}
   - {fileID: 1601610744}
   - {fileID: 616041641}
-  food: 2
-  meds: 4
-  parts: 8
-  rags: 16
+  food: 10
+  meds: 10
+  parts: 10
+  rags: 10
   npcTradeRatios:
   - {x: 1, y: 3}
   - {x: 2, y: 3}
@@ -9594,6 +9595,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149271186829484045, guid: 08deee094948d6344b9afbeadd822fd1,
+        type: 3}
+      propertyPath: itemValue
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6373097abba390f4b874c910a6a5728e, type: 3}
