@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 2609718946640993350}
   - component: {fileID: 2609718946640993347}
   m_Layer: 0
-  m_Name: Part
+  m_Name: Parts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,7 +128,7 @@ Transform:
   m_GameObject: {fileID: 2609718946640993348}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.4169297, y: -2.3499923, z: 3.9416695}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 2609718946372185029}
   m_Father: {fileID: 0}
@@ -204,11 +204,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e6c18d075c5d14b8b49ad22f1a9534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Part
-  itemType: 3
   itemValue: 5
   itemSprite: {fileID: 6246735077378340022, guid: 22d42b62c3bd23840a5d305a3809a83f,
     type: 3}
+  itemType: 3
 --- !u!1 &2609718948316292202
 GameObject:
   m_ObjectHideFlags: 0
