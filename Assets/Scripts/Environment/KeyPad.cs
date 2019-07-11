@@ -55,7 +55,10 @@ public class KeyPad : MonoBehaviour
             doorleft.rotation = rotLeft;
 
         }
-        keyPress();
+        if (keypadShow)
+        {
+            keyPress();
+        }
     }
 
     // Upon entering the trigger in front of the door resets user input and sets onTrigger to true
