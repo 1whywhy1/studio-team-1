@@ -16,8 +16,6 @@ public class Inventory : MonoBehaviour, IInventory
 	// Implement above as per interface requirement
 	public int MaxSlots => maxSlots;
 	public int MaxItemAmount => maxItemAmount;
-
-
 	public Dictionary<ItemType, int> InventoryItems => items;
 
 	// public enum ItemType { Food, Part, Rag, Ration }
@@ -68,7 +66,6 @@ public class Inventory : MonoBehaviour, IInventory
 
 	void UpdateInventoryUi(ItemType name, int amount)
 	{
-		Debug.Log(name);
 		switch (name)
 		{
 			case ItemType.Food:
