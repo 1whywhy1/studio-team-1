@@ -92,7 +92,7 @@ public class Move : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && Ccontroller.isGrounded)
         {
-            Jump();
+            Jump();                                                                                                 //this is why it doesnt run on shift but plays jump animations
         }
 
 
