@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿// Copyright 2014 Jarrah Technology (http://www.jarrahtechnology.com). All Rights Reserved.
+
+using UnityEngine;
 
 public static class CameraExtensions
 {
