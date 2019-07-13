@@ -1,4 +1,5 @@
 ﻿// Copyright 2014 Jarrah Technology (http://www.jarrahtechnology.com). All Rights Reserved.
+// This is a static class that allows to manage the Layers that are visible in the Camera View
 
 using UnityEngine;
 
