@@ -10,6 +10,14 @@ public enum ItemType
 	Rags
 };
 
+public enum TradeProgress
+{
+	Init,
+	PlayerTurn,
+	NPCTurn,
+	MakeTrade
+};
+
 // TODO: Make a method that actually used this enum instead of hard coded integer values
 /// <summary>
 /// For trade schematic reference
@@ -29,12 +37,4 @@ public enum TradeType
 	PartsForFood,
 	RagsForFood,
 	PartsForRags
-};
-
-public enum TradeProgress
-{
-	Init,
-	PlayerTurn,
-	NPCTurn,
-	MakeTrade
 };
