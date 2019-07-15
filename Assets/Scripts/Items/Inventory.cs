@@ -24,8 +24,6 @@ public class Inventory : MonoBehaviour, IInventory
 	// add items + check in case of avoid overflow of items
 	public void AddItem(ItemType itemName, int itemAmount)
 	{
-		ItemType currentItem = ItemType.Unassigned;
-
 		// if inventory does NOT contain key already, make one
 		if (!items.ContainsKey(itemName))
 		{
@@ -48,8 +46,6 @@ public class Inventory : MonoBehaviour, IInventory
 	// add items + check in case of avoid overflow of items
 	public void RemoveItem(ItemType itemName, int itemAmount)
 	{
-		ItemType currentItem = ItemType.Unassigned;
-
 		// decrement value of key/value pair
 		if (items.TryGetValue(itemName, out var currentCount))
 		{

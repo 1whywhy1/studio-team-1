@@ -89,6 +89,7 @@ public class TradingSystem : MonoBehaviour
 				}
 				else
 				{
+					tradeValid = true;
 					tradeProgress = TradeProgress.NPCTurn;
 
 					playerSwapType = item;
@@ -100,7 +101,7 @@ public class TradingSystem : MonoBehaviour
 
 	public void TakeItem(ItemType item, int amount)
 	{
-		if (npcToTradeWith != null)
+		if (npcToTradeWith != null && tradeValid != false)
 		{
 			// if item exists in inventory
 			if (npcInventory.InventoryItems.TryGetValue(item, out int value))
@@ -114,8 +115,8 @@ public class TradingSystem : MonoBehaviour
 				}
 				else
 				{
-					tradeProgress = TradeProgress.MakeTrade;
 					tradeValid = true;
+					tradeProgress = TradeProgress.MakeTrade;
 
 					npcSwapType = item;
 					npcSwapAmount = amount;
