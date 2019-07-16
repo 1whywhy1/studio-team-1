@@ -65,16 +65,16 @@ public class Inventory : MonoBehaviour, IInventory
 		switch (name)
 		{
 			case ItemType.Food:
-				pickupText[(int)name - 1].text = name.ToString();
+				pickupText[(int)name - 1].text = amount.ToString();
 				break;
 			case ItemType.Meds:
-				pickupText[(int)name - 1].text = name.ToString();
+				pickupText[(int)name - 1].text = amount.ToString();
 				break;
 			case ItemType.Parts:
-				pickupText[(int)name - 1].text = name.ToString();
+				pickupText[(int)name - 1].text = amount.ToString();
 				break;
 			case ItemType.Rags:
-				pickupText[(int)name - 1].text = name.ToString();
+				pickupText[(int)name - 1].text = amount.ToString();
 				break;
 		}
 	}

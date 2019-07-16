@@ -93,9 +93,6 @@ public class TradingSystem : MonoBehaviour
 
 					playerSwapType = item;
 					playerSwapAmount = amount;
-
-					// If valid, move to next step of transaction
-					TakeItem(item, amount);
 				}
 			}
 		}
@@ -126,12 +123,16 @@ public class TradingSystem : MonoBehaviour
 		}
 	}
 
+	/// <summary>
+	/// If trade shouldn't happen - it get's cancelled here
+	/// </summary>
 	void InvalidateTrade()
 	{
 		tradeValid = false;
 		tradeProgress = TradeProgress.Init;
 	}
 
+	// If trade successful - it carries out here
 	void ExecuteTrade()
 	{
 		if (tradeValid)
@@ -160,61 +161,73 @@ public class TradingSystem : MonoBehaviour
 			case 1:
 				tradeProgress = TradeProgress.PlayerTurn;
 				GiveItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[0].x));
+				TakeItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[0].y));
 				ExecuteTrade();
 				break;
 			case 2:
 				tradeProgress = TradeProgress.PlayerTurn;
-				GiveItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[1].x));;
+				GiveItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[1].x));
+				TakeItem(ItemType.Parts, Mathf.RoundToInt(npcInventory.npcTradeRatios[1].y));
 				ExecuteTrade();
 				break;
 			case 3:
 				tradeProgress = TradeProgress.PlayerTurn;
 				GiveItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[2].x));
+				TakeItem(ItemType.Rags, Mathf.RoundToInt(npcInventory.npcTradeRatios[2].y));
 				ExecuteTrade();
 				break;
 			case 4:
 				tradeProgress = TradeProgress.PlayerTurn;
-				GiveItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[3].x));;
+				GiveItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[3].x));
+				TakeItem(ItemType.Parts, Mathf.RoundToInt(npcInventory.npcTradeRatios[3].y));
 				ExecuteTrade();
 				break;
 			case 5:
 				tradeProgress = TradeProgress.PlayerTurn;
 				GiveItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[4].x));
+				TakeItem(ItemType.Rags, Mathf.RoundToInt(npcInventory.npcTradeRatios[4].y));
 				ExecuteTrade();
 				break;
 			case 6:
 				tradeProgress = TradeProgress.PlayerTurn;
-				GiveItem(ItemType.Rags, Mathf.RoundToInt(npcInventory.npcTradeRatios[5].x));;
+				GiveItem(ItemType.Rags, Mathf.RoundToInt(npcInventory.npcTradeRatios[5].x));
+				TakeItem(ItemType.Parts, Mathf.RoundToInt(npcInventory.npcTradeRatios[5].y));
 				ExecuteTrade();
 				break;
 			case 7:
 				tradeProgress = TradeProgress.PlayerTurn;
 				GiveItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[0].y));
+				TakeItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[0].x));
 				ExecuteTrade();
 				break;
 			case 8:
 				tradeProgress = TradeProgress.PlayerTurn;
 				GiveItem(ItemType.Parts, Mathf.RoundToInt(npcInventory.npcTradeRatios[1].y));
+				TakeItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[1].x));
 				ExecuteTrade();
 				break;
 			case 9:
 				tradeProgress = TradeProgress.PlayerTurn;
 				GiveItem(ItemType.Rags, Mathf.RoundToInt(npcInventory.npcTradeRatios[2].y));
+				TakeItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[2].x));
 				ExecuteTrade();
 				break;
 			case 10:
 				tradeProgress = TradeProgress.PlayerTurn;
 				GiveItem(ItemType.Parts, Mathf.RoundToInt(npcInventory.npcTradeRatios[3].y));
+				TakeItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[3].x));
 				ExecuteTrade();
 				break;
 			case 11:
 				tradeProgress = TradeProgress.PlayerTurn;
 				GiveItem(ItemType.Rags, Mathf.RoundToInt(npcInventory.npcTradeRatios[4].y));
+				TakeItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[4].x));
 				ExecuteTrade();
 				break;
 			case 12:
 				tradeProgress = TradeProgress.PlayerTurn;
 				GiveItem(ItemType.Parts, Mathf.RoundToInt(npcInventory.npcTradeRatios[5].y));
+				TakeItem(ItemType.Rags, Mathf.RoundToInt(npcInventory.npcTradeRatios[5].x));
 				ExecuteTrade();
 				break;
 			default:
