@@ -22,16 +22,32 @@ public class TradingSystem : MonoBehaviour
 		tradingUI.SetActive(false);
 	}
 
-	void ToggleBarterUi()
+	/// <summary>
+	/// Gets triggered by character (via SendMessage())
+	/// </summary>
+	/// <param name="npcToBarter">Pass through NPC via OnTriggerEnter()</param>
+	void ToggleBarterUi(Collider npcToBarter)
 	{
 		// toggle trading UI
 		tradingUI.SetActive(!tradingUI.activeSelf);
 
 		// freeze time when trading
 		if (tradingUI.activeSelf)
+		{
+			// assign NPC inventory WHEN this method is triggered (avoids 'NullReferenceException')
+			npcToTradeWith = npcToBarter;
+			npcInventory = npcToTradeWith.GetComponent<NPCInventory>();
+
 			Time.timeScale = 0;
+		}
 		else
+		{
+			// kill references when you're done
+			npcToTradeWith = null;
+			npcInventory = null;
+
 			Time.timeScale = 1;
+		}
 	}
 
 	public void GiveItem(ItemType item, int amount)
@@ -111,7 +127,7 @@ public class TradingSystem : MonoBehaviour
 	}
 
 	/// <summary>
-	/// Trade assigned item for assigned item.
+	/// Trade assigned item for assigned item. Ratios are accessed via Vector2 (x and y values)
 	/// </summary>
 	/// <param name="itemOne">The first item.</param>
 	/// <param name="itemTwo">The second item.</param>

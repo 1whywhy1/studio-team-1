@@ -52,9 +52,9 @@ public class Move : MonoBehaviour
 		// only only action when close (in range of collider)
 		if (inTradingRange)
 		{
-			if (Input.GetKeyDown(KeyCode.E))
+			if (Input.GetKeyDown(KeyCode.E) && npcToTradeWith != null)
 			{
-				tradingScript.SendMessage("ToggleBarterUi");
+				tradingScript.SendMessage("ToggleBarterUi", npcToTradeWith);
 			}
 		}
 	}
@@ -62,8 +62,8 @@ public class Move : MonoBehaviour
 	void OnTriggerEnter(Collider other)
 	{
 		// assign designated NPC to variables
-		npcInventory = other.GetComponent<NPCInventory>();
 		npcToTradeWith = other;
+		npcInventory = npcToTradeWith.GetComponent<NPCInventory>();
 
 		// only make actions when true (in range)
 		if (other.CompareTag("NPC"))
