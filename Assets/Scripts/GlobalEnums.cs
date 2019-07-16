@@ -10,6 +10,14 @@ public enum ItemType
 	Rags
 };
 
+public enum PlayerInControl
+{
+	Ava,
+	Hazmat,
+	Rox,
+	Tempest
+};
+
 public enum TradeProgress
 {
 	Init,

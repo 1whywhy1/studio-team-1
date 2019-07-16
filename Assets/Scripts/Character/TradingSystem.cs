@@ -6,10 +6,10 @@ using UnityEngine;
 public class TradingSystem : MonoBehaviour
 {
 	public bool inTradingRange = false;
+	public GameObject tradingUI;
 	private Collider npcToTradeWith;
-	private GameObject tradingUI;
 
-	[SerializeField] private TradeProgress tradeProgress = TradeProgress.Init;
+	[SerializeField] private TradeProgress tradeProgress;
 	private Inventory playerInventory;
 	private NPCInventory npcInventory;
 	private ItemType playerSwapType, npcSwapType;
@@ -18,8 +18,8 @@ public class TradingSystem : MonoBehaviour
 
 	void Start()
 	{
+		tradeProgress = TradeProgress.Init;
 		playerInventory = GameObject.Find("EGOPlayerInventory").GetComponent<Inventory>();
-		tradingUI = GameObject.Find("TradingUI");
 		tradingUI.SetActive(false);
 	}
 
@@ -65,7 +65,7 @@ public class TradingSystem : MonoBehaviour
 	void OnTriggerExit(Collider other)
 	{
 		// empty npc variable's when vicinity left
-		Inventory npcInventory = null;
+		npcInventory = null;
 		npcToTradeWith = null;
 
 		// only make actions when true (in range)
