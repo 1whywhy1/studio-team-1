@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class TradingSystem : MonoBehaviour
 {
-	public bool inTradingRange = false;
 	public GameObject tradingUI;
 	private Collider npcToTradeWith;
 
@@ -23,54 +22,16 @@ public class TradingSystem : MonoBehaviour
 		tradingUI.SetActive(false);
 	}
 
-	void Update()
+	void ToggleBarterUi()
 	{
-		// only only action when close (in range of collider)
-		if (inTradingRange)
-		{
-			if (Input.GetKeyDown(KeyCode.E))
-			{
-				// toggle trading UI
-				tradingUI.SetActive(!tradingUI.activeSelf);
+		// toggle trading UI
+		tradingUI.SetActive(!tradingUI.activeSelf);
 
-				// freeze time when trading
-				if (tradingUI.activeSelf)
-					Time.timeScale = 0;
-				else
-					Time.timeScale = 1;
-			}
-		}
-	}
-
-	/// <summary>
-	/// Occurs when player enters NPC vicinity
-	/// </summary>
-	/// <param name="other">NPC to trade with</param>
-
-	void OnTriggerEnter(Collider other)
-	{
-		// assign designated NPC to variables
-		npcInventory = other.GetComponent<NPCInventory>();
-		npcToTradeWith = other;
-
-		// only make actions when true (in range)
-		if (other.CompareTag("NPC"))
-			inTradingRange = true;
-	}
-
-	/// <summary>
-	/// Occurs when player leaves NPC vicinity
-	/// </summary>
-	/// <param name="other">NPC to trade with</param>
-	void OnTriggerExit(Collider other)
-	{
-		// empty npc variable's when vicinity left
-		npcInventory = null;
-		npcToTradeWith = null;
-
-		// only make actions when true (in range)
-		if (other.CompareTag("NPC"))
-			inTradingRange = false;
+		// freeze time when trading
+		if (tradingUI.activeSelf)
+			Time.timeScale = 0;
+		else
+			Time.timeScale = 1;
 	}
 
 	public void GiveItem(ItemType item, int amount)

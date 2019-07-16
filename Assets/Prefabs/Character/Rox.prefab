@@ -3509,7 +3509,6 @@ GameObject:
   - component: {fileID: 1009950563050651879}
   - component: {fileID: 1009950563050651878}
   - component: {fileID: 2051000173}
-  - component: {fileID: 4646685684373093600}
   m_Layer: 0
   m_Name: Rox
   m_TagString: Player
@@ -3591,6 +3590,8 @@ MonoBehaviour:
   jumpMax: 1
   isControlling: 0
   inControl: 2
+  tradingScript: {fileID: 0}
+  inTradingRange: 0
 --- !u!54 &1009950563050651872
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3651,20 +3652,6 @@ MonoBehaviour:
   secretLayer:
     serializedVersion: 2
     m_Bits: 256
---- !u!114 &4646685684373093600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921991797481123716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4766e701a0193a4c8599fc361ef7ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inTradingRange: 0
-  tradeProgress: 0
 --- !u!1 &921991797746800824
 GameObject:
   m_ObjectHideFlags: 0

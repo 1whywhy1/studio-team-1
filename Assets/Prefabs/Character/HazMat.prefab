@@ -3508,7 +3508,6 @@ GameObject:
   - component: {fileID: 3099677197481397956}
   - component: {fileID: 3099677197481397954}
   - component: {fileID: 3099677197481397957}
-  - component: {fileID: 1075699446494290232}
   m_Layer: 0
   m_Name: HazMat
   m_TagString: Player
@@ -3590,6 +3589,8 @@ MonoBehaviour:
   jumpMax: 1
   isControlling: 0
   inControl: 1
+  tradingScript: {fileID: 0}
+  inTradingRange: 0
 --- !u!54 &3099677197481397956
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3634,20 +3635,6 @@ MonoBehaviour:
   heldItem: {fileID: 0}
   isHolding: 0
   isRange: 0
---- !u!114 &1075699446494290232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3099677197481397955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4766e701a0193a4c8599fc361ef7ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inTradingRange: 0
-  tradeProgress: 0
 --- !u!1 &3099677197752596991
 GameObject:
   m_ObjectHideFlags: 0

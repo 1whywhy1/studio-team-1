@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +20,14 @@ public class Move : MonoBehaviour
 
 	private string state = "Movement";
 
+	/// <summary>
+	/// Trading stuff
+	/// </summary>
 	public PlayerInControl inControl;
+	public TradingSystem tradingScript;
+	private Collider npcToTradeWith;
+	private NPCInventory npcInventory;
+	[SerializeField] private bool inTradingRange;
 
 	void Start()
 	{
@@ -30,10 +38,47 @@ public class Move : MonoBehaviour
 
 	void LateUpdate()
 	{
+		// what to activate/deactivate when character is being controlled
 		if (isControlling)
 		{
 			Movement();
+			tradingScript.enabled = true;
 		}
+		else
+		{
+			tradingScript.enabled = false;
+		}
+
+		// only only action when close (in range of collider)
+		if (inTradingRange)
+		{
+			if (Input.GetKeyDown(KeyCode.E))
+			{
+				tradingScript.SendMessage("ToggleBarterUi");
+			}
+		}
+	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		// assign designated NPC to variables
+		npcInventory = other.GetComponent<NPCInventory>();
+		npcToTradeWith = other;
+
+		// only make actions when true (in range)
+		if (other.CompareTag("NPC"))
+			inTradingRange = true;
+	}
+
+	void OnTriggerExit(Collider other)
+	{
+		// empty npc variable's when vicinity left
+		npcInventory = null;
+		npcToTradeWith = null;
+
+		// only make actions when true (in range)
+		if (other.CompareTag("NPC"))
+			inTradingRange = false;
 	}
 
 	void Movement()

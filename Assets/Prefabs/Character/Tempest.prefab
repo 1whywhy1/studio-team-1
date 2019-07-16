@@ -3617,7 +3617,6 @@ GameObject:
   - component: {fileID: 8337881837733025761}
   - component: {fileID: 8337881837733025760}
   - component: {fileID: 8337881837733025763}
-  - component: {fileID: 7679723375441493140}
   m_Layer: 0
   m_Name: Tempest
   m_TagString: Player
@@ -3699,6 +3698,8 @@ MonoBehaviour:
   jumpMax: 2
   isControlling: 0
   inControl: 3
+  tradingScript: {fileID: 0}
+  inTradingRange: 0
 --- !u!54 &8337881837733025761
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3743,20 +3744,6 @@ MonoBehaviour:
   heldItem: {fileID: 0}
   isHolding: 0
   isRange: 0
---- !u!114 &7679723375441493140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8176735179937007717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4766e701a0193a4c8599fc361ef7ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inTradingRange: 0
-  tradeProgress: 0
 --- !u!1 &8176735179980296655
 GameObject:
   m_ObjectHideFlags: 0

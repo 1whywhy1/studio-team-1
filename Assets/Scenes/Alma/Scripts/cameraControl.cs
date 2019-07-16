@@ -30,12 +30,14 @@ public class cameraControl : MonoBehaviour
 	[Range(1f, 15f)] public float sensitivity = 15f; // create the sensitivity of the mouse
 
 	public PlayerInControl playerInControl;
+	private GameObject tradeSystem;
 
 	void Start()
 	{
 		trueTarget = targetPlayer1;
 		playerInControl = trueTarget.GetComponent<Move>().inControl;
 		player1.isControlling = true;
+		tradeSystem = GameObject.Find("EGOPlayerInventory");
 		cam1.SetActive(true);
 	}
 
@@ -95,6 +97,9 @@ public class cameraControl : MonoBehaviour
 
 	void SwapCharacters(PlayerInControl player)
 	{
+		// turn off inventory if open when swapping characters
+		tradeSystem.SetActive(false);
+
 		switch (player)
 		{
 			case PlayerInControl.Ava:
