@@ -3915,7 +3915,7 @@ MonoBehaviour:
   cam1: {fileID: 273702604}
   trueTarget: {fileID: 0}
   targetZoom: {fileID: 1138549973}
-  sensitivity: 7.5
+  sensitivity: 6
   playerInControl: 1
 --- !u!114 &273702610
 MonoBehaviour:
