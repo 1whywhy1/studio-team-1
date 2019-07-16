@@ -26,7 +26,7 @@ public class Vent: MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0) && isRange == true)
+        if (Input.GetKeyDown(KeyCode.E) && isRange == true)
         {
             Hazmat.GetComponent<CharacterController>().enabled = false;
             Hazmat.transform.position = destination.transform.position;

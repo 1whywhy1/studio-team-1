@@ -14,7 +14,7 @@ public class FoxyVision : MonoBehaviour
     void Update()
     {
         if (!disableE) {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 disableE = true;                        // Disables the E button check for the player input
                 cam.LayerCullingShow(secretLayer);      // Adds a layer mask to camera rendering
