@@ -64,10 +64,7 @@ public class cameraControl : MonoBehaviour
 			trueTarget = targetPlayer1;
 			playerInControl = trueTarget.GetComponent<Move>().inControl;
 
-			player1.isControlling = true;
-			player2.isControlling = false;
-			player3.isControlling = false;
-			player4.isControlling = false;
+			SwapCharacters(playerInControl);
 		}
 		else if (Input.GetKeyDown("2"))
 		{
@@ -75,10 +72,7 @@ public class cameraControl : MonoBehaviour
 			trueTarget = targetPlayer2;
 			playerInControl = trueTarget.GetComponent<Move>().inControl;
 
-			player1.isControlling = false;
-			player2.isControlling = true;
-			player3.isControlling = false;
-			player4.isControlling = false;
+			SwapCharacters(playerInControl);
 		}
 		else if (Input.GetKeyDown("3"))
 		{
@@ -86,10 +80,7 @@ public class cameraControl : MonoBehaviour
 			trueTarget = targetPlayer3;
 			playerInControl = trueTarget.GetComponent<Move>().inControl;
 
-			player1.isControlling = false;
-			player2.isControlling = false;
-			player3.isControlling = true;
-			player4.isControlling = false;
+			SwapCharacters(playerInControl);
 		}
 
 		if (Input.GetKeyDown("4"))
@@ -98,10 +89,38 @@ public class cameraControl : MonoBehaviour
 			trueTarget = targetPlayer4;
 			playerInControl = trueTarget.GetComponent<Move>().inControl;
 
-			player1.isControlling = false;
-			player2.isControlling = false;
-			player3.isControlling = false;
-			player4.isControlling = true;
+			SwapCharacters(playerInControl);
+		}
+	}
+
+	void SwapCharacters(PlayerInControl player)
+	{
+		switch (player)
+		{
+			case PlayerInControl.Ava:
+				player1.isControlling = true;
+				player2.isControlling = false;
+				player3.isControlling = false;
+				player4.isControlling = false;
+				break;
+			case PlayerInControl.Hazmat:
+				player1.isControlling = false;
+				player2.isControlling = true;
+				player3.isControlling = false;
+				player4.isControlling = false;
+				break;
+			case PlayerInControl.Rox:
+				player1.isControlling = false;
+				player2.isControlling = false;
+				player3.isControlling = true;
+				player4.isControlling = false;
+				break;
+			case PlayerInControl.Tempest:
+				player1.isControlling = false;
+				player2.isControlling = false;
+				player3.isControlling = false;
+				player4.isControlling = true;
+				break;
 		}
 	}
 }
