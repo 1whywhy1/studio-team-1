@@ -17,18 +17,23 @@ public class Item : MonoBehaviour, IInventoryItem
 	public Sprite Sprite => itemSprite;
 
 	public ItemType itemType = ItemType.Unassigned;
+	private Inventory inventory;
 	private string itemName;
 
 	private void Awake()
 	{
+		inventory = GameObject.Find("EGOPlayerInventory").GetComponent<Inventory>();
 		itemName = itemType.ToString();
 	}
 
+	/// <summary>
+	/// Where pickup adds to player inventory
+	/// </summary>
+	/// <param name="other"></param>
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Player"))
 		{
-			Inventory inventory = GameObject.Find("EGOPlayerInventory").GetComponent<Inventory>();
 			inventory.AddItem(itemType, itemValue);
 
 			Destroy(gameObject);

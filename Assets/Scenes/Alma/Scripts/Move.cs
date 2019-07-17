@@ -24,13 +24,14 @@ public class Move : MonoBehaviour
 	/// Trading stuff
 	/// </summary>
 	public PlayerInControl inControl;
-	public TradingSystem tradingScript;
+	private TradingSystem tradingScript;
 	private Collider npcToTradeWith;
 	private NPCInventory npcInventory;
 	[SerializeField] private bool inTradingRange;
 
 	void Start()
 	{
+		tradingScript = GameObject.Find("EGOPlayerInventory").GetComponent<TradingSystem>();
 		Ccontroller = GetComponent<CharacterController>();
 		anim = GetComponent<Animator>();
 		cam = Camera.main;
