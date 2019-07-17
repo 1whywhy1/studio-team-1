@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using static CameraExtensions;                          // Using static class CameraExtensions to manage Layers that are visible in the Camera View
+using UnityEngine.Rendering.PostProcessing;
 
 public class FoxyVision : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class FoxyVision : MonoBehaviour
     private bool disableE = false;                      // To restrict player from spamming E
     public LayerMask secretLayer;                       // Select a layer mask to be toggled for the camera
     public Move rox;
+    public PostProcessVolume foxEffect;
 
     // Update is called once per frame
     void Update()
@@ -19,6 +21,7 @@ public class FoxyVision : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    foxEffect.enabled = !foxEffect.enabled; // Switch on the post processing
                     disableE = true;                        // Disables the E button check for the player input
                     cam.LayerCullingShow(secretLayer);      // Adds a layer mask to camera rendering
                     StartCoroutine(CoWait());
@@ -31,6 +34,7 @@ public class FoxyVision : MonoBehaviour
     {
         yield return new WaitForSeconds(10);
         cam.LayerCullingHide(secretLayer);              // Hides a layer mask from the camera
+        foxEffect.enabled = !foxEffect.enabled;         // Switch off the post processing
         disableE = false;                               // Enables E button check for the player input
     }
 }

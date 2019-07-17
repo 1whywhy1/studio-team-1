@@ -52,8 +52,6 @@ public class cameraControl : MonoBehaviour
 
 		transform.localEulerAngles = new Vector3(pitch, yaw, roll);
 
-		// Camera's position - Start from the player's position and go backwards a distance desiredDistance from the player.
-		transform.position = trueTarget.transform.position - desiredDistance * transform.forward + Vector3.up * 1.5f;
 
 		if (Input.GetMouseButton(1))
 		{
@@ -128,4 +126,11 @@ public class cameraControl : MonoBehaviour
 				break;
 		}
 	}
+
+    private void LateUpdate()
+    {
+
+        // Camera's position - Start from the player's position and go backwards a distance desiredDistance from the player.
+        transform.position = trueTarget.transform.position - desiredDistance * transform.forward + Vector3.up * 1.5f;
+    }
 }
