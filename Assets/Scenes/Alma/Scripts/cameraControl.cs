@@ -129,8 +129,12 @@ public class cameraControl : MonoBehaviour
 
     private void LateUpdate()
     {
+        // Used to be 
+        // transform.position = trueTarget.transform.position - desiredDistance * transform.forward + Vector3.up * 1.5f;
+        // Changed to lerp to achieve a smoother followup on the character
 
         // Camera's position - Start from the player's position and go backwards a distance desiredDistance from the player.
-        transform.position = trueTarget.transform.position - desiredDistance * transform.forward + Vector3.up * 1.5f;
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, trueTarget.transform.position - desiredDistance * transform.forward + Vector3.up * 1.5f, 0.2f);
+        transform.position = smoothedPosition;
     }
 }
