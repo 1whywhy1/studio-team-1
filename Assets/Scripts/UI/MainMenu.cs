@@ -20,4 +20,9 @@ public class MainMenu : MonoBehaviour
 		Debug.Log("Quit!");
 		Application.Quit();
 	}
+
+    public void BacktoMain()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
