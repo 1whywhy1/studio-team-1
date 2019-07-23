@@ -7,7 +7,7 @@ using UnityEngine.Rendering.PostProcessing;
 public class FoxyVision : MonoBehaviour
 {
     public Camera cam;
-    private bool disableE = false;                      // To restrict player from spamming E
+    private bool disablePower = false;                      // To restrict player from spamming E
     public LayerMask secretLayer;                       // Select a layer mask to be toggled for the camera
     public Move rox;
     public PostProcessVolume foxEffect;
@@ -17,12 +17,12 @@ public class FoxyVision : MonoBehaviour
     {
         if (rox.isControlling)
         {
-            if (!disableE)
+            if (!disablePower)
             {
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.Mouse0))
                 {
                     foxEffect.enabled = !foxEffect.enabled; // Switch on the post processing
-                    disableE = true;                        // Disables the E button check for the player input
+                    disablePower = true;                        // Disables the E button check for the player input
                     cam.LayerCullingShow(secretLayer);      // Adds a layer mask to camera rendering
                     StartCoroutine(CoWait());
                 }
@@ -35,6 +35,6 @@ public class FoxyVision : MonoBehaviour
         yield return new WaitForSeconds(10);
         cam.LayerCullingHide(secretLayer);              // Hides a layer mask from the camera
         foxEffect.enabled = !foxEffect.enabled;         // Switch off the post processing
-        disableE = false;                               // Enables E button check for the player input
+        disablePower = false;                               // Enables E button check for the player input
     }
 }
