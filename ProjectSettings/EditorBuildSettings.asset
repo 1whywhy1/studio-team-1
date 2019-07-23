@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tony/TradingSystem.unity
     guid: 88883fad1e37e034da9290fe66f28420
+  - enabled: 1
+    path: Assets/Scenes/Alma/PauesMenu.unity
+    guid: 60d5b8dc3dad913428e74d9b39366dee
   m_configObjects: {}
