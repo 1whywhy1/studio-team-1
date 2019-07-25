@@ -11,7 +11,10 @@ public class Move : MonoBehaviour
 	public float jumpMax = 1f;
 	public bool isControlling;
 
-	private CharacterController Ccontroller;
+    public AudioClip pickUpSFX;
+
+
+    private CharacterController Ccontroller;
 	private Animator anim;
 	private Camera cam;
 
@@ -66,10 +69,17 @@ public class Move : MonoBehaviour
 		npcToTradeWith = other;
 		npcInventory = npcToTradeWith.GetComponent<NPCInventory>();
 
-		// only make actions when true (in range)
-		if (other.CompareTag("NPC"))
-			inTradingRange = true;
-	}
+        // only make actions when true (in range)
+        if (other.CompareTag("NPC"))
+        {
+            inTradingRange = true;
+        }
+
+        if (other.CompareTag("Pick Up"))
+        {
+            AudioSource.PlayClipAtPoint(pickUpSFX, other.transform.position);
+        }
+    }
 
 	void OnTriggerExit(Collider other)
 	{

@@ -379,6 +379,9 @@ MonoBehaviour:
   jumpCount: 2
   jumpMax: 2
   isControlling: 0
+  pickUpSFX: {fileID: 8300000, guid: 6ea641033376b104389280a7619d23cf, type: 3}
+  inControl: 0
+  inTradingRange: 0
 --- !u!54 &8667487305973599597
 Rigidbody:
   m_ObjectHideFlags: 0

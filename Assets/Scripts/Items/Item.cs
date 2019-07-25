@@ -9,9 +9,7 @@ public class Item : MonoBehaviour, IInventoryItem
 	[Header("Interface Requirements")]
 	public int itemValue = 1;
 	public Sprite itemSprite;
-    public AudioClip pickUpSound;
-    private AudioSource sfxAudioSource;
-
+   
     // Implement above as per interface requirement
     // Only has 'get', so variable is read only
     public string Name => itemName;
@@ -25,8 +23,8 @@ public class Item : MonoBehaviour, IInventoryItem
 	private void Awake()
 	{
 		inventory = GameObject.Find("EGOPlayerInventory").GetComponent<Inventory>();
-        sfxAudioSource = GameObject.Find("EGO SFX").GetComponent<AudioSource>();
-		itemName = itemType.ToString();
+
+        itemName = itemType.ToString();
 	}
 
 	/// <summary>
@@ -38,8 +36,10 @@ public class Item : MonoBehaviour, IInventoryItem
 		if (other.CompareTag("Player"))
 		{
 			inventory.AddItem(itemType, itemValue);
-            sfxAudioSource.PlayOneShot(pickUpSound);
-			Destroy(gameObject);
-		}
+
+            Destroy(gameObject);
+            
+
+        }
 	}
 }
