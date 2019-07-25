@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class KeyPad : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class KeyPad : MonoBehaviour
     public string input = "";
     public AudioClip woodenDoor;
     public Transform doorleft;            // Left door of the locked door
-    public Text errorText;
+    public TextMeshProUGUI errorText;
     public AudioSource effectsPlayer;
 
     private bool onTrigger;                // Check in the player is near to keypad lock

@@ -108,6 +108,7 @@ MonoBehaviour:
   itemValue: 1
   itemSprite: {fileID: 7831688794362381626, guid: 22d42b62c3bd23840a5d305a3809a83f,
     type: 3}
+  pickUpSound: {fileID: 8300000, guid: 6ea641033376b104389280a7619d23cf, type: 3}
   itemType: 1
 --- !u!1 &5149271186933408601
 GameObject:
