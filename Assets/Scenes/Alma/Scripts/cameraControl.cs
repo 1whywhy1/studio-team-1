@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cameraControl : MonoBehaviour
+public class CameraControl : MonoBehaviour
 {
 	[Header("Target Players")]
 	public GameObject targetPlayer1;
@@ -95,7 +95,7 @@ public class cameraControl : MonoBehaviour
 
 	void SwapCharacters(PlayerInControl player)
 	{
-		switch (player)
+			switch (player)
 		{
 			case PlayerInControl.Ava:
 				player1.isControlling = true;
