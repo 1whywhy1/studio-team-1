@@ -95,9 +95,6 @@ public class cameraControl : MonoBehaviour
 
 	void SwapCharacters(PlayerInControl player)
 	{
-		// turn off inventory if open when swapping characters
-		tradeSystem.SetActive(false);
-
 		switch (player)
 		{
 			case PlayerInControl.Ava:
@@ -129,7 +126,7 @@ public class cameraControl : MonoBehaviour
 
     private void LateUpdate()
     {
-        // Used to be 
+        // Used to be
         // transform.position = trueTarget.transform.position - desiredDistance * transform.forward + Vector3.up * 1.5f;
         // Changed to lerp to achieve a smoother followup on the character
 

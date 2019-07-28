@@ -13,7 +13,6 @@ public class Move : MonoBehaviour
 
     public AudioClip pickUpSFX;
 
-
     private CharacterController Ccontroller;
 	private Animator anim;
 	private Camera cam;
@@ -46,18 +45,14 @@ public class Move : MonoBehaviour
 		if (isControlling)
 		{
 			Movement();
-			tradingScript.enabled = true;
-		}
-		else
-		{
-			tradingScript.enabled = false;
 		}
 
 		// only only action when close (in range of collider)
-		if (inTradingRange)
+		if (inTradingRange && tradingScript)
 		{
 			if (Input.GetKeyDown(KeyCode.E) && npcToTradeWith != null)
 			{
+				Debug.Log(tradingScript);
 				tradingScript.SendMessage("ToggleBarterUi", npcToTradeWith);
 			}
 		}
@@ -69,12 +64,13 @@ public class Move : MonoBehaviour
 		npcToTradeWith = other;
 		npcInventory = npcToTradeWith.GetComponent<NPCInventory>();
 
-        // only make actions when true (in range)
+        // assign 'in range' to true
         if (other.CompareTag("NPC"))
         {
             inTradingRange = true;
         }
 
+        // play pick up sound
         if (other.CompareTag("Pick Up"))
         {
             AudioSource.PlayClipAtPoint(pickUpSFX, other.transform.position);
@@ -125,7 +121,6 @@ public class Move : MonoBehaviour
 		}
 
 		Vector3 gravityVector = -Vector3.up * gravity * Time.deltaTime;
-
 		Ccontroller.Move(velocity + gravityVector);
 
 		if (velocity.magnitude > 0)
@@ -134,14 +129,11 @@ public class Move : MonoBehaviour
 			transform.localEulerAngles = new Vector3(0, yAngle, 0);
 		}
 
-
 		if (Input.GetKeyDown(KeyCode.LeftShift) && Ccontroller.isGrounded)
 		{
 			Jump(); // this is why it doesnt run on shift but plays jump animations
 		}
 	}
-
-	void ReturnToMovement() {}
 
 	void Jump()
 	{

@@ -9,10 +9,10 @@ public class Item : MonoBehaviour, IInventoryItem
 	[Header("Interface Requirements")]
 	public int itemValue = 1;
 	public Sprite itemSprite;
-   
-    // Implement above as per interface requirement
-    // Only has 'get', so variable is read only
-    public string Name => itemName;
+
+	// Implement above as per interface requirement
+	// Only has 'get', so variable is read only
+	public string Name => itemName;
 	public int Amount => itemValue;
 	public Sprite Sprite => itemSprite;
 
@@ -24,7 +24,7 @@ public class Item : MonoBehaviour, IInventoryItem
 	{
 		inventory = GameObject.Find("EGOPlayerInventory").GetComponent<Inventory>();
 
-        itemName = itemType.ToString();
+		itemName = itemType.ToString();
 	}
 
 	/// <summary>
@@ -37,9 +37,7 @@ public class Item : MonoBehaviour, IInventoryItem
 		{
 			inventory.AddItem(itemType, itemValue);
 
-            Destroy(gameObject);
-            
-
-        }
+			Destroy(gameObject);
+		}
 	}
 }
