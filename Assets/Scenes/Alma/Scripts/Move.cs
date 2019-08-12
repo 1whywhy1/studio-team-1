@@ -85,7 +85,9 @@ public class Move : MonoBehaviour
 
 		// only make actions when true (in range)
 		if (other.CompareTag("NPC"))
+		{
 			inTradingRange = false;
+		}
 	}
 
 	void Movement()
@@ -115,11 +117,6 @@ public class Move : MonoBehaviour
 			gravity = Mathf.Clamp(gravity, -20f, 20f);
 		}
 
-		if (Input.GetKeyDown(KeyCode.Space) && jumpCount > 0)
-		{
-			Jump();
-		}
-
 		Vector3 gravityVector = -Vector3.up * gravity * Time.deltaTime;
 		Ccontroller.Move(velocity + gravityVector);
 
@@ -127,6 +124,11 @@ public class Move : MonoBehaviour
 		{
 			float yAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
 			transform.localEulerAngles = new Vector3(0, yAngle, 0);
+		}
+
+		if (Input.GetKeyDown(KeyCode.Space) && jumpCount > 0)
+		{
+			Jump();
 		}
 
 		if (Input.GetKeyDown(KeyCode.LeftShift) && Ccontroller.isGrounded)
