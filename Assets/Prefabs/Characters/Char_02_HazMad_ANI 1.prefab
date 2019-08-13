@@ -3805,7 +3805,7 @@ GameObject:
   - component: {fileID: 2079133970189621901}
   m_Layer: 0
   m_Name: Char_02_HazMad_ANI 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11802,10 +11802,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4401547244711712140}
     m_Modifications:
-    - target: {fileID: 1273915125232972, guid: 73767e07adddc394d82b994801f89bbb, type: 3}
-      propertyPath: m_Name
-      value: SmokeEffect
-      objectReference: {fileID: 0}
     - target: {fileID: 4508696319873668, guid: 73767e07adddc394d82b994801f89bbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.008427286
@@ -11861,6 +11857,10 @@ PrefabInstance:
     - target: {fileID: 4508696319873668, guid: 73767e07adddc394d82b994801f89bbb, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.10727864
+      objectReference: {fileID: 0}
+    - target: {fileID: 1273915125232972, guid: 73767e07adddc394d82b994801f89bbb, type: 3}
+      propertyPath: m_Name
+      value: SmokeEffect
       objectReference: {fileID: 0}
     - target: {fileID: 198791558892717060, guid: 73767e07adddc394d82b994801f89bbb,
         type: 3}
