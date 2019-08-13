@@ -11,21 +11,39 @@ public class SubmitResources : MonoBehaviour
 
     public void CheckTheItems()
     {
-        for (int i= 0; i < 4; ++i){
-            int playerInt = (int.Parse(player[i].text));
-            int requirementInt = (int.Parse(requirement[i].text));
-            if (playerInt >= requirementInt)
+        bool hasEnough = true;
+        int[] playerInt;
+        int[] requirementInt;
+
+        playerInt = new int[4];
+        requirementInt = new int[4];
+
+        for (int i = 0; i < 4; ++i)
+        {
+            playerInt[i] = (int.Parse(player[i].text));
+            requirementInt[i] = (int.Parse(requirement[i].text));
+        }
+
+        for (int i= 0; i < 4; ++i)
+        {
+            if (playerInt[i] < requirementInt[i])
             {
-                playerInt -= requirementInt;
-                player[i].text = playerInt.ToString();
-            }
-            else
-            {
-                // Display error here
-                break;
+                hasEnough = false;
             }
         }
 
+        if (hasEnough)
+        {
+            for(int i = 0; i < 4; ++i)
+            {
+                playerInt[i] -= requirementInt[i];
+                player[i].text = playerInt[i].ToString();
+            }
+        }
+        else
+        {
+            // Display error here
+        }
     }
 
 }
