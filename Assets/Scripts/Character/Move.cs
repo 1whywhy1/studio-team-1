@@ -99,7 +99,7 @@ public class Move : MonoBehaviour
 		float cameraDirection = cam.transform.localEulerAngles.y;
 		direction = Quaternion.AngleAxis(cameraDirection, Vector3.up) * direction;
 
-		Vector3 velocity = direction * moveSpeed * Time.deltaTime;
+		Vector3 velocity = direction * (moveSpeed * Time.deltaTime);
 		float percentSpeed = velocity.magnitude / (moveSpeed * Time.deltaTime);
 
 		anim.SetFloat("movePercent", percentSpeed);

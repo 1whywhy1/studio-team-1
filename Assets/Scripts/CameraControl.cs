@@ -9,12 +9,7 @@ public class CameraControl : MonoBehaviour
 	public GameObject targetPlayer2;
 	public GameObject targetPlayer3;
 	public GameObject targetPlayer4;
-
-	[Header("Independant Player Movement")]
-	public Move player1;
-	public Move player2;
-	public Move player3;
-	public Move player4;
+	private Move player1, player2, player3, player4;
 
 	[Header("Camera Stuff")]
 	public GameObject cam1;
@@ -30,15 +25,19 @@ public class CameraControl : MonoBehaviour
 	[Range(1f, 15f)] public float sensitivity = 15f; // create the sensitivity of the mouse
 
 	public PlayerInControl playerInControl;
-	private GameObject tradeSystem;
 
 	void Start()
 	{
 		trueTarget = targetPlayer1;
 		playerInControl = trueTarget.GetComponent<Move>().inControl;
-		player1.isControlling = true;
-		tradeSystem = GameObject.Find("EGOPlayerInventory");
 		cam1.SetActive(true);
+
+		player1 = targetPlayer1.GetComponent<Move>();
+		player2 = targetPlayer2.GetComponent<Move>();
+		player3 = targetPlayer3.GetComponent<Move>();
+		player4 = targetPlayer4.GetComponent<Move>();
+
+		player1.isControlling = true;
 	}
 
 	void Update()
@@ -51,13 +50,15 @@ public class CameraControl : MonoBehaviour
 		pitch = Mathf.Clamp(pitch, pitchMin, pitchMax);
 
 		transform.localEulerAngles = new Vector3(pitch, yaw, roll);
-
-
+		
 		if (Input.GetMouseButton(1))
 		{
 			transform.position = targetZoom.transform.position;
 		}
 
+		/// <summary>
+		/// Section handling character swapping
+		/// </summary>
 		if (Input.GetKeyDown("1"))
 		{
 			cam1.SetActive(true);
@@ -95,7 +96,7 @@ public class CameraControl : MonoBehaviour
 
 	void SwapCharacters(PlayerInControl player)
 	{
-			switch (player)
+		switch (player)
 		{
 			case PlayerInControl.Ava:
 				player1.isControlling = true;
