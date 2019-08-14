@@ -29,6 +29,7 @@ public class SubmitResources : MonoBehaviour
             if (playerInt[i] < requirementInt[i])
             {
                 hasEnough = false;
+                break;
             }
         }
 
@@ -43,6 +44,7 @@ public class SubmitResources : MonoBehaviour
         else
         {
             // Display error here
+            Debug.Log("You fool!");
         }
     }
 

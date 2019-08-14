@@ -1769,7 +1769,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 141011232}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1115845977}
+        m_MethodName: CheckTheItems
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &141011232
@@ -4891,6 +4902,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2754e82f7e9f6444b9688fabf0a24e86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetPlayer1: {fileID: 0}
+  targetPlayer2: {fileID: 0}
+  targetPlayer3: {fileID: 0}
+  targetPlayer4: {fileID: 0}
+  cam1: {fileID: 0}
+  trueTarget: {fileID: 0}
+  targetZoom: {fileID: 0}
+  sensitivity: 15
+  playerInControl: 0
 --- !u!114 &273702610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6756,7 +6776,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Food: 6
+  m_Text: 'Food:
 
 '
 --- !u!222 &657462695
@@ -7437,7 +7457,7 @@ GameObject:
   - component: {fileID: 798877008}
   - component: {fileID: 798877007}
   m_Layer: 5
-  m_Name: FeedRequirementTMP
+  m_Name: FoodRequirementTMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8010,7 +8030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &945486546
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8023,7 +8043,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2cb261e5ada73734583b092e7a862ffb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.468
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9203,6 +9223,59 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1115845976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1115845978}
+  - component: {fileID: 1115845977}
+  m_Layer: 0
+  m_Name: EGO Resources Submition Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1115845977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115845976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0843f5af2a50cb445bffc183c25978d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player:
+  - {fileID: 8312250697754440439}
+  - {fileID: 8312250698427861542}
+  - {fileID: 8312250697361712116}
+  - {fileID: 8312250698194881556}
+  requirement:
+  - {fileID: 798877007}
+  - {fileID: 1348863740}
+  - {fileID: 577748041}
+  - {fileID: 86187321}
+--- !u!4 &1115845978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115845976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 206.11696, y: 642.5112, z: -501.81964}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1121061746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6974150806128282320, guid: 29470fafcabdc264d8d6e6906afc0699,
@@ -9399,9 +9472,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Rags: 6
-
-'
+  m_Text: 'Rags:'
 --- !u!222 &1156832168
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9715,7 +9786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1193054693
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10229,21 +10300,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tempest
       objectReference: {fileID: 0}
-    - target: {fileID: 1032835692781955820, guid: 696aa5e69c9ac5d478e5bbdd810b691f,
-        type: 3}
-      propertyPath: tradingScript
-      value: 
-      objectReference: {fileID: 1212993599}
-    - target: {fileID: 1032835692781955820, guid: 696aa5e69c9ac5d478e5bbdd810b691f,
-        type: 3}
-      propertyPath: jumpCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1032835692781955820, guid: 696aa5e69c9ac5d478e5bbdd810b691f,
-        type: 3}
-      propertyPath: jumpMax
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8176735179936781317, guid: 696aa5e69c9ac5d478e5bbdd810b691f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10298,6 +10354,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032835692781955820, guid: 696aa5e69c9ac5d478e5bbdd810b691f,
+        type: 3}
+      propertyPath: tradingScript
+      value: 
+      objectReference: {fileID: 1212993599}
+    - target: {fileID: 1032835692781955820, guid: 696aa5e69c9ac5d478e5bbdd810b691f,
+        type: 3}
+      propertyPath: jumpCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032835692781955820, guid: 696aa5e69c9ac5d478e5bbdd810b691f,
+        type: 3}
+      propertyPath: jumpMax
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8337881837733025760, guid: 696aa5e69c9ac5d478e5bbdd810b691f, type: 3}
@@ -10550,7 +10621,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Meds: 6
+  m_Text: 'Meds:
 
 '
 --- !u!222 &1346682768
@@ -19906,9 +19977,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Parts: 6
-
-'
+  m_Text: 'Parts:'
 --- !u!222 &1978438614
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22638,7 +22707,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 49
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -22667,7 +22736,7 @@ MonoBehaviour:
     spaceCount: 19
     wordCount: 20
     linkCount: 0
-    lineCount: 13
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -24528,7 +24597,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -33380,7 +33449,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -34098,7 +34167,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -35588,7 +35657,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
