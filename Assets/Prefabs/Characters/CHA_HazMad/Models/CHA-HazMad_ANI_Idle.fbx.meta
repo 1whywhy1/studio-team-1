@@ -6,7 +6,67 @@ ModelImporter:
   - first:
       74: 7798981327488107568
     second: CHA_HazMad_Idle
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clips
+    second: {fileID: 2100000, guid: 24038f4478a8542419ec225fbcfa6c76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clothing
+    second: {fileID: 2100000, guid: 92c6a5e0a4a509941b2cab1230953344, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Extra_Black
+    second: {fileID: 2100000, guid: 44599707e9e3e92459f29ded274da59a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HazardSign
+    second: {fileID: 2100000, guid: 3b2796da105b1684582af18255403992, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LeatherStrap
+    second: {fileID: 2100000, guid: fff6c7a6f3768634295cb7e766669d69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MainMask_Black
+    second: {fileID: 2100000, guid: 3ffb2387fc7fac74880224bde192cae2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metalrings
+    second: {fileID: 2100000, guid: 35d5aae80443dc5458643639aa3e2992, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RustyRings
+    second: {fileID: 2100000, guid: 1c07c27d03ba9eb4baa7ec9fd494eb8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin
+    second: {fileID: 2100000, guid: 285f480e2e7059c4abe8ccf297c171a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube1_texture
+    second: {fileID: 2100000, guid: c01510f9cd1584144b39acbdd495fba3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube_liquid
+    second: {fileID: 2100000, guid: 9cd7b73f9934dda438bd352e029fa009, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube_texture
+    second: {fileID: 2100000, guid: c01510f9cd1584144b39acbdd495fba3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
