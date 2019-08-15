@@ -58,7 +58,7 @@ public class KeyPad : MonoBehaviour
         }
         if (keypadShow)
         {
-            keyPress();
+            KeyPress();
         }
     }
 
@@ -110,6 +110,7 @@ public class KeyPad : MonoBehaviour
             {
                 GUI.Box(new Rect(0, 0, 320, 455), "");
                 GUI.Box(new Rect(5, 5, 310, 25), input);
+
                 if (GUI.Button(new Rect(5, 35, 100, 100), "1"))
                 {
                     input = input + "1";
@@ -161,48 +162,28 @@ public class KeyPad : MonoBehaviour
     }
 
     // Registers the input from the player and stores the sequence
-    void keyPress()
+    void KeyPress()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
             input += "1";
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
             input = input + "2";
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
             input += "3";
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
             input += "4";
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
             input += "5";
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha6))
-        {
             input += "6";
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha7))
-        {
             input += "7";
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha8))
-        {
             input += "8";
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha9))
-        {
             input += "9";
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
             input += "0";
-        }
     }
 
     // Waits for 3sec and gets rid of "Wrong password" message

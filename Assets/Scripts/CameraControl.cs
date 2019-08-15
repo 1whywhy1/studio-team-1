@@ -22,7 +22,7 @@ public class CameraControl : MonoBehaviour
 	private float pitchMax = 60f;
 	private float yaw = 0f; // controls side to side
 	private float roll = 0f; // controls camera rotation
-	[Range(1f, 15f)] public float sensitivity = 15f; // create the sensitivity of the mouse
+	[Range(1f, 15f)] public float sensitivity = 5f; // create the sensitivity of the mouse
 
 	public PlayerInControl playerInControl;
 

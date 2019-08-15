@@ -4607,7 +4607,6 @@ GameObject:
   - component: {fileID: 273702607}
   - component: {fileID: 273702606}
   - component: {fileID: 273702605}
-  - component: {fileID: 273702608}
   - component: {fileID: 273702609}
   - component: {fileID: 273702610}
   - component: {fileID: 273702612}
@@ -4684,23 +4683,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &273702608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273702604}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 713ab6cbfd5a9414a9e8caead909a37b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 5
-  distFromTarget: 3
-  rotationSmoothTime: 0.12
-  target: {fileID: 0}
-  pitchMinMax: {x: -40, y: 65}
 --- !u!114 &273702609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4713,14 +4695,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2754e82f7e9f6444b9688fabf0a24e86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPlayer1: {fileID: 770875572}
-  targetPlayer2: {fileID: 0}
-  targetPlayer3: {fileID: 0}
-  targetPlayer4: {fileID: 0}
+  targetPlayer1: {fileID: 1216053646}
+  targetPlayer2: {fileID: 1992061825}
+  targetPlayer3: {fileID: 706612592}
+  targetPlayer4: {fileID: 1483113541}
   cam1: {fileID: 273702604}
   trueTarget: {fileID: 0}
-  targetZoom: {fileID: 0}
-  sensitivity: 15
+  targetZoom: {fileID: 770875572}
+  sensitivity: 3
   playerInControl: 0
 --- !u!114 &273702610
 MonoBehaviour:
@@ -10280,6 +10262,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97aaee07a1475c043884b72098f4cf26, type: 3}
+--- !u!1 &1216053646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9092636015207405921, guid: 97aaee07a1475c043884b72098f4cf26,
+    type: 3}
+  m_PrefabInstance: {fileID: 1216053645}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1216469467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22863,7 +22851,7 @@ MonoBehaviour:
     spaceCount: 19
     wordCount: 20
     linkCount: 0
-    lineCount: 7
+    lineCount: 6
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
