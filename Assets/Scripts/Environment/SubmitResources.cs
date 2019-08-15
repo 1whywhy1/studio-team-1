@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class SubmitResources : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class SubmitResources : MonoBehaviour
 
     public AudioClip success,failure;
     public AudioSource audioSource;
+
+    private bool loadNewScene = false; 
 
 
     public void CheckTheItems()
@@ -51,20 +54,32 @@ public class SubmitResources : MonoBehaviour
             //displays an success message, plays a success sound and starts a coroutine to switch the message off
             successMessage.gameObject.SetActive(true);
             audioSource.PlayOneShot(success);
-            StartCoroutine(CoWaitForMessage(successMessage));
+            loadNewScene = true;
+            StartCoroutine(CoWaitForMessage(successMessage, loadNewScene));
+         
         }
         else
         {
             //displays an error message, plays a failure sound and starts a coroutine to switch the message off
             errorMessage.gameObject.SetActive(true);
             audioSource.PlayOneShot(failure);
-            StartCoroutine(CoWaitForMessage(errorMessage));
+            loadNewScene = false;
+            StartCoroutine(CoWaitForMessage(errorMessage,loadNewScene));
         }
     }
 
-    IEnumerator CoWaitForMessage(TextMeshProUGUI eventMessage)
+    public void ToMain()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    IEnumerator CoWaitForMessage(TextMeshProUGUI eventMessage, bool end)
     {
         yield return new WaitForSeconds(3.0f);
         eventMessage.gameObject.SetActive(false);
+        if (end)
+        {
+            ToMain();
+        }
     }
 }
