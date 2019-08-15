@@ -20,92 +20,92 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_Eyelashes
-    second: {fileID: 2100000, guid: 7b0a0b9d1cbc3be4a9c574d06e72c01b, type: 2}
+    second: {fileID: 2100000, guid: 3ccba9bde24723e40ad61957d3d5dcb1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_Hair_Ties_color
-    second: {fileID: 2100000, guid: f3e640294e9115a4f91ec2467d44834e, type: 2}
+    second: {fileID: 2100000, guid: 2dc82da8e52d2e043ac8509241907bab, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_Hair_color
-    second: {fileID: 2100000, guid: bd9bfa39cc6e55f42b1284513fd2165d, type: 2}
+    second: {fileID: 2100000, guid: bfe2471fbe80b654094b500bc4849887, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_Lips_color
-    second: {fileID: 2100000, guid: 1db3f8f3d99cb65469e8a7a23252d679, type: 2}
+    second: {fileID: 2100000, guid: a81dd3ff01492ad44a435a47fa9ddb20, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_Nails
-    second: {fileID: 2100000, guid: d1bb9c5c88ec0d84ba3eb097bec58582, type: 2}
+    second: {fileID: 2100000, guid: 00a6295e0ec647249b0b75ff9968b7af, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_Skin_color
-    second: {fileID: 2100000, guid: 30a3ec7ac178da54b810114c41b65a9d, type: 2}
+    second: {fileID: 2100000, guid: dc17620525f1ee647aa68601c46af008, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_black_color
-    second: {fileID: 2100000, guid: 819714c866edc814ca840717c5d17c7c, type: 2}
+    second: {fileID: 2100000, guid: 52ba4587f4dec4f40b9319d2d017adef, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_clothes1
-    second: {fileID: 2100000, guid: 965d8e3e202965a49be63b2133e425fb, type: 2}
+    second: {fileID: 2100000, guid: 1a303f1e26ec00b438f555746e7f0e20, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_eye_color
-    second: {fileID: 2100000, guid: 6699fe12ad82f0243801f0fa34039614, type: 2}
+    second: {fileID: 2100000, guid: 545f7777869117c4bb98b39aa1954292, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_gloves
-    second: {fileID: 2100000, guid: 07cb060c0e5a8d74a983559c73de463d, type: 2}
+    second: {fileID: 2100000, guid: 298ed3740c7dc4742a21427a2536bbb9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_shoe_bottom
-    second: {fileID: 2100000, guid: 58cb9ba86a4cdf645b76a87afe607da7, type: 2}
+    second: {fileID: 2100000, guid: 145bca53d6f60f8429e493dfe8b94a04, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_shoe_laces
-    second: {fileID: 2100000, guid: c3eb96bce3505f6428a69022911f7785, type: 2}
+    second: {fileID: 2100000, guid: 01231b9490b7fc4458025e94be3c6022, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_shoes
-    second: {fileID: 2100000, guid: 9ee09304af894ab4286f2049368d6cd0, type: 2}
+    second: {fileID: 2100000, guid: 77f8a94eeca73a845a69d04575e4a900, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_socks
-    second: {fileID: 2100000, guid: 7ccc102ad9c079841b6bd893ed9157e8, type: 2}
+    second: {fileID: 2100000, guid: 3c2d48e6212a7494894a56f58d4d64ff, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cha_01_Ava_V47_wings_bone_color
-    second: {fileID: 2100000, guid: 4a17edbb85d521b4c873264e97042a28, type: 2}
+    second: {fileID: 2100000, guid: f110de25507aadd4988dac5260044068, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Default_Material
-    second: {fileID: 2100000, guid: 8c10d46d4e7d940428a57911a52dbd76, type: 2}
+    second: {fileID: 2100000, guid: af8b0edd4bbed1543a0a53b721017636, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Wings_right_texture
-    second: {fileID: 2100000, guid: 0d40ba1a1c92245458b25320b091c108, type: 2}
+    second: {fileID: 2100000, guid: ce92853f01ba34741be9084d0316b31a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: wings_texture
-    second: {fileID: 2100000, guid: 05f7b8556949c044885465c20fcc316f, type: 2}
+    second: {fileID: 2100000, guid: dcab1a4e9c3a004489c310c899f3d29e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
