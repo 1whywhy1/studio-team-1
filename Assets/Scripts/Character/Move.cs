@@ -10,6 +10,7 @@ public class Move : MonoBehaviour
 	public float jumpCount = 1f;
 	public float jumpMax = 1f;
 	public bool isControlling;
+    public bool isGrounded;
 
     public AudioClip pickUpSFX;
 
@@ -18,7 +19,7 @@ public class Move : MonoBehaviour
 	private Camera cam;
 
 	private float gravity = 0f;
-	private float jumpVelocity = 0;
+	private float jumpVelocity = 0f;
 
 	private string state = "Movement";
 
@@ -45,6 +46,7 @@ public class Move : MonoBehaviour
 		if (isControlling)
 		{
 			Movement();
+
 		}
 
 		// only only action when close (in range of collider)
@@ -92,6 +94,8 @@ public class Move : MonoBehaviour
 
 	void Movement()
 	{
+        
+
 		float x = Input.GetAxisRaw("Horizontal");
 		float z = Input.GetAxisRaw("Vertical");
 
@@ -107,13 +111,16 @@ public class Move : MonoBehaviour
 		if (Ccontroller.isGrounded)
 		{
 			jumpCount = jumpMax;
-			gravity = 1f;
+			//gravity = 1f;
+            isGrounded = true;
 			anim.SetBool("isGrounded", true);
 			state = "Movement";
 		}
 		else
 		{
-			gravity += 0.25f;
+            isGrounded = false;
+            anim.SetBool("isGrounded", false);
+            gravity += 0.2f;
 			gravity = Mathf.Clamp(gravity, -20f, 20f);
 		}
 
@@ -126,19 +133,21 @@ public class Move : MonoBehaviour
 			transform.localEulerAngles = new Vector3(0, yAngle, 0);
 		}
 
-		if (Input.GetKeyDown(KeyCode.Space) && jumpCount > 0)
+		if (Input.GetKeyDown(KeyCode.Space)&& jumpCount > 0)
 		{
 			Jump();
 		}
 
-		if (Input.GetKeyDown(KeyCode.LeftShift) && Ccontroller.isGrounded)
-		{
-			Jump(); // this is why it doesnt run on shift but plays jump animations
-		}
+		//if (Input.GetKeyDown(KeyCode.LeftShift) && Ccontroller.isGrounded)
+		//{
+		//	Jump(); // this is why it doesnt run on shift but plays jump animations
+		//}
 	}
 
 	void Jump()
 	{
+        print(Vector3.up);
+        isGrounded = false;
 		gravity = -jumpHeight;
 		jumpCount--;
 		jumpVelocity -= jumpHeight;
