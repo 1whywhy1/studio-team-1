@@ -4711,8 +4711,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPlayer1: {fileID: 1216053646}
   targetPlayer2: {fileID: 1992061825}
-  targetPlayer3: {fileID: 706612592}
-  targetPlayer4: {fileID: 1483113541}
+  targetPlayer3: {fileID: 1483113541}
+  targetPlayer4: {fileID: 706612592}
   cam1: {fileID: 273702604}
   trueTarget: {fileID: 0}
   targetZoom: {fileID: 770875572}
