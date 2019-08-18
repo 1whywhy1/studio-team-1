@@ -7061,6 +7061,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tempest
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 7b82d7220c70cb94ba16c496ea792594,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7b82d7220c70cb94ba16c496ea792594,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13544,6 +13549,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: b4cd8554dd672394db43a3c87daee4d4, type: 3}
       propertyPath: m_Name
       value: Rox
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: b4cd8554dd672394db43a3c87daee4d4, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b4cd8554dd672394db43a3c87daee4d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20155,6 +20164,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HazMad
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b2310cac7cf97848bffc3286a062505,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0b2310cac7cf97848bffc3286a062505,
         type: 3}
