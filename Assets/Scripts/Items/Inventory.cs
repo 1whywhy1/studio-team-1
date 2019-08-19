@@ -21,20 +21,6 @@ public class Inventory : MonoBehaviour, IInventory
 
 	// public enum ItemType { Food, Part, Rag, Ration }
 	public TextMeshProUGUI[] pickupText;
-	
-	/// <summary>
-	/// Make inventory based off a Singleton design
-	/// </summary>
-	private static Inventory _instance;
-	public static Inventory Instance { get { return _instance; } }
-
-	private void Awake()
-	{
-		if (_instance != null && _instance != this)
-			Destroy(this.gameObject);
-		else
-			_instance = this;
-	}
 
 	// add items + check in case of avoid overflow of items
 	public void AddItem(ItemType itemName, int itemAmount)
