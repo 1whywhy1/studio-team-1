@@ -137,6 +137,13 @@ public class TradingSystem : MonoBehaviour
 		{
 			case 1:
 				tradeProgress = TradeProgress.PlayerTurn;
+                // AG: Here is where you want to check the ratio.
+                // Find out how many of the specific item an NPC has and calculate the ratio for trading.
+                // Eg: Player has 100 Meds and NPC has 100 Parts and 0 Meds. The player wants to trade Meds for Parts.
+                //     There should be UI where the player can adjust the amount of items traded...
+                //     ...so the player can say "I want to give you 1 Meds and I want Parts." and the NPC will reply "Cool! I will give you 4 parts for 1 meds."
+                //     This NPC would offer 4:1 ratio because it has no Meds.
+                //     If the player then offered parts, the NPC would take the ratio 1:1.
 				GiveItem(ItemType.Meds, Mathf.RoundToInt(npcInventory.npcTradeRatios[0].x));
 				TakeItem(ItemType.Food, Mathf.RoundToInt(npcInventory.npcTradeRatios[0].y));
 				ExecuteTrade();
