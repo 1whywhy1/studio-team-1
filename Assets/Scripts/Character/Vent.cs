@@ -7,26 +7,21 @@ public class Vent: MonoBehaviour
     public GameObject destination;
     public GameObject Hazmat;
 
-
     CharacterController Ccontroller;
 
     public bool isRange;
-
-
+    
     // Start is called before the first frame update
     void Start()
     {
         isRange = false;
         Ccontroller = GetComponent<CharacterController>();
-
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.E) && isRange == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && isRange == true)
         {
             Hazmat.GetComponent<CharacterController>().enabled = false;
             Hazmat.transform.position = destination.transform.position;
@@ -35,22 +30,15 @@ public class Vent: MonoBehaviour
         }
     }
 
-
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "HazMat")
+        if (other.gameObject.name == "HazMad")
         {
             isRange = true;
-
-
         }
         else
         {
             isRange = false;
-
         }
-
     }
-
-
 }

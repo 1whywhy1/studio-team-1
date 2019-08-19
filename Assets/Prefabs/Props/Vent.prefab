@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 5700863559733333381}
   - component: {fileID: 5700863559733333378}
   - component: {fileID: 5700863559733333379}
+  - component: {fileID: 3924089962814140773}
   m_Layer: 0
   m_Name: Vent
   m_TagString: Vent
@@ -138,3 +139,16 @@ MonoBehaviour:
   destination: {fileID: 5700863558296934850}
   Hazmat: {fileID: 0}
   isRange: 0
+--- !u!65 &3924089962814140773
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5700863559733333376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6096404, y: 2.9020991, z: 2.451656}
+  m_Center: {x: -3.8048189, y: -0.18852268, z: 0.09370653}

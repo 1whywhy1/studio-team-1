@@ -20,7 +20,7 @@ public class Push : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && isRange == true)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && isRange == true)
         {
             if (isHolding == false)
             {
