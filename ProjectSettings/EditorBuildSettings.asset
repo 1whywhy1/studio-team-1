@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Alma/PauesMenu.unity
     guid: 60d5b8dc3dad913428e74d9b39366dee
   - enabled: 0
-    path: Assets/Scripts/Tony/TradingSystem.unity
+    path: Assets/Scenes/Tony/TradingSystem.unity
     guid: 88883fad1e37e034da9290fe66f28420
   m_configObjects: {}
