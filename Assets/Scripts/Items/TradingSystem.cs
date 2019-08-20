@@ -10,7 +10,7 @@ public class TradingSystem : MonoBehaviour
 
 	[SerializeField] private TradeProgress tradeProgress;
 	private Inventory playerInventory;
-	private NPCInventory npcInventory;
+	[SerializeField] private NPCInventory npcInventory;
 	private ItemType playerSwapType, npcSwapType;
 	private int playerSwapAmount, npcSwapAmount;
     private int giveToPiorityGroup, takeFromPriorityGroup;
@@ -31,6 +31,7 @@ public class TradingSystem : MonoBehaviour
 	{
 		// toggle trading UI
 		tradingUI.SetActive(!tradingUI.activeSelf);
+		Debug.LogWarning("HFAHIFHFIS");
 
 		// freeze time when trading
 		if (tradingUI.activeSelf)
@@ -75,28 +76,6 @@ public class TradingSystem : MonoBehaviour
 			}
 		}
 	}
-
-    //public void GiveItem1(ItemType item, int amount)
-    //{
-    //    // if item exists in inventory
-    //    if (playerInventory.InventoryItems.TryGetValue(item, out int value))
-    //    {
-    //        // if either person does not have enough materials
-    //        if (value < amount)
-    //        {
-    //            Debug.Log("YOU DON'T HAVE ENOUGH");
-    //            InvalidateTrade();
-    //        }
-    //        else
-    //        {
-    //            tradeValid = true;
-    //            tradeProgress = TradeProgress.NPCTurn;
-
-    //            playerSwapType = item;
-    //            playerSwapAmount = amount;
-    //        }
-    //    }
-    //}
 
 	public void TakeItem(ItemType item, int amount)
 	{

@@ -40,6 +40,20 @@ public class Move : MonoBehaviour
 		cam = Camera.main;
 	}
 
+	private void Update()
+	{
+		// only only action when close (in range of collider)
+		if (inTradingRange && tradingScript)
+		{
+			if (Input.GetKeyDown(KeyCode.E) && npcToTradeWith != null)
+			{
+				Debug.Log(tradingScript);
+				Debug.Log(npcToTradeWith);
+				tradingScript.SendMessage("ToggleBarterUi", npcToTradeWith);
+			}
+		}
+	}
+
 	void LateUpdate()
 	{
 		// what to activate/deactivate when character is being controlled
@@ -47,16 +61,6 @@ public class Move : MonoBehaviour
 		{
 			Movement();
 
-		}
-
-		// only only action when close (in range of collider)
-		if (inTradingRange && tradingScript)
-		{
-			if (Input.GetKeyDown(KeyCode.E) && npcToTradeWith != null)
-			{
-				Debug.Log(tradingScript);
-				tradingScript.SendMessage("ToggleBarterUi", npcToTradeWith);
-			}
 		}
 	}
 
