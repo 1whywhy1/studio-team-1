@@ -26,7 +26,7 @@ public class CameraControl : MonoBehaviour
 
 	public PlayerInControl playerInControl;
 
-	void Start()
+	void Awake()
 	{
 		trueTarget = targetPlayer1;
 		playerInControl = trueTarget.GetComponent<Move>().inControl;
@@ -56,9 +56,7 @@ public class CameraControl : MonoBehaviour
 			transform.position = targetZoom.transform.position;
 		}
 
-		/// <summary>
-		/// Section handling character swapping
-		/// </summary>
+		// Section handling character swapping
 		if (Input.GetKeyDown("1"))
 		{
 			cam1.SetActive(true);

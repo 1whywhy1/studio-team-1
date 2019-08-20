@@ -31,7 +31,6 @@ public class TradingSystem : MonoBehaviour
 	{
 		// toggle trading UI
 		tradingUI.SetActive(!tradingUI.activeSelf);
-		Debug.LogWarning("HFAHIFHFIS");
 
 		// freeze time when trading
 		if (tradingUI.activeSelf)

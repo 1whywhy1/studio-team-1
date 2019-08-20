@@ -47,8 +47,7 @@ public class Move : MonoBehaviour
 		{
 			if (Input.GetKeyDown(KeyCode.E) && npcToTradeWith != null)
 			{
-				Debug.Log(tradingScript);
-				Debug.Log(npcToTradeWith);
+				// Debug.Log(npcToTradeWith);
 				tradingScript.SendMessage("ToggleBarterUi", npcToTradeWith);
 			}
 		}
