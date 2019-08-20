@@ -3,6 +3,7 @@
     Properties
 	{
 		_MainColor("Main Color", Color) = (1,1,1,1)
+		_RimColor("Rim Color", Color) = (1,1,1,1)
 		_RimPower("Rim Power", Range(0, 1)) = 1
 		_IntersectionPower("Intersect Power", Range(0, 1)) = 0
 	}
@@ -41,6 +42,7 @@
 			sampler2D _CameraDepthTexture;
 			fixed4 _MainColor;
 			float _RimPower;
+			float _RimColor;
 			float _IntersectionPower;
 
 			v2f vert (appdata v)
@@ -53,6 +55,7 @@
 				o.screenPos = ComputeScreenPos(o.vertex);
 				COMPUTE_EYEDEPTH(o.eyeZ);
 				o.uv = v.uv;
+                
 				return o;
 			}
 			
