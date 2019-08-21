@@ -18,14 +18,17 @@ public class CameraControl : MonoBehaviour
 	[Range(0f, 1f)]public float cameraSmooth;
 
 	private float desiredDistance = 3f;
-	private float pitch = 0f; // controls up and down
+	private float pitch = 0f;                                   // controls up and down
 	private float pitchMin = -10f;
 	private float pitchMax = 60f;
-	private float yaw = 0f; // controls side to side
-	private float roll = 0f; // controls camera rotation
-	[Range(1f, 15f)] public float sensitivity = 5f; // create the sensitivity of the mouse
+	private float yaw = 0f;                                     // controls side to side
+	private float roll = 0f;                                    // controls camera rotation
+	[Range(1f, 15f)] public float sensitivity = 5f;             // create the sensitivity of the mouse
 
-	public PlayerInControl playerInControl;
+    public UnityEngine.Video.VideoClip videoClipAva, videoClipHazMad, videoClipTempest, videoClipRox;
+
+
+    public PlayerInControl playerInControl;
 
 	void Awake()
 	{
