@@ -3938,6 +3938,7 @@ MonoBehaviour:
   cam1: {fileID: 273702604}
   trueTarget: {fileID: 0}
   targetZoom: {fileID: 255738973}
+  cameraSmooth: 0
   sensitivity: 2
   playerInControl: 0
 --- !u!114 &273702610
@@ -7533,7 +7534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &945486546
 AudioSource:
   m_ObjectHideFlags: 0
