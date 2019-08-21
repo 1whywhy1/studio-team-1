@@ -3973,7 +3973,7 @@ MonoBehaviour:
   cam1: {fileID: 273702604}
   trueTarget: {fileID: 0}
   targetZoom: {fileID: 255738973}
-  cameraSmooth: 0
+  cameraSmooth: 1
   sensitivity: 2
   UI: {fileID: 517862094}
   videoClipAva: {fileID: 32900000, guid: ead4a8853f03d6540b273e8deb2dba04, type: 3}
