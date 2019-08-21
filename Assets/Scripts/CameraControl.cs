@@ -30,11 +30,11 @@ public class CameraControl : MonoBehaviour
     public GameObject UI;                                       // to hid UI while the video is playing
 
     public VideoClip videoClipAva, videoClipHazMad, videoClipRox, videoClipTempest;
-    private VideoPlayer videoPlayer;
+    public VideoPlayer videoPlayer;
     private bool avaPlayed = false, hazmadPlayed = false, roxPlayed = false, tempestPlayed = false;
     private float avaLength = 5f, hazmadLength = 10f, roxLength = 4f, tempestLength = 11f;
 
-
+    [SerializeField] private bool isPlayingVideo = false;
 
     public PlayerInControl playerInControl;
 
@@ -49,115 +49,98 @@ public class CameraControl : MonoBehaviour
 		player3 = targetPlayer3.GetComponent<Move>();
 		player4 = targetPlayer4.GetComponent<Move>();
 
-        videoPlayer = GetComponent<VideoPlayer>();
+        //videoPlayer = GetComponent<VideoPlayer>();
 
 		player1.isControlling = true;
 	}
 
 	void Update()
 	{
-		// multiplying these movements by the sensitivity which let's us control how much moving to the mouse effects the camera angle.
-		pitch -= sensitivity * Input.GetAxis("Mouse Y");
-		yaw += sensitivity * Input.GetAxis("Mouse X");
+        if(isPlayingVideo == false)
+        {
+            // multiplying these movements by the sensitivity which let's us control how much moving to the mouse effects the camera angle.
+            pitch -= sensitivity * Input.GetAxis("Mouse Y");
+            yaw += sensitivity * Input.GetAxis("Mouse X");
 
-		// Clamp prevents a value from going below a minimum or above a maximum value.
-		pitch = Mathf.Clamp(pitch, pitchMin, pitchMax);
+            // Clamp prevents a value from going below a minimum or above a maximum value.
+            pitch = Mathf.Clamp(pitch, pitchMin, pitchMax);
 
-		transform.localEulerAngles = new Vector3(pitch, yaw, roll);
-		
-		if (Input.GetMouseButton(1))
-		{
-			transform.position = targetZoom.transform.position;
-		}
+            transform.localEulerAngles = new Vector3(pitch, yaw, roll);
 
-		// Section handling character swapping
-		if (Input.GetKeyDown("1"))
-		{
-            //plays cinematic when ava is used for the first time
-            if (!avaPlayed)
+            if (Input.GetMouseButton(1))
             {
-                //hides UI
-                UI.SetActive(false);
-
-                videoPlayer.clip = videoClipAva;
-                videoPlayer.Play();
-                StartCoroutine(CoWait(avaLength));
-
-                avaPlayed = true;
+                transform.position = targetZoom.transform.position;
             }
 
-			cam1.SetActive(true);
-			trueTarget = targetPlayer1;
-			playerInControl = trueTarget.GetComponent<Move>().inControl;
-
-			SwapCharacters(playerInControl);
-		}
-		else if (Input.GetKeyDown("2"))
-		{
-            //plays cinematic when hazmad is used for the first time
-            if (!hazmadPlayed)
+            // Section handling character swapping
+            if (Input.GetKeyDown("1"))
             {
-                //hides UI
-                UI.SetActive(false);
+                //plays cinematic when ava is used for the first time
+                if (!avaPlayed)
+                {
+                    StartCoroutine(CoWait(videoClipAva));
 
-                videoPlayer.clip = videoClipHazMad;
-                videoPlayer.Play();
-                StartCoroutine(CoWait(hazmadLength));
+                    avaPlayed = true;
+                }
 
-                hazmadPlayed = true;
+                cam1.SetActive(true);
+                trueTarget = targetPlayer1;
+                playerInControl = trueTarget.GetComponent<Move>().inControl;
+
+                SwapCharacters(playerInControl);
+            }
+            else if (Input.GetKeyDown("2"))
+            {
+                //plays cinematic when hazmad is used for the first time
+                if (!hazmadPlayed)
+                {
+                    StartCoroutine(CoWait(videoClipHazMad));
+
+                    hazmadPlayed = true;
+                }
+
+                cam1.SetActive(true);
+                trueTarget = targetPlayer2;
+                playerInControl = trueTarget.GetComponent<Move>().inControl;
+
+                SwapCharacters(playerInControl);
+            }
+            else if (Input.GetKeyDown("3"))
+            {
+
+                //plays cinematic when rox is used for the first time
+                if (!roxPlayed)
+                {
+                    StartCoroutine(CoWait(videoClipRox));
+
+                    roxPlayed = true;
+                }
+
+                cam1.SetActive(true);
+                trueTarget = targetPlayer3;
+                playerInControl = trueTarget.GetComponent<Move>().inControl;
+
+                SwapCharacters(playerInControl);
             }
 
-            cam1.SetActive(true);
-			trueTarget = targetPlayer2;
-			playerInControl = trueTarget.GetComponent<Move>().inControl;
-
-			SwapCharacters(playerInControl);
-		}
-		else if (Input.GetKeyDown("3"))
-		{
-
-            //plays cinematic when rox is used for the first time
-            if (!roxPlayed)
+            if (Input.GetKeyDown("4"))
             {
-                //hides UI
-                UI.SetActive(false);
 
-                videoPlayer.clip = videoClipRox;
-                videoPlayer.Play();
-                StartCoroutine(CoWait(roxLength));
+                //plays cinematic when tempest is used for the first time
+                if (!tempestPlayed)
+                {
+                    StartCoroutine(CoWait(videoClipTempest));
 
-                roxPlayed = true;
+                    tempestPlayed = true;
+                }
+
+                cam1.SetActive(true);
+                trueTarget = targetPlayer4;
+                playerInControl = trueTarget.GetComponent<Move>().inControl;
+
+                SwapCharacters(playerInControl);
             }
-
-            cam1.SetActive(true);
-			trueTarget = targetPlayer3;
-			playerInControl = trueTarget.GetComponent<Move>().inControl;
-
-			SwapCharacters(playerInControl);
-		}
-
-		if (Input.GetKeyDown("4"))
-		{
-           
-            //plays cinematic when tempest is used for the first time
-            if (!tempestPlayed)
-            {
-                //hides UI
-                UI.SetActive(false);
-
-                videoPlayer.clip = videoClipTempest;
-                videoPlayer.Play();
-                StartCoroutine(CoWait(tempestLength));
-
-                tempestPlayed = true;
-            }
-
-            cam1.SetActive(true);
-			trueTarget = targetPlayer4;
-			playerInControl = trueTarget.GetComponent<Move>().inControl;
-
-			SwapCharacters(playerInControl);
-		}
+        }
 	}
 
 	void SwapCharacters(PlayerInControl player)
@@ -202,9 +185,21 @@ public class CameraControl : MonoBehaviour
         transform.position = smoothedPosition;
     }
 
-    IEnumerator CoWait(float waitTime)
+    IEnumerator CoWait(VideoClip clip)
     {
-        yield return new WaitForSeconds(waitTime);
+        //hides UI
+        UI.SetActive(false);
+        isPlayingVideo = true;
+        videoPlayer.gameObject.SetActive(true);
+
+        videoPlayer.Stop();
+        videoPlayer.clip = clip;
+        videoPlayer.Play();
+
+        yield return new WaitForSeconds((float)clip.length);
+
+        isPlayingVideo = false;
         UI.SetActive(true);
+        videoPlayer.gameObject.SetActive(false);
     }
 }
