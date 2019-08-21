@@ -3975,11 +3975,11 @@ MonoBehaviour:
   targetZoom: {fileID: 255738973}
   cameraSmooth: 0
   sensitivity: 2
+  UI: {fileID: 517862094}
   videoClipAva: {fileID: 32900000, guid: ead4a8853f03d6540b273e8deb2dba04, type: 3}
   videoClipHazMad: {fileID: 32900000, guid: e257d24882e128740905c92e24523df2, type: 3}
   videoClipRox: {fileID: 32900000, guid: b19e125dfe9c9944f9b14406a52d634c, type: 3}
   videoClipTempest: {fileID: 32900000, guid: ba4fb8b953545ae43a30ba5a350d18a2, type: 3}
-  UI: {fileID: 0}
   playerInControl: 0
 --- !u!114 &273702610
 MonoBehaviour:
@@ -4820,6 +4820,12 @@ Transform:
   m_Father: {fileID: 419356228}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &517862094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1751206114171025342, guid: b94e7b9820ede154f8d992eff206165d,
+    type: 3}
+  m_PrefabInstance: {fileID: 7716499419696043519}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &538396681
 Mesh:
   m_ObjectHideFlags: 0
