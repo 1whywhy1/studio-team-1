@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class CameraControl : MonoBehaviour
 {
@@ -25,7 +26,14 @@ public class CameraControl : MonoBehaviour
 	private float roll = 0f;                                    // controls camera rotation
 	[Range(1f, 15f)] public float sensitivity = 5f;             // create the sensitivity of the mouse
 
-    public UnityEngine.Video.VideoClip videoClipAva, videoClipHazMad, videoClipTempest, videoClipRox;
+
+    public GameObject UI;                                       // to hid UI while the video is playing
+
+    public VideoClip videoClipAva, videoClipHazMad, videoClipRox, videoClipTempest;
+    private VideoPlayer videoPlayer;
+    private bool avaPlayed = false, hazmadPlayed = false, roxPlayed = false, tempestPlayed = false;
+    private float avaLength = 5f, hazmadLength = 10f, roxLength = 4f, tempestLength = 11f;
+
 
 
     public PlayerInControl playerInControl;
@@ -40,6 +48,8 @@ public class CameraControl : MonoBehaviour
 		player2 = targetPlayer2.GetComponent<Move>();
 		player3 = targetPlayer3.GetComponent<Move>();
 		player4 = targetPlayer4.GetComponent<Move>();
+
+        videoPlayer = GetComponent<VideoPlayer>();
 
 		player1.isControlling = true;
 	}
@@ -63,6 +73,19 @@ public class CameraControl : MonoBehaviour
 		// Section handling character swapping
 		if (Input.GetKeyDown("1"))
 		{
+            //plays cinematic when ava is used for the first time
+            if (!avaPlayed)
+            {
+                //hides UI
+                UI.SetActive(false);
+
+                videoPlayer.clip = videoClipAva;
+                videoPlayer.Play();
+                StartCoroutine(CoWait(avaLength));
+
+                avaPlayed = true;
+            }
+
 			cam1.SetActive(true);
 			trueTarget = targetPlayer1;
 			playerInControl = trueTarget.GetComponent<Move>().inControl;
@@ -71,7 +94,20 @@ public class CameraControl : MonoBehaviour
 		}
 		else if (Input.GetKeyDown("2"))
 		{
-			cam1.SetActive(true);
+            //plays cinematic when hazmad is used for the first time
+            if (!hazmadPlayed)
+            {
+                //hides UI
+                UI.SetActive(false);
+
+                videoPlayer.clip = videoClipHazMad;
+                videoPlayer.Play();
+                StartCoroutine(CoWait(hazmadLength));
+
+                hazmadPlayed = true;
+            }
+
+            cam1.SetActive(true);
 			trueTarget = targetPlayer2;
 			playerInControl = trueTarget.GetComponent<Move>().inControl;
 
@@ -79,7 +115,21 @@ public class CameraControl : MonoBehaviour
 		}
 		else if (Input.GetKeyDown("3"))
 		{
-			cam1.SetActive(true);
+
+            //plays cinematic when rox is used for the first time
+            if (!roxPlayed)
+            {
+                //hides UI
+                UI.SetActive(false);
+
+                videoPlayer.clip = videoClipRox;
+                videoPlayer.Play();
+                StartCoroutine(CoWait(roxLength));
+
+                roxPlayed = true;
+            }
+
+            cam1.SetActive(true);
 			trueTarget = targetPlayer3;
 			playerInControl = trueTarget.GetComponent<Move>().inControl;
 
@@ -88,7 +138,21 @@ public class CameraControl : MonoBehaviour
 
 		if (Input.GetKeyDown("4"))
 		{
-			cam1.SetActive(true);
+           
+            //plays cinematic when tempest is used for the first time
+            if (!tempestPlayed)
+            {
+                //hides UI
+                UI.SetActive(false);
+
+                videoPlayer.clip = videoClipTempest;
+                videoPlayer.Play();
+                StartCoroutine(CoWait(tempestLength));
+
+                tempestPlayed = true;
+            }
+
+            cam1.SetActive(true);
 			trueTarget = targetPlayer4;
 			playerInControl = trueTarget.GetComponent<Move>().inControl;
 
@@ -136,5 +200,11 @@ public class CameraControl : MonoBehaviour
         // Camera's position - Start from the player's position and go backwards a distance desiredDistance from the player.
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, trueTarget.transform.position - desiredDistance * transform.forward + Vector3.up * 1.5f, cameraSmooth);
         transform.position = smoothedPosition;
+    }
+
+    IEnumerator CoWait(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        UI.SetActive(true);
     }
 }
