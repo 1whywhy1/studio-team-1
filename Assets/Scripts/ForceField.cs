@@ -5,21 +5,12 @@ using UnityEngine;
 
 public class ForceField : MonoBehaviour
 {
-	// Singleton Sound Manager instance
-	private static ForceField _instance;
-	public static ForceField Instance { get { return _instance; } }
-
 	[Header("Effects Area")]
 	[Range(0f, 1f)] public float exitSoundLevel;
 	private AudioSource audioSource;
 	
 	private void Awake()
 	{
-		if (_instance != null && _instance != this)
-			Destroy(this.gameObject);
-		else
-			_instance = this;
-
 		audioSource = GetComponent<AudioSource>();
 	}
 
