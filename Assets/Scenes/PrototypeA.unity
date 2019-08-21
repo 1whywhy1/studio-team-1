@@ -3938,6 +3938,7 @@ MonoBehaviour:
   cam1: {fileID: 273702604}
   trueTarget: {fileID: 0}
   targetZoom: {fileID: 255738973}
+  cameraSmooth: 0
   sensitivity: 2
   playerInControl: 0
 --- !u!114 &273702610
@@ -22228,6 +22229,11 @@ PrefabInstance:
       propertyPath: rox
       value: 
       objectReference: {fileID: 543713117}
+    - target: {fileID: 815683678967035039, guid: e88a741d4cc6f604689f3395e5e4beb1,
+        type: 3}
+      propertyPath: secretLayer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 1163004304237458578, guid: e88a741d4cc6f604689f3395e5e4beb1,
         type: 3}
       propertyPath: m_Avatar
