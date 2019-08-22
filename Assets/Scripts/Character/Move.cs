@@ -12,7 +12,7 @@ public class Move : MonoBehaviour
 	public bool isControlling;
     public bool isGrounded;
 
-    public AudioClip pickUpSFX;
+    public AudioClip pickUpSFX, jumpUp, jumpLand;
 
     private CharacterController Ccontroller;
 	private Animator anim;
@@ -140,11 +140,6 @@ public class Move : MonoBehaviour
 		{
 			Jump();
 		}
-
-		//if (Input.GetKeyDown(KeyCode.LeftShift) && Ccontroller.isGrounded)
-		//{
-		//	Jump(); // this is why it doesnt run on shift but plays jump animations
-		//}
 	}
 
 	void Jump()
