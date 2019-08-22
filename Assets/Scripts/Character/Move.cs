@@ -12,7 +12,7 @@ public class Move : MonoBehaviour
 	public bool isControlling;
     public bool isGrounded;
 
-    public AudioClip pickUpSFX, jumpUp, jumpLand;
+    public AudioClip pickUpSFX;
 
     private CharacterController Ccontroller;
 	private Animator anim;

@@ -400,8 +400,6 @@ MonoBehaviour:
   isControlling: 1
   isGrounded: 0
   pickUpSFX: {fileID: 8300000, guid: 6ea641033376b104389280a7619d23cf, type: 3}
-  jumpUp: {fileID: 8300000, guid: 0e1e67e89129f2e45a19082c2d63fa1c, type: 3}
-  jumpLand: {fileID: 8300000, guid: 4f336bbe479847441a47658260b17666, type: 3}
   inControl: 0
   inTradingRange: 0
 --- !u!82 &8296172667614636536
@@ -515,8 +513,8 @@ MonoBehaviour:
   clips:
   - {fileID: 8300000, guid: 68e081a0f71c90e4e999aaf5cba53422, type: 3}
   - {fileID: 8300000, guid: dca9d4f686e9f2b42b25cbef50dec3e0, type: 3}
-  jumpUp: {fileID: 0}
-  jumpLand: {fileID: 0}
+  jumpUp: {fileID: 8300000, guid: 0e1e67e89129f2e45a19082c2d63fa1c, type: 3}
+  jumpLand: {fileID: 8300000, guid: 4f336bbe479847441a47658260b17666, type: 3}
 --- !u!1 &623955580003312552
 GameObject:
   m_ObjectHideFlags: 0
