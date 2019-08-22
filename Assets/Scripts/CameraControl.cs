@@ -28,11 +28,11 @@ public class CameraControl : MonoBehaviour
 
     public GameObject UI;                                       // to hid UI while the video is playing
 
+    //for playing characters intro
     public VideoClip videoClipAva, videoClipHazMad, videoClipRox, videoClipTempest;
     public VideoPlayer videoPlayer;
     private bool avaPlayed = false, hazmadPlayed = false, roxPlayed = false, tempestPlayed = false;
-    private float avaLength = 5f, hazmadLength = 10f, roxLength = 4f, tempestLength = 11f;
-
+   
     [SerializeField] private bool isPlayingVideo = false;
 
     public PlayerInControl playerInControl;
