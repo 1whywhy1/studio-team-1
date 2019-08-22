@@ -26,7 +26,6 @@ public class CameraControl : MonoBehaviour
 	private float roll = 0f;                                    // controls camera rotation
 	[Range(1f, 15f)] public float sensitivity = 5f;             // create the sensitivity of the mouse
 
-
     public GameObject UI;                                       // to hid UI while the video is playing
 
     public VideoClip videoClipAva, videoClipHazMad, videoClipRox, videoClipTempest;
