@@ -26,11 +26,10 @@ public class CameraControl : MonoBehaviour
 	private float roll = 0f;                                    // controls camera rotation
 	[Range(1f, 15f)] public float sensitivity = 5f;             // create the sensitivity of the mouse
 
+    // video playing section (for playing characters intro)
     public GameObject UI;                                       // to hid UI while the video is playing
-
-    //for playing characters intro
     public VideoClip videoClipAva, videoClipHazMad, videoClipRox, videoClipTempest;
-    public VideoPlayer videoPlayer;
+    private VideoPlayer videoPlayer;
     private bool avaPlayed = false, hazmadPlayed = false, roxPlayed = false, tempestPlayed = false;
    
     [SerializeField] private bool isPlayingVideo = false;
@@ -48,14 +47,14 @@ public class CameraControl : MonoBehaviour
 		player3 = targetPlayer3.GetComponent<Move>();
 		player4 = targetPlayer4.GetComponent<Move>();
 
-        //videoPlayer = GetComponent<VideoPlayer>();
+		videoPlayer = GetComponent<VideoPlayer>();
 
 		player1.isControlling = true;
 	}
 
 	void Update()
 	{
-        if(isPlayingVideo == false)
+        if (isPlayingVideo == false)
         {
             // multiplying these movements by the sensitivity which let's us control how much moving to the mouse effects the camera angle.
             pitch -= sensitivity * Input.GetAxis("Mouse Y");
@@ -188,8 +187,8 @@ public class CameraControl : MonoBehaviour
     {
         //hides UI
         UI.SetActive(false);
+        videoPlayer.enabled = true;
         isPlayingVideo = true;
-        videoPlayer.gameObject.SetActive(true);
 
         videoPlayer.Stop();
         videoPlayer.clip = clip;
@@ -198,7 +197,7 @@ public class CameraControl : MonoBehaviour
         yield return new WaitForSeconds((float)clip.length);
 
         isPlayingVideo = false;
+        videoPlayer.enabled = false;
         UI.SetActive(true);
-        videoPlayer.gameObject.SetActive(false);
     }
 }
