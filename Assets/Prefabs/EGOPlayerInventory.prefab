@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3896602164518220719}
   - component: {fileID: 3896602164518220712}
+  - component: {fileID: 872395115297726082}
   m_Layer: 0
   m_Name: EGOPlayerInventory
   m_TagString: Untagged
@@ -50,3 +51,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &872395115297726082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3896602164518220713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4766e701a0193a4c8599fc361ef7ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tradingUI: {fileID: 0}
+  tradeProgress: 0
+  npcInventory: {fileID: 0}

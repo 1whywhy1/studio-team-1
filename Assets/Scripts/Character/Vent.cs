@@ -32,7 +32,7 @@ public class Vent: MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "HazMad")
+        if (other.gameObject.name == "Character_HazMad")
         {
             isRange = true;
         }
