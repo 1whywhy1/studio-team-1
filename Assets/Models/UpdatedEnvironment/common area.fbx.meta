@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: e639ecc0b81fc6a408b1890018bee816
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: column_03_textures_centre_col
+    second: {fileID: 2100000, guid: 7886ffca74d50374eab9d767c1661814, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: column_03_textures_corner_col
+    second: {fileID: 2100000, guid: c4f0ca8e8e9c1c44ca8d534abdcb6fde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor1_extra_walls_03_textures_floor_1_extra_walls
+    second: {fileID: 2100000, guid: 4952e1cb3efcf2240b24a619d2414902, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor_04_textures_ca_floor
+    second: {fileID: 2100000, guid: 314ac7ff1377bd94f8811ea9be4c7d96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground_wall_04_textures_ca_walls
+    second: {fileID: 2100000, guid: e643d9ee3181f4949b321c7abf605795, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: walkway_04_textures_walkway_fence
+    second: {fileID: 2100000, guid: 5773f676d36a73c43a6892ad8ef249e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: walkway_04_textures_walkway_frame
+    second: {fileID: 2100000, guid: 42536f70fdb47304caf3b8b3b62bf75e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: walkway_04_textures_walkway_walking_ground
+    second: {fileID: 2100000, guid: 75af755547df08249ba477dc65e83cb0, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ca_floor_ca_floor_AlbedoTransparency
+    second: {fileID: 2800000, guid: 6d6480f738e6cec4098502e0c0a5f049, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ca_floor_ca_floor_MetallicSmoothness
+    second: {fileID: 2800000, guid: 7f3944cc9800ea4498c5dfa224cbf80c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ca_floor_ca_floor_Normal
+    second: {fileID: 2800000, guid: 70ac18ed45ec47147bcc0746d1465eef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ca_walls_ca_walls_AlbedoTransparency
+    second: {fileID: 2800000, guid: 5af8f13cc6a36bb4686b6e4e3931f55c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ca_walls_ca_walls_MetallicSmoothness
+    second: {fileID: 2800000, guid: a9dca1005bec5f24dab55c0c6355afcf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ca_walls_ca_walls_Normal
+    second: {fileID: 2800000, guid: 185757987a87fbb49bad03d83364c071, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: column_central column_AlbedoTransparency
+    second: {fileID: 2800000, guid: 409d85cd6587bcd40a4e73a927a3b5db, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: f1_extra_walls_extra walls_AlbedoTransparency
+    second: {fileID: 2800000, guid: 097d2cb5451b28d4dafe8408da98d985, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: f1_extra_walls_extra walls_MetallicSmoothness
+    second: {fileID: 2800000, guid: 79e01f55fa59ccb4cbe43cb2a3727721, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: f1_extra_walls_extra walls_Normal
+    second: {fileID: 2800000, guid: f465a92ccf8e36c44856a3df744bcd0f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: walkway_fences_AlbedoTransparency
+    second: {fileID: 2800000, guid: 9020395b455f89e48b1ea3f86fd83cf8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: walkway_fences_MetallicSmoothness
+    second: {fileID: 2800000, guid: 8ca965e305471484ea2387d73d502cf1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: walkway_fences_Normal
+    second: {fileID: 2800000, guid: 5683e290d76a2f147a74b9b2b53e3ff9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: walkway_walkway frame_AlbedoTransparency
+    second: {fileID: 2800000, guid: 30145a30d6a1d3140bc3d888a31fd396, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: walkway_walkway frame_MetallicSmoothness
+    second: {fileID: 2800000, guid: 130c45f73976699448163693b3a73b63, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: walkway_walkway frame_Normal
+    second: {fileID: 2800000, guid: 30d210f281c30c94e9fe79e10f6acf78, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: walkway_walkway walk_AlbedoTransparency
+    second: {fileID: 2800000, guid: 5c7c8bf41540afe4a967747470d26b6a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: walkway_walkway walk_MetallicSmoothness
+    second: {fileID: 2800000, guid: 6595483c927760d47abadd04521d4a78, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: walkway_walkway walk_Normal
+    second: {fileID: 2800000, guid: 98653816cf4fb1d4aa3b4ee3f5b19704, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

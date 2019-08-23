@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: 6afc97be05dc5ca44ba24e797f61a837
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: button_core
+    second: {fileID: 2100000, guid: 8a0161bdac0fd2842acd5a66720e522f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: button_frame
+    second: {fileID: 2100000, guid: be296bfdf273f634ea3b4cca0361168b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: faucet
+    second: {fileID: 2100000, guid: 5c9fa70fba886c745acb8126435abc1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sink_body
+    second: {fileID: 2100000, guid: 358dc075f6655d04e9879b6b64979ba9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sink_pipe
+    second: {fileID: 2100000, guid: 8374436d623cb4a458b5b78b9041a797, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_button_button core_AlbedoTransparency
+    second: {fileID: 2800000, guid: d43b3a3ffe88e3048b17ff5944d51f89, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_button_button core_MetallicSmoothness
+    second: {fileID: 2800000, guid: 9ff6ae3e56b75af4b843903a77b43c2f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_button_button core_Normal
+    second: {fileID: 2800000, guid: fb784f4b1c5c66043b72b534558cb64b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_button_frame_AlbedoTransparency
+    second: {fileID: 2800000, guid: 278dd0d6af71b7048995930a8543434d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_button_frame_MetallicSmoothness
+    second: {fileID: 2800000, guid: ee332de5ba3f4f24bb88e7ea70424c5f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_button_frame_Normal
+    second: {fileID: 2800000, guid: ffae1453b755ca2479ef3c96854ad849, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_main-body_sink body_AlbedoTransparency
+    second: {fileID: 2800000, guid: 7f1d4c4ac29861b4185abf6ccc0c5607, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_main-body_sink body_MetallicSmoothness
+    second: {fileID: 2800000, guid: ae365669ae49e9045a4498e4bd760d33, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_main-body_sink body_Normal
+    second: {fileID: 2800000, guid: d17e4487412765e4c90de46189c8747a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_pipe_sink pipe_AlbedoTransparency
+    second: {fileID: 2800000, guid: b4cd4636dbf0bb34baa935433937f721, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_pipe_sink pipe_MetallicSmoothness
+    second: {fileID: 2800000, guid: 6fedee2e87fffee47a40d0ca936369ef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_pipe_sink pipe_Normal
+    second: {fileID: 2800000, guid: d96e76251459c014d97d27eabb2fe4a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_water_hole_sink water pipe_AlbedoTransparency
+    second: {fileID: 2800000, guid: 1090323ea52c5ab4498bd90f7da3ba43, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_water_hole_sink water pipe_MetallicSmoothness
+    second: {fileID: 2800000, guid: 32ebd442eac0d0d41a68031ca126c4cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sink_water_hole_sink water pipe_Normal
+    second: {fileID: 2800000, guid: c5deef0eee1250b4b8ba4e91b2ba507a, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

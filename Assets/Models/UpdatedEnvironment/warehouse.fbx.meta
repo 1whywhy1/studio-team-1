@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: a2bc478f1efbbc44f89d9ac895793ec5
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: g_hall_03_textures_ground_hallway_floors
+    second: {fileID: 2100000, guid: 7181e4723e6e58c44890acbb0025deaa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: g_hall_03_textures_ground_hallway_walls1
+    second: {fileID: 2100000, guid: 2c32d1e96178089438c387bac509f8b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: warehouse_03_textures_warehouse_floors
+    second: {fileID: 2100000, guid: b0585b4fb4651894dae6a30ddd32d4de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: warehouse_03_textures_warehouse_walls
+    second: {fileID: 2100000, guid: 712dbc201a1eaaf469938351a7edbe67, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: g_hall_ground hall floors_AlbedoTransparency
+    second: {fileID: 2800000, guid: 88d4ec6e61c90034b80145349d063987, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: g_hall_ground hall floors_MetallicSmoothness
+    second: {fileID: 2800000, guid: 4a2b2becbbbab164b87d78f9c67e157b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: g_hall_ground hall floors_Normal
+    second: {fileID: 2800000, guid: c816ea35e6ca9fe4481dc8ef0f5a90a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: g_hall_ground hall walls_AlbedoTransparency
+    second: {fileID: 2800000, guid: 5f55e2eafbb64194f923616c57345970, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: g_hall_ground hall walls_MetallicSmoothness
+    second: {fileID: 2800000, guid: 6e0e18af09f42784799587542cb0e4ba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: g_hall_ground hall walls_Normal
+    second: {fileID: 2800000, guid: e50b5ff449a707f439790dcade56d08c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: warehouse_warehouse floors_AlbedoTransparency
+    second: {fileID: 2800000, guid: cc745cd26c2bfbc4db2e69658ae4d608, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: warehouse_warehouse floors_MetallicSmoothness
+    second: {fileID: 2800000, guid: 84576695dd02d6c4e83c1a8032ecca97, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: warehouse_warehouse floors_Normal
+    second: {fileID: 2800000, guid: e154e367596e8da4d96c62e2913e9ae4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: warehouse_warehouse walls_AlbedoTransparency
+    second: {fileID: 2800000, guid: 09a28be0742f522418879c15502599ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: warehouse_warehouse walls_MetallicSmoothness
+    second: {fileID: 2800000, guid: b769621610371f34eb11c4d14906cd50, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: warehouse_warehouse walls_Normal
+    second: {fileID: 2800000, guid: 89833b0976079c4488e1177e172d0710, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

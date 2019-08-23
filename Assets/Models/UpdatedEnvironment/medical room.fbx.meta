@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: d75890a490c23d44d9ccb8781ee50562
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_hallway_03_textures_F_hall_floor
+    second: {fileID: 2100000, guid: 88548eefad102584885e223c2b87988e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_hallway_03_textures_F_hall_walls
+    second: {fileID: 2100000, guid: c4bf816beb7d6624280077815b89f881, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: infirmary_03_textures_infirmary_floor
+    second: {fileID: 2100000, guid: 814bf6f1dc19d5a47a0f2e55be782ea1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: infirmary_03_textures_infirmary_walls
+    second: {fileID: 2100000, guid: cb04eb5f4a16d6547b3203072548d51f, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hallway_1F hallway floor_AlbedoTransparency
+    second: {fileID: 2800000, guid: 729b688bc6190124b8427813747f3819, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hallway_1F hallway floor_MetallicSmoothness
+    second: {fileID: 2800000, guid: a06fab3e9fba51c4a9722ffb42bfb91b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hallway_1F hallway floor_Normal
+    second: {fileID: 2800000, guid: 0c4259a596871b748b7351b05495d7e4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hallway_1F hallway walls_AlbedoTransparency
+    second: {fileID: 2800000, guid: 02a664586ce09bb46852b0e060a5d09a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hallway_1F hallway walls_MetallicSmoothness
+    second: {fileID: 2800000, guid: abc46d537569b184bae422edf0cb797a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hallway_1F hallway walls_Normal
+    second: {fileID: 2800000, guid: bfdbb871a40fa2d4dab56188acd00b8d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: infirmary_infirmary floor_AlbedoTransparency
+    second: {fileID: 2800000, guid: cf34485e27ce1a148bb03c32a64c4b10, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: infirmary_infirmary floor_MetallicSmoothness
+    second: {fileID: 2800000, guid: 46598f89d932f104fa137212149c3e59, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: infirmary_infirmary floor_Normal
+    second: {fileID: 2800000, guid: a604dbc2ca024e043aa589df42a605ff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: infirmary_infirmary walls_AlbedoTransparency
+    second: {fileID: 2800000, guid: 11b9868863ddf6645aa8d353b9386191, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: infirmary_infirmary walls_MetallicSmoothness
+    second: {fileID: 2800000, guid: 818fd9b4fec67684494665cbb6fc88e2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: infirmary_infirmary walls_Normal
+    second: {fileID: 2800000, guid: 923e54046910f25458ff8a742dee645b, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
