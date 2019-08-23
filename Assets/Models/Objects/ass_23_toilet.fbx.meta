@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: 0d5b6baeecaf5084abef2c132f6071d2
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: button_frame1
+    second: {fileID: 2100000, guid: 49859a01847302c42a6d1a778abfc1a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: full_button1
+    second: {fileID: 2100000, guid: 406a6a9b23916e14ca476ab3b9357810, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: half_button1
+    second: {fileID: 2100000, guid: 8205a7e9989a4224289e612ce08eb99e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: main1
+    second: {fileID: 2100000, guid: 2613cf577eb116f4384e58a969308dd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rubber1
+    second: {fileID: 2100000, guid: 5d60a58097dbc7f49afffc3ef6fe4ceb, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_button frame_AlbedoTransparency
+    second: {fileID: 2800000, guid: ee29521f27ff67c4bb1339ad24d6a3a7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_button frame_MetallicSmoothness
+    second: {fileID: 2800000, guid: 079a2e89ac7e32d4184fec20329036a2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_button frame_Normal
+    second: {fileID: 2800000, guid: a0625c3f3d2b95e4b8fb9c391d561e4f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_full button_AlbedoTransparency
+    second: {fileID: 2800000, guid: 1db852e6082da304db060778ceba20ca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_full button_MetallicSmoothness
+    second: {fileID: 2800000, guid: 9b4010cf80a59ac4fb0917b59bbee0a7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_full button_Normal
+    second: {fileID: 2800000, guid: b53ead69da0415243b146ecc02f96372, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_half button_AlbedoTransparency
+    second: {fileID: 2800000, guid: 3a039875e847c694cbd716be13ff85b1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_half button_MetallicSmoothness
+    second: {fileID: 2800000, guid: 4bc34d09aa90b8f4996ad82cd163b212, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_half button_Normal
+    second: {fileID: 2800000, guid: a25d374f5618ac74097ce2288e84e557, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_main_AlbedoTransparency
+    second: {fileID: 2800000, guid: fc9466e0bdeb0e8448017695f36ee298, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_main_MetallicSmoothness
+    second: {fileID: 2800000, guid: 519bced70d9253144b347b081ffd1cd4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_main_Normal
+    second: {fileID: 2800000, guid: e4677c9a8aeb2994ab5b21fbe2197c5f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_rubber_AlbedoTransparency
+    second: {fileID: 2800000, guid: 980eb49611fc7684c9b35a6ad60339df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_rubber_MetallicSmoothness
+    second: {fileID: 2800000, guid: a081123d030285f4b9a3e08950092b07, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: toilet_rubber_Normal
+    second: {fileID: 2800000, guid: 1d8c1ba3f0e31c741b62637362ab45b2, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

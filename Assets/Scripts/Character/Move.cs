@@ -47,7 +47,6 @@ public class Move : MonoBehaviour
 		{
 			if (Input.GetKeyDown(KeyCode.E) && npcToTradeWith != null)
 			{
-				// Debug.Log(npcToTradeWith);
 				tradingScript.SendMessage("ToggleBarterUi", npcToTradeWith);
 			}
 		}
@@ -59,7 +58,6 @@ public class Move : MonoBehaviour
 		if (isControlling)
 		{
 			Movement();
-
 		}
 	}
 
@@ -97,8 +95,6 @@ public class Move : MonoBehaviour
 
 	void Movement()
 	{
-        
-
 		float x = Input.GetAxisRaw("Horizontal");
 		float z = Input.GetAxisRaw("Vertical");
 
@@ -114,7 +110,7 @@ public class Move : MonoBehaviour
 		if (Ccontroller.isGrounded)
 		{
 			jumpCount = jumpMax;
-			//gravity = 1f;
+			// gravity = 1f;
             isGrounded = true;
 			anim.SetBool("isGrounded", true);
 			state = "Movement";
@@ -140,16 +136,10 @@ public class Move : MonoBehaviour
 		{
 			Jump();
 		}
-
-		//if (Input.GetKeyDown(KeyCode.LeftShift) && Ccontroller.isGrounded)
-		//{
-		//	Jump(); // this is why it doesnt run on shift but plays jump animations
-		//}
 	}
 
 	void Jump()
 	{
-        print(Vector3.up);
         isGrounded = false;
 		gravity = -jumpHeight;
 		jumpCount--;

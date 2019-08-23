@@ -3,7 +3,19 @@ guid: 2754e82f7e9f6444b9688fabf0a24e86
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - targetPlayer1: {instanceID: 0}
+  - targetPlayer2: {instanceID: 0}
+  - targetPlayer3: {instanceID: 0}
+  - targetPlayer4: {instanceID: 0}
+  - cam1: {instanceID: 0}
+  - trueTarget: {instanceID: 0}
+  - targetZoom: {instanceID: 0}
+  - UI: {instanceID: 0}
+  - videoClipAva: {fileID: 32900000, guid: ead4a8853f03d6540b273e8deb2dba04, type: 3}
+  - videoClipHazMad: {fileID: 32900000, guid: e257d24882e128740905c92e24523df2, type: 3}
+  - videoClipRox: {fileID: 32900000, guid: b19e125dfe9c9944f9b14406a52d634c, type: 3}
+  - videoClipTempest: {fileID: 32900000, guid: ba4fb8b953545ae43a30ba5a350d18a2, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

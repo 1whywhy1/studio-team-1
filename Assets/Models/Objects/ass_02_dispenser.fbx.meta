@@ -1,0 +1,274 @@
+fileFormatVersion: 2
+guid: 1c65d50fb793fdd4b8dd8380a813f344
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cabinet_doors
+    second: {fileID: 2100000, guid: 51383e707137959489fe340bc8bac2b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: counter_body
+    second: {fileID: 2100000, guid: 80155790d8cddbc4dadab91971caa231, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: counter_top
+    second: {fileID: 2100000, guid: 136d6442c79ad2c4eaa824068d64b289, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dispenser_body
+    second: {fileID: 2100000, guid: 4371fd08d9304874aa3a9ed6f6691401, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dispenser_button___gear
+    second: {fileID: 2100000, guid: 3b5387a8f1306144fb9223efa3595d81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dispenser_glass_panel
+    second: {fileID: 2100000, guid: 15885be3034e1204bb1f2d6b106e5880, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: food_1
+    second: {fileID: 2100000, guid: 2a414e9c97e37d248bbc753ab7fcdff4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: food_2
+    second: {fileID: 2100000, guid: 9fae2347a45347b4b9cfd70213c014b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: food_3
+    second: {fileID: 2100000, guid: 48b23f1e98fce4e43916d7dddf03804b, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_cabinet doors_AlbedoTransparency
+    second: {fileID: 2800000, guid: 2a051729f2927f8409322bb7568d62bb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_cabinet doors_MetallicSmoothness
+    second: {fileID: 2800000, guid: ff16a2da38ae8b64ea16d2e534a51fcb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_cabinet doors_Normal
+    second: {fileID: 2800000, guid: aadea43e55989094182c6dd9b29d876f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_counter body_AlbedoTransparency
+    second: {fileID: 2800000, guid: 5705fc6cc9a08b4409727d17428e17e6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_counter body_MetallicSmoothness
+    second: {fileID: 2800000, guid: 479de35310a9c8d46a470e624c502b82, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_counter body_Normal
+    second: {fileID: 2800000, guid: 913b55eab887e5d408cb1e33e3f315ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_counter top_AlbedoTransparency
+    second: {fileID: 2800000, guid: e7a1f840c1ae17d46baab659f0457f7f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_counter top_MetallicSmoothness
+    second: {fileID: 2800000, guid: 6321b1218b761024ba02fa43f9ae92c9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_counter top_Normal
+    second: {fileID: 2800000, guid: 3856880a17346d44fa3701bafe2eb9aa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_dispenser body_AlbedoTransparency
+    second: {fileID: 2800000, guid: 8bf5473a2c3e63f4785c9dae2a8ed17e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_dispenser body_MetallicSmoothness
+    second: {fileID: 2800000, guid: 08241b086f904f443a0165973cc72303, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_dispenser body_Normal
+    second: {fileID: 2800000, guid: ab69beb836d08ac419d560aa918344d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_dispenser button & gear_AlbedoTransparency
+    second: {fileID: 2800000, guid: d0e6bd9ffe5ce654ba0bc277bc22ad37, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_dispenser button & gear_MetallicSmoothness
+    second: {fileID: 2800000, guid: df1bfcdd5935b82489f4c07109dc75a4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_dispenser button & gear_Normal
+    second: {fileID: 2800000, guid: a79dbbc6951d28e43b79a6d930fd5e13, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_dispenser glass panel_AlbedoTransparency
+    second: {fileID: 2800000, guid: c5d1d5969d2fd7e40817fbd96ff07105, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_dispenser glass panel_MetallicSmoothness
+    second: {fileID: 2800000, guid: 88bf9b39979e4ea4a83afacb9299b337, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_dispenser glass panel_Normal
+    second: {fileID: 2800000, guid: 1ebc7681f25e64b4993edec5d65638cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_food_1_AlbedoTransparency
+    second: {fileID: 2800000, guid: 036a288f0bac09647b843c0ce701cddf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_food_1_MetallicSmoothness
+    second: {fileID: 2800000, guid: d1d3846af30eab5438875f155da73092, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_food_1_Normal
+    second: {fileID: 2800000, guid: ad57e28f2fba1bc4697f9251f1f3fbfa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_food_2_AlbedoTransparency
+    second: {fileID: 2800000, guid: 794dadd75e2ce6f4bbcd84bac04bd81a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_food_2_MetallicSmoothness
+    second: {fileID: 2800000, guid: f0cdf6733993a7f419bf1d55bb363013, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_food_2_Normal
+    second: {fileID: 2800000, guid: b03fb3bf27f97284d828a7ebc559cba7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_food_3_AlbedoTransparency
+    second: {fileID: 2800000, guid: b90c945e7d9c8b64fa01ed82b2287071, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_food_3_MetallicSmoothness
+    second: {fileID: 2800000, guid: 4dd68949045c63641a3192bde1e00699, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d & c_food_3_Normal
+    second: {fileID: 2800000, guid: 6fda32f6b02612449a5bf05168e438ac, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

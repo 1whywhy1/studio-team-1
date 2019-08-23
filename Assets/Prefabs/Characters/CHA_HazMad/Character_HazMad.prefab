@@ -636,8 +636,10 @@ GameObject:
   - component: {fileID: 8699736936322482894}
   - component: {fileID: 8699736936322482895}
   - component: {fileID: 8699736936322482888}
+  - component: {fileID: 5675305795596674941}
+  - component: {fileID: -9066725795416683111}
   m_Layer: 0
-  m_Name: HazMad
+  m_Name: Character_HazMad
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -754,6 +756,37 @@ MonoBehaviour:
   pickUpSFX: {fileID: 8300000, guid: 6ea641033376b104389280a7619d23cf, type: 3}
   inControl: 1
   inTradingRange: 0
+--- !u!114 &5675305795596674941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836052909007805244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2e50c2560294934aa70ba7a6e5b02cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 68e081a0f71c90e4e999aaf5cba53422, type: 3}
+  - {fileID: 8300000, guid: dca9d4f686e9f2b42b25cbef50dec3e0, type: 3}
+  jumpUp: {fileID: 8300000, guid: 0e1e67e89129f2e45a19082c2d63fa1c, type: 3}
+  jumpLand: {fileID: 8300000, guid: 4f336bbe479847441a47658260b17666, type: 3}
+--- !u!114 &-9066725795416683111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836052909007805244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 927c4d4f15ac7db42a6b8a537e4cc3d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breatheIn: {fileID: 8300000, guid: 0ee487a4b8f8fef4ab8d35d5635c8c2a, type: 3}
+  breatheOut: {fileID: 8300000, guid: 2dd5fe1911adf9845bbf00f636428a65, type: 3}
 --- !u!1 &842711205811346063
 GameObject:
   m_ObjectHideFlags: 0

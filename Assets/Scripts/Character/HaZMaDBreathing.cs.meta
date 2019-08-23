@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 927c4d4f15ac7db42a6b8a537e4cc3d7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - breatheIn: {fileID: 8300000, guid: 0ee487a4b8f8fef4ab8d35d5635c8c2a, type: 3}
+  - breatheOut: {fileID: 8300000, guid: 2dd5fe1911adf9845bbf00f636428a65, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
