@@ -3,7 +3,47 @@ guid: ea9c98386468e8c4d828869ed5b410b4
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cell_floors_04_cell_floor_ceiling
+    second: {fileID: 2100000, guid: bcd7b5dc428b3d34a997865fdff4e800, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cell_wall_08_cell_walls
+    second: {fileID: 2100000, guid: 8ff9b46200119494e88a92be397bee2c, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cell_floors_cell floor & ceiling_AlbedoTransparency
+    second: {fileID: 2800000, guid: 03a518d806ff6204a89a0ad8d3c3c5a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cell_floors_cell floor & ceiling_MetallicSmoothness
+    second: {fileID: 2800000, guid: 45384d506cc51914f99f181da53ef251, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cell_floors_cell floor & ceiling_Normal
+    second: {fileID: 2800000, guid: b36a5b6c1d5ff8b40a5ed2b8b0d8b662, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cell_walls_cell walls_AlbedoTransparency
+    second: {fileID: 2800000, guid: 43793f42bce5342479befe78776606ff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cell_walls_cell walls_MetallicSmoothness
+    second: {fileID: 2800000, guid: 46acb36999bf68b4aab9b054d9a71808, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cell_walls_cell walls_Normal
+    second: {fileID: 2800000, guid: a13da5df539d13240b019de283a6c8bd, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
