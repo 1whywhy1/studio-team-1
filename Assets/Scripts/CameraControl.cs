@@ -29,9 +29,11 @@ public class CameraControl : MonoBehaviour
     // video playing section (for playing characters intro)
     public GameObject UI;                                       // to hid UI while the video is playing
     public VideoClip videoClipAva, videoClipHazMad, videoClipRox, videoClipTempest;
-    private VideoPlayer videoPlayer;
+    
+    public  VideoPlayer videoPlayer;
     private bool avaPlayed = false, hazmadPlayed = false, roxPlayed = false, tempestPlayed = false;
-   
+    public GameObject screen;
+
     [SerializeField] private bool isPlayingVideo = false;
 
     public PlayerInControl playerInControl;
@@ -47,7 +49,7 @@ public class CameraControl : MonoBehaviour
 		player3 = targetPlayer3.GetComponent<Move>();
 		player4 = targetPlayer4.GetComponent<Move>();
 
-		videoPlayer = GetComponent<VideoPlayer>();
+		//videoPlayer = GetComponent<VideoPlayer>();
 
 		player1.isControlling = true;
 	}
@@ -139,6 +141,10 @@ public class CameraControl : MonoBehaviour
                 SwapCharacters(playerInControl);
             }
         }
+        else
+        {
+            transform.position = new Vector3(0f, 25f, 0f);
+        }
 	}
 
 	void SwapCharacters(PlayerInControl player)
@@ -187,7 +193,8 @@ public class CameraControl : MonoBehaviour
     {
         //hides UI
         UI.SetActive(false);
-        videoPlayer.enabled = true;
+        screen.SetActive(true);
+
         isPlayingVideo = true;
 
         videoPlayer.Stop();
@@ -196,8 +203,9 @@ public class CameraControl : MonoBehaviour
 
         yield return new WaitForSeconds((float)clip.length);
 
+        transform.position = trueTarget.transform.position;
         isPlayingVideo = false;
-        videoPlayer.enabled = false;
+        screen.SetActive(false);
         UI.SetActive(true);
     }
 }
