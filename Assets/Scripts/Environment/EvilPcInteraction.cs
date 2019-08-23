@@ -9,16 +9,6 @@ public class EvilPcInteraction : MonoBehaviour
 	public GameObject interactionMessage; // For showing a message in the middle of the screen telling the player to Press E for interaction
 	public GameObject submitMenu;		  // Evil PC Submition menu
 
-	[Header("Audio section")]
-	public AudioClip computerError;
-	public AudioClip computerSuccess;
-	private AudioSource sfxSource;
-
-	void Awake()
-	{
-		sfxSource = GetComponent<AudioSource>();
-	}
-
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Player") && this.enabled)
@@ -47,33 +37,6 @@ public class EvilPcInteraction : MonoBehaviour
 			submitMenu.gameObject.SetActive(false);
 			interactionMessage.gameObject.SetActive(false);
 			info.gameObject.SetActive(true);
-		}
-	}
-
-	public void SubmissionFailure()
-	{
-		sfxSource.clip = computerError;
-		
-		if (sfxSource.clip == computerError)
-			sfxSource.PlayOneShot(sfxSource.clip);
-		else
-			Debug.LogWarning("Incorrect audio clip selected, played nothing.");
-	}
-	
-	public void SubmissionSuccess(bool didSucceed)
-	{
-		if (didSucceed)
-		{
-			sfxSource.clip = computerSuccess;
-
-			if (sfxSource.clip == computerSuccess)
-				sfxSource.PlayOneShot(sfxSource.clip);
-			else
-				Debug.LogWarning("Incorrect audio clip selected, played nothing.");
-		}
-		else
-		{
-			SubmissionFailure();
 		}
 	}
 }
