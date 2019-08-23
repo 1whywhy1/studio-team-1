@@ -11,13 +11,13 @@ public class KeyPad : MonoBehaviour
     public string input = "";
     public AudioClip woodenDoor;
     public Transform doorleft;            // Left door of the locked door
-    public TextMeshProUGUI errorText;
+    public GameObject errorText;
     public AudioSource effectsPlayer;
 
     private bool onTrigger;                // Check in the player is near to keypad lock
     private bool doorOpened = false;       // Opens the door
     private bool keypadShow;              // Shows keypad
-    private string errorMsg = "Wrong password";
+    //private string errorMsg = "Wrong password";
 
     bool doorSoundPlayed = false;
 
@@ -37,8 +37,7 @@ public class KeyPad : MonoBehaviour
                 onTrigger = false;
                 keypadShow = false;
                 input = "";
-                errorText.text = errorMsg;
-                StartCoroutine("CoWaitForMessage");
+                StartCoroutine("CoWaitError");
             }
         }
 
@@ -187,9 +186,10 @@ public class KeyPad : MonoBehaviour
     }
 
     // Waits for 3sec and gets rid of "Wrong password" message
-    IEnumerator CoWaitForMessage()
+    IEnumerator CoWaitError()
     {
+        errorText.SetActive(true);
         yield return new WaitForSeconds(3.0f);
-        errorText.text = "";
+        errorText.SetActive(false);
     }
 }
