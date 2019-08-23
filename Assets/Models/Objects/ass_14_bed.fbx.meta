@@ -3,7 +3,47 @@ guid: 2648d04adfceada4aa7da9fca29ce296
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bed_blanket
+    second: {fileID: 2100000, guid: 401da79b087007344a90a77445f81462, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bed_mattress
+    second: {fileID: 2100000, guid: 46ba12fc18bad1243bec9d3631fd4af5, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: blanket_bed blanket_AlbedoTransparency
+    second: {fileID: 2800000, guid: 70756c746b5c0cb41aa6072b551d9c27, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: blanket_bed blanket_MetallicSmoothness
+    second: {fileID: 2800000, guid: ef10dbb205ae8544c8cb987c0ec21982, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: blanket_bed blanket_Normal
+    second: {fileID: 2800000, guid: 214cc30e48300914a8722d949fc14d36, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mattress_bed mattress_AlbedoTransparency
+    second: {fileID: 2800000, guid: 4882beaa73c95824196c795bebe74a48, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mattress_bed mattress_MetallicSmoothness
+    second: {fileID: 2800000, guid: cb7d32cdde0e9044a912864a37884082, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: mattress_bed mattress_Normal
+    second: {fileID: 2800000, guid: 083baa4086e3e65438f75261baa05b52, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

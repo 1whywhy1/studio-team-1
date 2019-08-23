@@ -3,7 +3,27 @@ guid: b63fe0927974abf4f9ff3393373b375a
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vent
+    second: {fileID: 2100000, guid: 2951ce5e1c9bbae49aa405ca67494e3a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cell_vent_vent_AlbedoTransparency
+    second: {fileID: 2800000, guid: 19e9518136c04d349b5c12f42cc81f5f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cell_vent_vent_MetallicSmoothness
+    second: {fileID: 2800000, guid: 3fd8a5bf180a46847b114c83b0ec9371, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cell_vent_vent_Normal
+    second: {fileID: 2800000, guid: 3a190b942cfb85649ac39a6ae9c9fb9d, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

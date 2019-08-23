@@ -3,7 +3,62 @@ guid: 7011575b5b385e54398cdbe623a2150e
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base
+    second: {fileID: 2100000, guid: c20a888703de9c443a9d2d051891a4f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: buttons
+    second: {fileID: 2100000, guid: 01d1800c04af7204593b6e72a3d7f121, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: screen
+    second: {fileID: 2100000, guid: 8b72adc249a42d1459ac4ad36eed457b, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: elevator_export_buttons_BaseColor
+    second: {fileID: 2800000, guid: f52639606b58f6d47be06cc21e8a6b89, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: elevator_export_buttons_Metalness
+    second: {fileID: 2800000, guid: 7539f30d192dc614d8521c139a3e6e7f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: elevator_export_buttons_Normal
+    second: {fileID: 2800000, guid: bebb80fb1cda08848bd0ab5e69fa6216, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: elevator_export_buttons_Roughness
+    second: {fileID: 2800000, guid: 7bc30fa35c48abc49a67731b1cbab99b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: elevator_export_screen_BaseColor
+    second: {fileID: 2800000, guid: a612a5962239b534ea1f08e4eafc985b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: elevator_export_screen_Metalness
+    second: {fileID: 2800000, guid: b6b5b6e8bc66fd04bb3cfe435f386fbf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: elevator_export_screen_Normal
+    second: {fileID: 2800000, guid: 9c1f00dcf0b28d14788eb5c97b2ea9f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: elevator_export_screen_Roughness
+    second: {fileID: 2800000, guid: 85fd0431a3e76b84b836058306311e67, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

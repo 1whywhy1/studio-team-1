@@ -3,7 +3,47 @@ guid: 7eaad0722bbab054a9a705bf0e811d23
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_legs
+    second: {fileID: 2100000, guid: 22dca7b04b2bd2e46b7cbe3a7cb8000f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: silicon_metal_surface
+    second: {fileID: 2100000, guid: aa0b6d0960424aa42a16ceea4a6cd3d8, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: table_set_01_matte surfaces_AlbedoTransparency
+    second: {fileID: 2800000, guid: 14eb205252b16694b9b90f04c8d86f9c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: table_set_01_matte surfaces_MetallicSmoothness
+    second: {fileID: 2800000, guid: d75e1eb8df0507b42ab9b54a51df37a7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: table_set_01_matte surfaces_Normal
+    second: {fileID: 2800000, guid: 77e2a83704d7c0e4ea76db963752c359, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: table_set_01_metal legs_AlbedoTransparency
+    second: {fileID: 2800000, guid: 2f2bf8124ec112e43a4d5157e8215eb5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: table_set_01_metal legs_MetallicSmoothness
+    second: {fileID: 2800000, guid: 08dd245039ae3ac4c80f3ef7ce65e042, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: table_set_01_metal legs_Normal
+    second: {fileID: 2800000, guid: 8d41238a91318d14a83f305d973c18f6, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

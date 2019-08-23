@@ -3,7 +3,52 @@ guid: 1dfca81306fa73c42ac80e89a0639c7e
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_light_frame
+    second: {fileID: 2100000, guid: 9231dfb2d4121b04ea8e6891586fcfe0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_light_source
+    second: {fileID: 2100000, guid: 0812848d7a5b08a40ae7320f23694e4a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t2_01_eye light frame_AlbedoTransparency
+    second: {fileID: 2800000, guid: 879e72d7e1b9b19488de19de2b659805, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t2_01_eye light frame_MetallicSmoothness
+    second: {fileID: 2800000, guid: c3f30c1bd6f01af498110d8ca2ffa11e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t2_01_eye light frame_Normal
+    second: {fileID: 2800000, guid: a84026b7f28cb0a4084654d89d991cf8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t2_01_eye light source_AlbedoTransparency
+    second: {fileID: 2800000, guid: 5fc3a85762260634b877a7820201a5b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t2_01_eye light source_Emission
+    second: {fileID: 2800000, guid: 413f173bfcbea404ea5e287f73667f57, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t2_01_eye light source_MetallicSmoothness
+    second: {fileID: 2800000, guid: df05cdfd4bf8ee546b9dc08099453502, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t2_01_eye light source_Normal
+    second: {fileID: 2800000, guid: bdb1dec7c41126845bb2fcebe946a4e5, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

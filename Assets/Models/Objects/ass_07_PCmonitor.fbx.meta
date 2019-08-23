@@ -3,7 +3,112 @@ guid: 201f6a725ffaaf24a8b847d53c285615
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: moving_arms
+    second: {fileID: 2100000, guid: 2dd9e0443ea03334f8c92b42eb57ed3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: screen_mount
+    second: {fileID: 2100000, guid: 34774a5192535454f8fb21cfabf2a764, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tv_frame_rim
+    second: {fileID: 2100000, guid: 86b93c9193e33954db90f8cb3fb678c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_frame
+    second: {fileID: 2100000, guid: ca4f7c877e421c34e95eef7d07dc710d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tv_screen
+    second: {fileID: 2100000, guid: 664f5285ca20add429c130787e8f6bf0, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_moving arm_AlbedoTransparency
+    second: {fileID: 2800000, guid: cbb8855e8ffd8f040bef21082e1612cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_moving arm_MetallicSmoothness
+    second: {fileID: 2800000, guid: acd6d49d8a93a90499dc3bac02969787, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_moving arm_Normal
+    second: {fileID: 2800000, guid: 5c43e168e3613ac4f9dc528d9c0a98b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_screen mount_AlbedoTransparency
+    second: {fileID: 2800000, guid: 99874e8991065564eb779b5eea7c738d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_screen mount_MetallicSmoothness
+    second: {fileID: 2800000, guid: 9f03e811898cfaf4a9a32c26383ffc29, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_screen mount_Normal
+    second: {fileID: 2800000, guid: 4f44598ec0b47aa468111f5c9e408667, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_tv frame deco_AlbedoTransparency
+    second: {fileID: 2800000, guid: 2e97e1061787cc2448adb3aa9db0d419, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_tv frame deco_MetallicSmoothness
+    second: {fileID: 2800000, guid: 643ba310bc55197468c170bc21d62951, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_tv frame deco_Normal
+    second: {fileID: 2800000, guid: d49950b21676f534d861985752edea71, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_tv frame_AlbedoTransparency
+    second: {fileID: 2800000, guid: 78048d5bf3a78f341a8ac7f6b31f4a30, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_tv frame_MetallicSmoothness
+    second: {fileID: 2800000, guid: 0ed4efd88ccf38241b6462adad19c7f7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_tv frame_Normal
+    second: {fileID: 2800000, guid: 2478432178f62314dbd267a9d9bccd7b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_tv screen_AlbedoTransparency
+    second: {fileID: 2800000, guid: 6b00a0be02f21e24ba1e4d930e57f4b1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_tv screen_Emission
+    second: {fileID: 2800000, guid: a6126263a2a7d7148ad61b405387e7ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_tv screen_MetallicSmoothness
+    second: {fileID: 2800000, guid: 0c0f0a4e57267b7418bf433649571269, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv_monitor_tv screen_Normal
+    second: {fileID: 2800000, guid: 6d8bb809ffc9ddc46ae115a28dc5f465, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

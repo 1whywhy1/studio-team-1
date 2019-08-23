@@ -3,7 +3,112 @@ guid: a431eef4c26d74843b374d8fdd5d8fca
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: additional_gears
+    second: {fileID: 2100000, guid: 36f211f571197ea4698c7c693b87dc0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ceiling_mount1
+    second: {fileID: 2100000, guid: 78ebe14e8c1484545bd622166e049419, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_pole
+    second: {fileID: 2100000, guid: 4f88eb8042002514494d3a1d3bdc74aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_shade
+    second: {fileID: 2100000, guid: ffed5896b1a516b4cb519d0d892afa43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_source1
+    second: {fileID: 2100000, guid: e06f350233cd1264295b71022bca3e8d, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_additional_AlbedoTransparency
+    second: {fileID: 2800000, guid: 2e01521cfd1bfea49b65f8173586aa0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_additional_MetallicSmoothness
+    second: {fileID: 2800000, guid: ec6436257470c454ca6e32c97e5cf4d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_additional_Normal
+    second: {fileID: 2800000, guid: 0ba7e823b4365a14a8419c5c077729d3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_ceiling mount_AlbedoTransparency
+    second: {fileID: 2800000, guid: 205eff420e03f69439222816f1838782, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_ceiling mount_MetallicSmoothness
+    second: {fileID: 2800000, guid: 024ea2d55b133ca4b99de1aa52714dad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_ceiling mount_Normal
+    second: {fileID: 2800000, guid: c703781a1b242d54fbcd9ed13db5c387, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_light shade_AlbedoTransparency
+    second: {fileID: 2800000, guid: ce3afe916fdfd6940a54bd439621ed26, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_light shade_MetallicSmoothness
+    second: {fileID: 2800000, guid: a5b7769a17fa27948ba63c7290932ca9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_light shade_Normal
+    second: {fileID: 2800000, guid: 638e1531e7b9eb443a291d6391022966, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_light source_AlbedoTransparency
+    second: {fileID: 2800000, guid: f4b3576a74011894298e98a1a7d32a2d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_light source_Emission
+    second: {fileID: 2800000, guid: 7bcc7352416da9941845958c1c0bcb9a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_light source_MetallicSmoothness
+    second: {fileID: 2800000, guid: 6c986e073ededc44388421013f77a184, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_light source_Normal
+    second: {fileID: 2800000, guid: 20a2181059b3cd2408b9a0283a2bfa26, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_pole_AlbedoTransparency
+    second: {fileID: 2800000, guid: d6be302ab1bf2404ebc93b2c33014d79, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_pole_MetallicSmoothness
+    second: {fileID: 2800000, guid: 1c76873f3429f374e9789dd6fab2b1b6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: light_t1_01_pole_Normal
+    second: {fileID: 2800000, guid: d7edcd9c3f8cea540958716879d58109, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

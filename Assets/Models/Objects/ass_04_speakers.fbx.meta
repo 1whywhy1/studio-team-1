@@ -3,7 +3,47 @@ guid: 2148440c7b368b74f9fe0ba39ecf5a91
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: speaker_body
+    second: {fileID: 2100000, guid: 2c6f627b05d3a474a96d8e24d7ee9f79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: speaker_mount
+    second: {fileID: 2100000, guid: 6cb28897f46341f449e505d2fc9b5a12, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: speaker_body_speaker body_AlbedoTransparency
+    second: {fileID: 2800000, guid: 7750f9c7d605b3a479e694088ed35d0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: speaker_body_speaker body_MetallicSmoothness
+    second: {fileID: 2800000, guid: f8f1fed68dc052148a26329cbb9bc81b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: speaker_body_speaker body_Normal
+    second: {fileID: 2800000, guid: 6ffc0865b9e6ff24d8bfc648bec5a7e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: speaker_mount_speaker mount_AlbedoTransparency
+    second: {fileID: 2800000, guid: b0146bfdf1cee7e4487951559ca4514a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: speaker_mount_speaker mount_MetallicSmoothness
+    second: {fileID: 2800000, guid: 6df14697c9c4b8546bd8605b398cbba6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: speaker_mount_speaker mount_Normal
+    second: {fileID: 2800000, guid: 624c0bf1483efe341895e41f8c86f09a, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

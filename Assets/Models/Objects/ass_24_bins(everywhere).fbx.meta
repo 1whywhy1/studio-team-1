@@ -3,7 +3,87 @@ guid: 84db453d7fbc8b746a3d730e66dd71d6
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: common_bin_body
+    second: {fileID: 2100000, guid: 76a73db2fc3972e44939b84861f66278, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: common_bin_flap_gear
+    second: {fileID: 2100000, guid: 8c73edcc472afbb45ab8a228ca9abb25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: common_bin_metal_top
+    second: {fileID: 2100000, guid: 0bc6d0be240178f44ae8790e23948082, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: common_bin_plastic_rim
+    second: {fileID: 2100000, guid: 1457ae17320431e4fba233aa696fb03a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: common_bin_01_bin body_AlbedoTransparency
+    second: {fileID: 2800000, guid: 541d2d9151342844a96c5508faca7817, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: common_bin_01_bin body_MetallicSmoothness
+    second: {fileID: 2800000, guid: 5667c55959b126341a230e692a63eae9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: common_bin_01_bin body_Normal
+    second: {fileID: 2800000, guid: 4f6d435f42a3eb94bb08e8ff8b5c171d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: common_bin_01_bin metal frame_AlbedoTransparency
+    second: {fileID: 2800000, guid: c25d8bf36f3a12d42a5ab1eca9500a16, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: common_bin_01_bin metal frame_MetallicSmoothness
+    second: {fileID: 2800000, guid: 1dcf59e42ad8978458a5d08d7e475093, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: common_bin_01_bin metal frame_Normal
+    second: {fileID: 2800000, guid: a5655719c7e278144904d0c4f9ca78e0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: common_bin_01_bin rim_AlbedoTransparency
+    second: {fileID: 2800000, guid: 750e871498bd7444aa4ae06be0f241b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: common_bin_01_bin rim_MetallicSmoothness
+    second: {fileID: 2800000, guid: 03cb646da25e95c4690a97e60b79a03e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: common_bin_01_bin rim_Normal
+    second: {fileID: 2800000, guid: 9c610bbbaaf4328499febb8a2904896e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: common_bin_01_flap gear_AlbedoTransparency
+    second: {fileID: 2800000, guid: ebb4353915346b4418db85f91efa3837, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: common_bin_01_flap gear_MetallicSmoothness
+    second: {fileID: 2800000, guid: e0e45dda68d269f41b89b9858f83dfc7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: common_bin_01_flap gear_Normal
+    second: {fileID: 2800000, guid: 035ffe57ee43d5d4eb25d976129758b2, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

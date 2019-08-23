@@ -3,7 +3,147 @@ guid: 60a11c7e1d2022b4bbd2215be2e3de3b
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sign_frame
+    second: {fileID: 2100000, guid: 4f762b8653ef4f74b8d13e1214a8433a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sign_poles
+    second: {fileID: 2100000, guid: 83093a232e3c12f43917406608f8f0bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: to_cells_sign
+    second: {fileID: 2100000, guid: 4c1995e95e13135499f613f0c711cba7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: to_common_area_sign
+    second: {fileID: 2100000, guid: 5968d6e19b47a95409ff8050c9138651, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: to_medical_room_sign
+    second: {fileID: 2100000, guid: f19ab276ba958d741b773cfde9d1befd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: to_warehouse_sign
+    second: {fileID: 2100000, guid: a4690942e04780c4eb15a902bc387e52, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign frame_AlbedoTransparency
+    second: {fileID: 2800000, guid: e7ed07f4334ffc3408db8f5c525860a8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign frame_MetallicSmoothness
+    second: {fileID: 2800000, guid: 3b78bb987ad127546952be4f64d5e9eb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign frame_Normal
+    second: {fileID: 2800000, guid: 422f4f5bacdf80e4dbaa824feb269bdd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign poles_AlbedoTransparency
+    second: {fileID: 2800000, guid: 3554b6089bf899f4697d1ca33c4a04a2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign poles_MetallicSmoothness
+    second: {fileID: 2800000, guid: 003f34c55d189f54db53ea15bb582cd0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign poles_Normal
+    second: {fileID: 2800000, guid: 79d80a35133753a4f81394cd40d043fb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_cells_AlbedoTransparency
+    second: {fileID: 2800000, guid: f7a5c9fa939eb1e4e820b3f8fab83165, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_cells_Emission
+    second: {fileID: 2800000, guid: 5a591917bdb220f41bd79a1fde560c93, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_cells_MetallicSmoothness
+    second: {fileID: 2800000, guid: 32b6246499d13d34589f1acc8c812535, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_cells_Normal
+    second: {fileID: 2800000, guid: e59b6af696ea53a43b7c6f11cc800f56, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_common_AlbedoTransparency
+    second: {fileID: 2800000, guid: 6b511d467d9a3c141965ce45304fe5df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_common_Emission
+    second: {fileID: 2800000, guid: 15c31fd1a2197f5438eb73f502586786, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_common_MetallicSmoothness
+    second: {fileID: 2800000, guid: eabb136c4dfb778498ab111312477845, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_common_Normal
+    second: {fileID: 2800000, guid: 2f9dd9a370538fd4cbbd7b6801e1b505, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_medical_AlbedoTransparency
+    second: {fileID: 2800000, guid: 92a501368cc1d3f419e59092d21192a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_medical_Emission
+    second: {fileID: 2800000, guid: 45f9d50b6a55e2a4eab0769b0eb94481, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_medical_MetallicSmoothness
+    second: {fileID: 2800000, guid: 25b13aa66fffcb24a9c31a5548d13e8b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_medical_Normal
+    second: {fileID: 2800000, guid: 3179e8c135d624a4aa51edfec80cc11c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_warehouse_AlbedoTransparency
+    second: {fileID: 2800000, guid: ad0229a8b5727c94595ad740c475a0fe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_warehouse_Emission
+    second: {fileID: 2800000, guid: 640db45abdad3fb4fb0cba8ae97f0856, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_warehouse_MetallicSmoothness
+    second: {fileID: 2800000, guid: 0bd2eeeb3d1c3bc40b1652f6c3fb80ef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: room_signs_sign screen_warehouse_Normal
+    second: {fileID: 2800000, guid: 6e92a66197335554f94978600428fc86, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
