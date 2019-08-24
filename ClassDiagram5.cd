@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CameraControl">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4DxAEoIkAwAAgAAAAJQiIEAgQgAAAEACAAAAAAAAEEA=</HashCode>
+      <FileName>Assets\Scripts\CameraControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraExtensions">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAEAQAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CameraExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ava">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAACAAEAAAAACAACUAAAAAAAAgQAAAAAAAABA=</HashCode>
+      <FileName>Assets\Scripts\Character\Ava.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoxyVision">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAEAAAgAAQAAAAAAAACAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Character\FoxyVision.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Move">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBBAgBEiAgCAABDAgAIAQAAAAAAIENQQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Character\Move.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerMovement">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAgAEiAAAAEAhAgAIAAAAAAAAAAEAUAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Character\PlayerMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Push">
+    <Position X="9.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAABgAAQAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Character\Push.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vent">
+    <Position X="7.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAgUAAAAAAAAAQAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Character\Vent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CursorScript">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAACQAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CursorScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BGMusicController">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAEECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Environment\BGMusicController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EvilPcInteraction">
+    <Position X="9.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAABAAAAAAAAAAAAAAAIAAQIAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Environment\EvilPcInteraction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyPad">
+    <Position X="9.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYCAAQAAAAEAAAAAQAEAAAAAACgAJQAQgCAAAAAAAg=</HashCode>
+      <FileName>Assets\Scripts\Environment\KeyPad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SubmitResources">
+    <Position X="16.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAUAAAAAAQAAAAAAAAIAAIAAEAIDAAEAEAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Environment\SubmitResources.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ForceField">
+    <Position X="7.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAEIAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\ForceField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inventory">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgAAAAIAAAAAAAAAgAAAAExAAABAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Items\Inventory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Item" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAACAAAAAASAAAAAAAASQCACAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Items\Item.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NPCInventory">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAACAAEAAAAAAAACAAAAAAAAQAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Items\NPCInventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SFXPickUp">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Items\SFXPickUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TradingSystem">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABAASEACACCAIIQAIACAAQAAAAAACABAAAACICAAA=</HashCode>
+      <FileName>Assets\Scripts\Items\TradingSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenu">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAABAAAAAIAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NPCDialog">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAQAAACAAAIIAACAAAAAAAAAAABAAAAAAAAABAgA=</HashCode>
+      <FileName>Assets\Scripts\UI\NPCDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pause">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BRQgAAAAAAAAAAAACAAAAAAAAAAAkAAAgAAAAAgABEg=</HashCode>
+      <FileName>Assets\Scripts\UI\Pause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerInventory">
+    <Position X="2.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAgAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\PlayerInventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PrintInstructions">
+    <Position X="11" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAQAAACAAAAAAAAAAAAAAAAAAABAAAIAAAAIBAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\PrintInstructions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SettingsScreen">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAABAgCAAAABAACAAIAAAAQAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\SettingsScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IInventoryItem">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAASAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IInventory">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ItemType">
+    <Position X="2.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAgQAAAAAAAAgAAAAE=</HashCode>
+      <FileName>Assets\Scripts\GlobalEnums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PlayerInControl">
+    <Position X="4" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAgAAAAAAAgAAAAAAIAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GlobalEnums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TradeProgress">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAgAwA=</HashCode>
+      <FileName>Assets\Scripts\GlobalEnums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TradeType">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hIAAAAAACAwACAAABAAAAAAAAwAAQAAAAAAAAgAgAAA=</HashCode>
+      <FileName>Assets\Scripts\GlobalEnums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
