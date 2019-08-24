@@ -43,7 +43,7 @@ public class Ava : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Ava Variant")
+        if (other.gameObject.name == "Character_Ava")
         {
             isRange = true;
         }
